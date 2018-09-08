@@ -38,7 +38,7 @@
                  <main>
                     <div>
                        <figure>
-                           <img src="img/me.jpg" width="400" height="500"/>
+                           <img src="img/me.jpg"/>
                      </figure>
                      </div>
                <div id="paragraph">
@@ -66,7 +66,7 @@
               <em> CST336 Internet Programming. 2018&copy; Garcia<br /></em>
              <strong>Disclaimer:</strong> The information in this webpage fictitous. <br />
              It is used for academic purposes only.<br>
-             <img src="img/csumb.png" width="100" height="50"/>
+             <img src="img/csumb.jpg"/>
          </footer>
          
     </body>
