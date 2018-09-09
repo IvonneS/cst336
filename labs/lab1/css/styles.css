@@ -45,6 +45,16 @@ h1{
      margin-bottom: 0px;
     
 }
+.column{
+    float: left;
+    width:33.33%;
+    padding: 2px; 
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
 #paragraph{
     float: right;
     margin-right: 200px;
@@ -84,4 +94,7 @@ ul {
    font-size: 1.0em;
     color: pink;
     font-family: sans-serif;
+}
+.nav .current{
+    color: white;
 }

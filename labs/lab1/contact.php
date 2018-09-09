@@ -8,11 +8,15 @@
     
         <header>
             <h1> Contact me </h1>
-          <nav>
-              <strong>
-             <hr width="70%"/>
-             <a href= "main.php">HOME</a>
-             <a href= "about.php">ABOUT</a>
+           <nav class = "nav">
+            
+             <hr width="100%"/>
+             <strong>
+             <a  href= "main.php">HOME</a>
+             
+             <a  href= "about.php">ABOUT</a>
+             
+             <a class = "current" href= "contact.php">CONTACT</a>
              </strong>
          </nav>
          <style>
@@ -35,7 +39,14 @@
                <em>CST336 Internet Programming. 2018&copy; Garcia<br /></em>
              <strong>Disclaimer:</strong> The information in this webpage fictitous. <br />
              It is used for academic purposes only.<br>
-             <img src="img/csumb.jpg" />
+             <div class ="row">
+             <div class = "column">
+                 <img src="img/buddy_verified.png" alt = "Peer Review"/>
+             </div>
+             <div class = "column">
+                 <img src="img/csumb.jpg" alt = "CSUMB logo"/>
+             </div>
+             </div>
          </footer>
     <!--</body>-->
 </html>
