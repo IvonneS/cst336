@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
    <head>
-        <!--<meta charset=”utf-8” /> <!--includes most characters from languages-->-->
         <title> Programming Languages </title>
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
         <nav class = "files">
