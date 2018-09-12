@@ -4,6 +4,9 @@ body {
  font: cursive;
  margin: 0 auto;  
 }
+.body_one{
+    background: "img/code.jpg";
+}
 nav, footer, header {
     text-align: center;
 }

@@ -23,7 +23,7 @@
          </nav>
         
     </head>
-    <body>
+    <body class = "body_one">
         
         <div>
             <p style="text-align: center;"> A programming language is a formal language that specifies a set of instructions that 
