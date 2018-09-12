@@ -24,6 +24,10 @@ body {
     font-size: 1.5em;
     color: #17252A;
     margin-bottom: 2%;
+    background: url(backg.jpg);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    padding: 15px;
 }
 header {
     text-align: center;
@@ -48,6 +52,7 @@ header {
     float: left;
     padding:10px;
     font-size: medium;
+    
 }
 .row::after{
     content: "";
