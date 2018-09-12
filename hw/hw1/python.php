@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta charset=”utf-8” /> <!--includes most characters from languages-->
-        <title> PYTHON </title>
+        <title> Programming Languages </title>
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
         <nav class = "files">
              
@@ -30,13 +30,13 @@
             </p>
             
         </div>
-        <div>
-            <figure>  
-             <img scr="" alt="image does not work">
-        </figure>
-           
+       <div class = "image">
+        
+             <img src="img/java.png" alt = "pyhton logo"/>
+        
         </div>
-        <div style = "position: relative";>
+        <hr width="45%" size = "2.5" color = "#2B7A78"/>
+        <div class = "facts">
             <h2>Interesting Facts...</h2>
             <p>
                 
@@ -56,8 +56,10 @@
                 if the for loop exits naturally, without any break statements.
             </p>
         </div>
-        <div>
-            <h2>Reference</h2>
+        
+            <h2>~REFERENCE~</h2>
+        <div class = "links">
+            
             <li><a href="https://wiki.kidzsearch.com/wiki/Python_(programming_language)">Article</a></li>
             <li><a href= "https://www.quora.com/What-are-some-interesting-facts-about-Python-programming-language">Facts</a></li>
             <li><a href="http://www.informit.com/articles/index.aspx?st=86026">Article</a></li>
@@ -65,7 +67,7 @@
         
    
    
-    <ul>
+    <ul class = "buttons">
       <a href="https://www.w3schools.in/python-tutorial/" class = "swagButton">w3schools Tutorial</a>
        <a href="https://www.linkedin.com/premium/plan/learning/guest?categoryId=415&categoryCollection=developer&hero=10&src=go-pa&veh=sem_src.go-pa_c.google-lil-sem-prs-b2c-gbl-eng-alpha-b2-dev-python_pkw.free%20python%20tutorial_pmt.e_pcrid.231569568942_pdv.c_plc._trg._net.g_learning&trk=sem_src.go-pa_c.google-lil-sem-prs-b2c-gbl-eng-alpha-b2-dev-python_pkw.free%20python%20tutorial_pmt.e_pcrid.231569568942_pdv.c_plc._trg._net.g_learning&gclid=CjwKCAiA-9rTBRBNEiwAt0Znw7ZR-sJVw_DNpXLr6ebieQNFzxp2QLJlBl2YxLhTDvBGT3P0_y49CRoCpEUQAvD_BwE" class = "swagButton">Python Tutorial</a>
       <a href="https://www.coursera.org/courses?languages=en&query=python" class = "swagButton">Free courses</a>

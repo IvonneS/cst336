@@ -29,10 +29,21 @@
         instructions that can be used to produce a varity of output. <br>
         Programming languages generally consist of instructions for a computer. <br>
         Programming languages can be used to create programs that implement specific algorithms.</p>
-            
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+           <hr width="45%" size = "2.5" color = "#2B7A78"/>
+            <h1 class = "files"> Timeline of some programming languages</h1>
         <div class = "bigTable">
             <table>
-                <h1> Timeline of some programming languages</h1>
+                
                 <tr id="table-header"> 
                    <td><strong>Year &nbsp</strong></td>
                    <td><strong>Language &nbsp</strong></td>
@@ -206,13 +217,13 @@
                </tr>
                
             </table>
-        </div>
+  
         </div>
     
-        
+                    <h2>~REFERENCE~</h2>
             <!--References List-->
-            <div>
-                 <h2>Here some of my references</h2>
+            <div class = "links">
+                 
                  <li><a href="https://www.veracode.com/blog/2013/04/the-history-of-programming-languages-infographic">Article</a></li>
                   <li><a href="https://www.computerscience.org/resources/computer-programming-languages/">Guide</a></li>
             </div>

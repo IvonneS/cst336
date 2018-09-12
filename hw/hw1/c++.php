@@ -31,12 +31,11 @@
             </p>
             
         </div>
-        <div>
-            <figure>
-             <img scr="im/c++.png" width = "150" high = "300" alt="image does not work">
-        </figure>
+         <div class = "image">
+             <img scr="img/c++.png" alt="c++ logo">
+        
         </div>
-        <div style = "position: relative";>
+        <div class = "facts">
             <h2>Interesting Facts...</h2>
            <h1>C++ influenced many other programming languages</h1>
             <p>
@@ -68,9 +67,8 @@
                 efficient abstractions while also offering hardware access.
             </p>
         </div>
-        
-          <div>
-            <h2>Reference</h2>
+          <h2>~REFERENCE~</h2>
+          <div class = "links">
             <li><a href="https://www.techopedia.com/definition/26184/c-programming-language">Article </a></li>
             <li><a href= "http://blog.stoneriverelearning.com/7-things-that-you-didnt-know-about-c-programming/">Facts</a></li>
             <li><a href="https://en.wikipedia.org/wiki/C%2B%2B">Article</a></li>
@@ -78,7 +76,7 @@
         
    
    
-    <ul>
+    <ul class = "buttons">
       <a href="https://www.w3schools.in/c-tutorial/" class = "swagButton">C w3schools Tutorial</a>
        <a href="http://cppinstitute.org/free-c-and-c-courses?gclid=EAIaIQobChMI19fPsvyL2QIVhGd-Ch2a_wMxEAAYAyAAEgK4IPD_BwE" class = "swagButton">C++ Tutorial</a>
       <a href="https://www.coursera.org/courses?languages=en&query=c+programming" class = "swagButton">Free courses</a>
