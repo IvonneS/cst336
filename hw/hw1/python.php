@@ -26,7 +26,21 @@
             <p class = "intro">
                 Python is an open source programming language, it<br>
                 was made to both look good and be easy to read. <br>
-                It was created by a programmer named Guido van Rossum. 
+                It was created by a programmer named Guido van Rossum. <br><br>
+                Python has a very easy to read syntax. Some of it comes from C,<br>
+                because that is the language that Python was written in. One big change <br>
+                with Python is the use of whitespace to delimit code: spaces or tabs <br>
+                are used to organize code by the amount of spaces or tabs. This means at <br>
+                the end of each line, a semicolon is not needed and curly braces ({}) <br>
+                are not used to group code, which are both common in C. The combined effect makes<br>
+                Python a very easy to read language<br>
+               
+                <li><b>Professions and Industries:</b> professional services and design, python<br>
+                developers, software engineers,</li><br>
+                <li><b>Major Organizations:</b> Google, Pinterest, Instagram, YouTube, DropBox, NASA</li><br>
+                <li><b>Specializations and Industries: </b>Web and Internet development, scientific <br>
+                and numeric computing; desktop graphical user interfaces (GUIs)</li><br>
+                
             </p>
             
         </div>

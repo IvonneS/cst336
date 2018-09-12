@@ -31,7 +31,15 @@
                 C++ includes several operators such as comparison, arithmetic, bit manipulation and logical operators.<br>
                 One of the most attractive features of C++ is that it enables the overloading of certain operators <br>
                 such as addition. A few of the essential concepts within the C++ programming language include polymorphism,<br>
-                virtual and friend functions, templates, namespaces and pointers.
+                virtual and friend functions, templates, namespaces and pointers.<br><br>
+                
+              
+                <li><b>Professions and Industries:</b> Used by employers in Information Technology, Engineering, <br>
+                Professional Services, Design, Quality Control and Management</li><br>
+                <li><b>Major Organizations:</b> Google, Mozilla, Firefox, Winamp, Adobe Software, Amazon, Lockheed Martin</li><br>
+                <li><b>Specializations and Industries:</b>System/Application Software, Drivers, Client-Server Applications, Embedded Firmware</li><br>
+                
+                
             </p>
         </div>
         

@@ -39,10 +39,8 @@ header {
     font-size: medium;
 }
 .image{
-    float: center;
-    content: "";
-    clear: both;
-    display: table;
+    text-align:center;
+    
 }
 
 /*for menu paragraph*/

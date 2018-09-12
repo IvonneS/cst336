@@ -30,6 +30,14 @@
                 There are lots of applications and websites that will not work unless you have Java installed,<br>
                 and more are created every day. Java is fast, secure, and reliable. From laptops to datacenters,<br>
                 game consoles to scientific supercomputers, cell phones to the Internet. <strong>Java is everywhere!</strong>
+                <br><br>
+                
+               
+                <li><b>Professions and Industries:</b> Used by employers in communications, education, finance, health sciences, <br>
+                hospitality, retail and utilities</li><br>
+                <li><b>Major Organizations:</b>V2COM, Eclipse Information Technologies, eBay, Eurotech</li><br>
+                <li><b>Specializations and Industries:</b>Internet of Things (IoT), Enterprise Architecture, Cloud Computing</li><br>
+                
             </p>
             
         </div>
