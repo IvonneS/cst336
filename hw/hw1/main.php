@@ -24,8 +24,9 @@
     <body>
         
         <div>
-            <p style="text-align: center;"> A programming language is a formal language that specifies a set of instructions that 
-        can be used to produce a varity of output. <br>
+             <p class = "intro">
+        A programming language is a formal language that specifies a set of <br>
+        instructions that can be used to produce a varity of output. <br>
         Programming languages generally consist of instructions for a computer. <br>
         Programming languages can be used to create programs that implement specific algorithms.</p>
             
