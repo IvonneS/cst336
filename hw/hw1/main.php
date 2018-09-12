@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html>
-    <head>
+   <head>
         <meta charset=”utf-8” /> <!--includes most characters from languages-->
-        <title> Hw1 </title>
+        <title> Programming Languages </title>
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <nav class = "files">
+             
+             <a class = "current"href= "main.php">  HOME  </a>
+             
+             <a href= "c++.php">  C++  </a>
+             
+             <a  href= "java.php">  Java </a>
+             
+             <a href= "python.php">  Python </a>
+         </nav>
          <header>
             
-            <h1>Programming Languages</h1>
+            <h1> Programming Languages</h1>
             
             </header>
-            <hr width="100%"/>
-         <nav>
-            
-             <a href= "main.php">  HOME &nbsp </a>
-             
-             <a href= "c++.php">  C++ &nbsp </a>
-             
-             <a href= "java.php">  Java &nbsp </a>
-             
-             <a href= "python.php">  Python &nbsp</a>
-          
-         </nav>
-        
-    </head>
-    <body class = "body_one">
+     </head>
+    
+    <body>
         
         <div>
             <p style="text-align: center;"> A programming language is a formal language that specifies a set of instructions that 
@@ -31,7 +29,7 @@
         Programming languages generally consist of instructions for a computer. <br>
         Programming languages can be used to create programs that implement specific algorithms.</p>
             
-        
+        <div class = "bigTable">
             <table>
                 <h1> Timeline of some programming languages</h1>
                 <tr id="table-header"> 
@@ -207,7 +205,8 @@
                </tr>
                
             </table>
-            </div>
+        </div>
+        </div>
     
         
             <!--References List-->

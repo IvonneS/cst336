@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <head>
+   <head>
         <meta charset=”utf-8” /> <!--includes most characters from languages-->
         <title> Programming Languages </title>
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <nav class = "files">
+             
+             <a href= "main.php">  HOME  </a>
+             
+             <a class = "current" href= "c++.php">  C++  </a>
+             
+             <a  href= "java.php">  Java </a>
+             
+             <a href= "python.php">  Python </a>
+         </nav>
          <header>
             
             <h1> C++ Language</h1>
             
             </header>
-         <nav>
-            
-             <a href= "main.php">  HOME &nbsp </a>
-             
-             <a href= "c++.php">  C++ &nbsp </a>
-             
-             <a href= "java.php">  Java &nbsp </a>
-             
-             <a href= "python.php">  Python &nbsp</a>
-         
-         </nav>
-    </head>
+     </head>
     <body>
         <div>
             <p class = "intro">

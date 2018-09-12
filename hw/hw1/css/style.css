@@ -1,28 +1,51 @@
 body {
- background-color:pink;
- color:black;
+ background-color: 	#3AAFA9;
+ color:#17252A;
  font: cursive;
- margin: 0 auto;  
+  
 }
-.body_one{
-    background: "img/code.jpg";
-}
-nav, footer, header {
+/*class for links for other files*/
+.files{
     text-align: center;
 }
-p{
-    text-align: left;
-    font-family: inherit;
-    font-size: 1.3em;
+.files .current{
     color: white;
 }
 
-li{
-    text-align: left;
+.intro{
+    text-align: center;
     font-family: inherit;
-    font-size: 1.4em;
-    color: yellow;
+    font-size: 1.5em;
+    color: #17252A;
+    margin-bottom: 2%;
 }
+header {
+    text-align: center;
+    font-family: serif;
+    color: #FEFFFF;
+    background-color: #2B7A78;
+}
+.image{
+    margin-top: 2%;
+    margin-right: 5%;
+    margin-left: 80%;
+}
+.facts{
+    text-align: center;
+    font-family: inherit;
+    font-size: 1em;
+    color: black;
+    /*margin-right: 50%;*/
+}
+
+.nav .current{
+    color: #17252A;
+}
+.bigTable{
+    alignment-baseline: central;
+}
+
+
 nav{
     font-family: inherit;
     font-size: 1.7em;
@@ -33,34 +56,47 @@ nav{
 table, th, td {
    border: 1px blue;
     text-align: center;
-    
-}
-table{
     margin-bottom: 50px;
     margin-top: 25px;
     
 }
-   
+
 #table-header{
     text-align: center;
-    background-color: #990000;
+    background-color: #2B7A78;
 }
 .table-row{
-    background-color: #991f00;
+   background-color: #2B7A78;
      text-align: center;
 }
-.support{
-    /*class for references links*/
-    text-align: right;
-    color:#F1C40F;
+
+
+
+
+/*class for references links*/
+.links{
+    margin-bottom: 5%;
+    margin-top: 2%;
+}
+li{
+    text-align: left;
+    font-family: inherit;
+    font-size: 1.5em;
+    color: gray;
+
+}
+/*Creating tutorial buttons*/
+.buttons{
+    float: center;
+ 
 }
 .swagButton{
     font-family: cursive;
     font-weight: 100;
     font-size: 1.5em;
     text-align: center;
-    color: #31A6FF;
-    border: solid 2px #31A6FF;
+    color: #17252A;
+    border: solid 2px #17252A;
     border-radius: 50px;
     padding: 10px 20px;
    
@@ -72,23 +108,6 @@ table{
     color: #fff;
     
 }
-figure{
-    text-align: right;
-}
-.intro{
+footer{
     text-align: center;
-    font-family: inherit;
-    font-size: 1.3em;
-    color: #EC7063;
-}
-header{
-    color: #B3B6B7;
- 
-
-ul{
-    border-color: #C02B2B;
-    font-size: 1.8em;
-    font-style: italic;
-    text-align: center;
-    margin:80%;
 }
