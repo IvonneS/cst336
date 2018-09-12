@@ -32,24 +32,25 @@
             
         </div>
          <div class = "image">
-             <img scr="img/c++.png" alt="c++ logo">
+             <img scr="" alt="c++ logo">
         
         </div>
+         <hr width="45%" size = "2.5" color = "#2B7A78"/>
         <div class = "facts">
             <h2>Interesting Facts...</h2>
-           <h1>C++ influenced many other programming languages</h1>
+           
             <p>
                According to Wikipedia, C++ has influenced many other<br>
                programming languages, some of which include C#, Java and <br>
                even newer versions of C                
             </p>
-            <h1>Introduces Object-Oriented Programming</h1>
+            
             <p>
                 Although it was lacking in C, object-oriented programming was introduced <br>
                 in C++. Among other things, C++ supports the four primary <br>
                 features of OOP: abstraction, inheritance, polymorphism and encapsulation. 
             </p>
-            <h1>Has more than 35 Operators</h1>
+          
             <p>
                 C++ has two primary concepts on which the language was<br>
                 built: direct mapping for hardware features and zero-overhead<br>
@@ -58,7 +59,7 @@
                 used for creating efficient abstractions while also offering hardware <br>
                 access.
             </p>
-            <h1>Has two main concepts</h1>
+           
             <p>
                 C++ has two primary concepts on which the language was built: <br>
                 direct mapping for hardware features and zero-overhead abstractions <br>

@@ -32,7 +32,7 @@
         </div>
        <div class = "image">
         
-             <img src="img/java.png" alt = "pyhton logo"/>
+             <img src="img/python.png" alt = "pyhton logo"/>
         
         </div>
         <hr width="45%" size = "2.5" color = "#2B7A78"/>

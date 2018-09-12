@@ -7,11 +7,17 @@ body {
 /*class for links for other files*/
 .files{
     text-align: center;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration: none;
+    float: center;
+    font:times; 
 }
 .files .current{
-    color: white;
+    color: #DEF2F1;
 }
 
+/*first paragraph*/
 .intro{
     text-align: center;
     font-family: inherit;
@@ -30,6 +36,18 @@ header {
     margin-right: 5%;
     margin-left: 80%;
 }
+/*for menu paragraph*/
+.column{
+    float: left;
+    padding:10px;
+    font-size: medium;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+/**********************/
 .facts{
     text-align: center;
     font-family: inherit;
@@ -43,7 +61,6 @@ header {
 }
 .bigTable{
     margin-left: 7.5%;
-
 }
 
 
@@ -104,7 +121,7 @@ li{
     
 }
 .swagButton:hover { 
-    background-color: #31A6FF;
+    background-color: #2B7A78;
     color: #fff;
     
 }

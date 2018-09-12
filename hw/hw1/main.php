@@ -6,9 +6,9 @@
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
         <nav class = "files">
              
-             <a class = "current"href= "main.php">  HOME  </a>
+             <a class = "current"href= "main.php"> HOME   </a>
              
-             <a href= "c++.php">  C++  </a>
+             <a href= "c++.php"> C++  </a>
              
              <a  href= "java.php">  Java </a>
              
@@ -28,14 +28,18 @@
         A programming language is a formal language that specifies a set of <br>
         instructions that can be used to produce a varity of output. <br>
         Programming languages generally consist of instructions for a computer. <br>
-        Programming languages can be used to create programs that implement specific algorithms.</p>
+        </p>
         </div>
         
-        
-        
-        
-        
-        
+    
+        <div class ="row">
+             <div class = "column">
+               <img src="img/img.gif" alt = "gif"/>
+             </div>
+             <div class = "column">
+               <p>TEXT</p>
+             </div>
+        </div>
         
         
         

@@ -42,37 +42,33 @@
         <hr width="45%" size = "2.5" color = "#2B7A78"/>
         <div class = "facts">
            <h1>Interesting Facts...</h1>
-           <p><b>Java was called Oak at the beginning</b><br>
-             At first, the idea of James Gosling was a big oak tree<br>
-               that grew outise his window. But he found that <br>
-               the name Oak was already registered by other company.<br>
+           <p>
+            
                
                It is said that Gosling and his team of programmers chose the logo <br>
                of the cup of coffee for Java because they met in a cafeteria when<br>
                they were discussing about what name of the language.<br>
-            <b>Java was invented by accident</b><br>
+            </p>
+            <p>
                When James Gosling was working on a set-top box at Sun Labs, <br>
                and he started by "cleaning up" C++, Java came out.<br>
-            <b>Its pays to learn</b><br>
+           </p><p>
                 The median salary of a Java developer is $83,975.00. <br>
                 There are about 9 million Java developers in the world.<br>
-            <b>Java is second most popular language after C</b><br>
+            </p><p>
                 Contrary to what many people think, Java is second most<br>
                 popular programming language after C.<br>
-            <b>JUnit Testing Framework</b><br>
+            </p><p>
                 The JUnit Testing Framework is the number one top used <br>
                 Java technology. Its popularity can be deduced from almost<br>
                 4 out of 5 Java developers. 70 percent developers used JUnit <br>
                 Testing Framework.<br>
-            <b>Java is the go to tool for enterprises</b><br>
-                More than 90 percent of enterprises use Java for programming.<br>
-            <b>The Duke</b><br>
+            </p><p>
+                More than 90 percent of enterprises use Java for programming.
+           </p><p>
                 Java has a mascot called The Duke, it was created <br>
                 by Joe Palrang. 
-            <br>
-            <b>Java and Android</b><br>
-                Google's Android operating system uses Java APIs<br>
-                so Java runs about on one billion plus smartphones.
+            
             </p>
             
         </div>
