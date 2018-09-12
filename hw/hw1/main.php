@@ -68,11 +68,11 @@
             <table>
                 
                 <tr id="table-header"> 
-                   <td><strong>Year &nbsp </strong></td>
-                   <td><strong>Language &nbsp </strong></td>
-                   <td><strong>Creator &nbsp </strong></td>
-                   <td><strong>Primary Uses &nbsp </strong></td>
-                   <td><strong>Used By &nbsp </strong></td>
+                   <td><strong>Year  </strong></td>
+                   <td><strong>Language  </strong></td>
+                   <td><strong>Creator  </strong></td>
+                   <td><strong>Primary Uses  </strong></td>
+                   <td><strong>Used By </strong></td>
                </tr>
                
                 <tr class="table-row">
@@ -247,12 +247,12 @@
             <!--References List-->
             <div class = "links">
                  
-                 <li><a href="https://www.veracode.com/blog/2013/04/the-history-of-programming-languages-infographic">Article</a></li>
-                  <li><a href="https://www.computerscience.org/resources/computer-programming-languages/">Guide</a></li>
+                 <a href="https://www.veracode.com/blog/2013/04/the-history-of-programming-languages-infographic">Article</a>
+                  <a href="https://www.computerscience.org/resources/computer-programming-languages/">Guide</a>
             </div>
         
-        <hr width="100%"/>
-         
+        <div class="hr"><hr /></div>
+   </body>  
          <footer>
               <em> CST336 Internet Programming. 2018&copy; Garcia<br /></em>
              <strong>Disclaimer:</strong> The information in this webpage fictitous. <br />
@@ -260,5 +260,5 @@
              <img src="../../img/csumb.png" alt = "csumb logo"/>
          </footer>
          
-    </body>
+    
 </html>
