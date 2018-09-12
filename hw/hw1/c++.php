@@ -21,7 +21,7 @@
             </header>
      </head>
     <body>
-        <div>
+        <div class = part>
             <p class = "intro">
                 C++ is considered to be an intermediate-level language, as it encapsulates both <br>
                 high- and low-level language features. Initially, the language was called "C with classes"<br>
@@ -34,10 +34,12 @@
                 virtual and friend functions, templates, namespaces and pointers.<br><br>
                 
               
-                <li><b>Professions and Industries:</b> Used by employers in Information Technology, Engineering, <br>
+                <li><b><sub>Professions and Industries:</sub></b> Used by employers in Information Technology, Engineering, <br>
                 Professional Services, Design, Quality Control and Management</li><br>
-                <li><b>Major Organizations:</b> Google, Mozilla, Firefox, Winamp, Adobe Software, Amazon, Lockheed Martin</li><br>
-                <li><b>Specializations and Industries:</b>System/Application Software, Drivers, Client-Server Applications, Embedded Firmware</li><br>
+                <li><b><sub>Major Organizations:</sub></b> Google, Mozilla, Firefox, Winamp, Adobe Software, Amazon, Lockheed Martin</li><br>
+                <li><b><sub>
+                    Specializations and Industries:
+                </sub></b>System/Application Software, Drivers, Client-Server Applications, Embedded Firmware</li><br>
                 
                 
             </p>

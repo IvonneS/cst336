@@ -33,10 +33,12 @@
                 <br><br>
                 
                
-                <li><b>Professions and Industries:</b> Used by employers in communications, education, finance, health sciences, <br>
+                <li><b><sub>Professions and Industries:</sub></b> Used by employers in communications, education, finance, health sciences, <br>
                 hospitality, retail and utilities</li><br>
-                <li><b>Major Organizations:</b>V2COM, Eclipse Information Technologies, eBay, Eurotech</li><br>
-                <li><b>Specializations and Industries:</b>Internet of Things (IoT), Enterprise Architecture, Cloud Computing</li><br>
+                 <li><b><sub>Major Organizations:</sub></b>V2COM, Eclipse Information Technologies, eBay, Eurotech</li><br>
+                <li><b><sub>
+                    Specializations and Industries:
+                </sub></b>Internet of Things (IoT), Enterprise Architecture, Cloud Computing</li><br>
                 
             </p>
             
