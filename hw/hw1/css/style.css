@@ -32,16 +32,17 @@ header {
     background-color: #2B7A78;
 }
 
-.image{
-    margin-top: 2%;
-    margin-right: 5%;
-    margin-left: 80%;
-}
 /*for paragraph with more information*/
-.middlepart{
-    float: left;
+.second{
+     float: center;
     padding:10px;
     font-size: medium;
+}
+.image{
+    float: center;
+    content: "";
+    clear: both;
+    display: table;
 }
 
 /*for menu paragraph*/

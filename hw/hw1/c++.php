@@ -26,14 +26,28 @@
                 C++ is considered to be an intermediate-level language, as it encapsulates both <br>
                 high- and low-level language features. Initially, the language was called "C with classes"<br>
                 as it had all the properties of the C language with an additional concept of "classes."<br>
-                However, it was renamed C++ in 1983. It is pronounced "see-plus-plus."
+                However, it was renamed C++ in 1983. It is pronounced "see-plus-plus.
 
             </p>
-            
+            <p>
+                C++ includes several operators such as comparison, arithmetic, bit manipulation and logical operators.<br>
+                One of the most attractive features of C++ is that it enables the overloading of certain operators <br>
+                such as addition. A few of the essential concepts within the C++ programming language include polymorphism,<br>
+                virtual and friend functions, templates, namespaces and pointers.
+            </p>
         </div>
+        <div class "second">
          <div class = "image">
              <img src="img/cp.png" alt = "c++ logo"/>
-        
+        </div>
+        <div class = "image">
+            <p>
+                C++ includes several operators such as comparison, arithmetic, bit manipulation and logical operators.<br>
+                One of the most attractive features of C++ is that it enables the overloading of certain operators <br>
+                such as addition. A few of the essential concepts within the C++ programming language include polymorphism,<br>
+                virtual and friend functions, templates, namespaces and pointers.
+            </p>
+        </div>
         </div>
          <hr width="45%" size = "2.5" color = "#2B7A78"/>
         <div class = "facts">
