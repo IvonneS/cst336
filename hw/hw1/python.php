@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset=”utf-8” /> <!--includes most characters from languages-->
+       
         <title> Programming Languages </title>
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
         <nav class = "files">
@@ -35,7 +35,7 @@
              <img src="img/python.png" alt = "pyhton logo"/>
         
         </div>
-        <hr width="45%" size = "2.5" color = "#2B7A78"/>
+        <div class="hr"><hr /></div>
         <div class = "facts">
             <h2>Interesting Facts...</h2>
             <p>
@@ -60,9 +60,9 @@
             <h2>~REFERENCE~</h2>
         <div class = "links">
             
-            <li><a href="https://wiki.kidzsearch.com/wiki/Python_(programming_language)">Article</a></li>
-            <li><a href= "https://www.quora.com/What-are-some-interesting-facts-about-Python-programming-language">Facts</a></li>
-            <li><a href="http://www.informit.com/articles/index.aspx?st=86026">Article</a></li>
+            <a href="https://wiki.kidzsearch.com/wiki/Python_(programming_language)">Article 1</a>
+            <a href= "https://www.quora.com/What-are-some-interesting-facts-about-Python-programming-language">Facts</a>
+            <a href="http://www.informit.com/articles/index.aspx?st=86026">Article 2</a>
         </div>
         
    
@@ -78,7 +78,7 @@
      
      
              <!--****************************************-->
-        <hr width="100%"/>
+        <div class="hr"><hr /></div>
          
          <footer>
               <em> CST336 Internet Programming. 2018&copy; Garcia<br /></em>
