@@ -33,13 +33,12 @@
             </p>
             
         </div>
-        <div class = "middlepart">
             <div class = "image">
              <img src="img/java.png" alt = "JAVA logo"/>
             
                 
             </div>
-        </div>
+       
         
         <hr width="45%" size = "2.5" color = "#2B7A78"/>
         <div class = "facts">
