@@ -78,8 +78,8 @@
         
         <div class = "links">
             
-            <li><a href="https://en.wikipedia.org/wiki/Java_version_history">Article Java</a></li>
-            <li><a href= "https://www.techworm.net/2016/05/10-interesting-facts-java.html">Facts</a></li>
+            <a href="https://en.wikipedia.org/wiki/Java_version_history">Article Java</a>
+            <a href= "https://www.techworm.net/2016/05/10-interesting-facts-java.html">Facts</a>
         </div>
    
     <ul class = "buttons">

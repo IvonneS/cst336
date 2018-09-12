@@ -46,11 +46,11 @@
                    <li>Java: general-purpose, object-oriented, high-level<br>
                    programming language with several features <br>
                    that make it ideal for web-based development.<br><br></li>
-                   -C++: general purpose, object-oriented, middle-level <br>
-                   programming language and is an extension of C language  <br><br>
-                   -Python: advanced programming languge that is <br>
+                   <li>C++: general purpose, object-oriented, middle-level <br>
+                   programming language and is an extension of C language  <br><br></li>
+                   <li>Python: advanced programming languge that is <br>
                    interpreted object-oriented<br>
-                   and built on flexible and robust semantics.
+                   and built on flexible and robust semantics.</li>
                    
                 
                </p>

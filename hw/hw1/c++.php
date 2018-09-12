@@ -70,9 +70,9 @@
         </div>
           <h2>~REFERENCE~</h2>
           <div class = "links">
-            <li><a href="https://www.techopedia.com/definition/26184/c-programming-language">Article </a></li>
-            <li><a href= "http://blog.stoneriverelearning.com/7-things-that-you-didnt-know-about-c-programming/">Facts</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/C%2B%2B">Article</a></li>
+            <a href="https://www.techopedia.com/definition/26184/c-programming-language">Article </a>
+            <a href= "http://blog.stoneriverelearning.com/7-things-that-you-didnt-know-about-c-programming/">Facts</a>
+            <a href="https://en.wikipedia.org/wiki/C%2B%2B">Article</a>
         </div>
         
    
