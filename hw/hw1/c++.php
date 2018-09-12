@@ -11,11 +11,13 @@
             </header>
          <nav>
             
-             <a href= "main.php">HOME &nbsp</a>
+             <a href= "main.php">  HOME &nbsp </a>
              
-             <a href= "java.php">Java &nbsp</a>
+             <a href= "c++.php">  C++ &nbsp </a>
              
-             <a href= "python.php">Python &nbsp</a>
+             <a href= "java.php">  Java &nbsp </a>
+             
+             <a href= "python.php">  Python &nbsp</a>
          
          </nav>
     </head>
@@ -92,7 +94,7 @@
               <em> CST336 Internet Programming. 2018&copy; Garcia<br /></em>
              <strong>Disclaimer:</strong> The information in this webpage fictitous. <br />
              It is used for academic purposes only.<br>
-             <img src="im/csumb.png" width="100" height="50"/>
+             <img src="../../img/csumb.png" alt = "csumb logo"/>
          </footer>
     </body>
 </html>
