@@ -48,6 +48,12 @@ header {
     display: table;
 }
 /**********************/
+.details{
+    text-align: left;
+    font-family: inherit;
+    font-size: 1.5em;
+    color: black;
+}
 .facts{
     text-align: center;
     font-family: inherit;

@@ -25,9 +25,9 @@
         
         <div>
              <p class = "intro">
-        A programming language is a formal language that specifies a set of <br>
-        instructions that can be used to produce a varity of output. <br>
-        Programming languages generally consist of instructions for a computer. <br>
+        A programming language is a formal language to communicate with a computer this specifies a set of <br>
+        instructions that can be used to produce a varity of output. There are differnt types of languages,<br>
+        each of them compile the code from english to binary.<br>
         </p>
         </div>
         
@@ -37,7 +37,24 @@
                <img src="img/img.gif" alt = "gif"/>
              </div>
              <div class = "column">
-               <p>TEXT</p>
+               <p class = "details">
+                   Even though there are many programing languages for <br>
+                   different needs that have a great <br>
+                   and easy use, the three most commun programming<br>
+                   languages are java, c ++ and python. <br>
+                   Each of them having different structures and uses,<br>
+                   but very important languages nowdays. <br><br>
+                   -Java: general-purpose, object-oriented, high-level<br>
+                   programming language with several features <br>
+                   that make it ideal for web-based development.<br><br>
+                   -C++: general purpose, object-oriented, middle-level <br>
+                   programming language and is an extension of C language  <br><br>
+                   -Python: advanced programming languge that is <br>
+                   interpreted object-oriented<br>
+                   and built on flexible and robust semantics.
+                   
+                
+               </p>
              </div>
         </div>
         
