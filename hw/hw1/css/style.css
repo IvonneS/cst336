@@ -134,3 +134,8 @@ li{
 footer{
     text-align: center;
 }
+.hr {
+    height: 15px;
+  width: "25%";
+  color: #2B7A78;
+}

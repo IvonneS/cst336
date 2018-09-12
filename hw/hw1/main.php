@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
    <head>
-        <meta charset=”utf-8” /> <!--includes most characters from languages-->
+        <!--<meta charset=”utf-8” /> <!--includes most characters from languages-->-->
         <title> Programming Languages </title>
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
         <nav class = "files">
              
-             <a class = "current"href= "main.php"> HOME   </a>
+             <a class = "current" href= "main.php"> HOME   </a>
              
              <a href= "c++.php"> C++  </a>
              
@@ -60,17 +60,19 @@
         
         
         
-           <hr width="45%" size = "2.5" color = "#2B7A78"/>
+           <!--<hr width="45%" size = "2.5" color = "#2B7A78"/>-->
+           <div class="hr"><hr /></div>
+           
             <h1 class = "files"> Timeline of some programming languages</h1>
         <div class = "bigTable">
             <table>
                 
                 <tr id="table-header"> 
-                   <td><strong>Year &nbsp</strong></td>
-                   <td><strong>Language &nbsp</strong></td>
-                   <td><strong>Creator &nbsp</strong></td>
-                   <td><strong>Primary Uses &nbsp</strong></td>
-                   <td><strong>Used By &nbsp</strong></td>
+                   <td><strong>Year &nbsp </strong></td>
+                   <td><strong>Language &nbsp </strong></td>
+                   <td><strong>Creator &nbsp </strong></td>
+                   <td><strong>Primary Uses &nbsp </strong></td>
+                   <td><strong>Used By &nbsp </strong></td>
                </tr>
                
                 <tr class="table-row">
