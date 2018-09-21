@@ -1,5 +1,5 @@
 <?php
-        function displaySymbol($random_value)
+        function displaySymbol($random_value, $pos)
       {
             
             if ($random_value == 0) {
@@ -29,17 +29,20 @@
                       break;
           }
            //echo "<img id='reel$iHelper' src='img/$symbol.png' alt='$symbol' title='$symbol'>";
-           echo "<img src=\"img/$symbol.png\" alt='$symbol' title='".ucfirst($symbol)."'/>";
+           
+           echo "<img id= 'reel$pos' src=\"img/$symbol.png\" alt='$symbol' title='".ucfirst($symbol)."'  width= '70px'/>";
+        
           
       }
 
        function displayPoints($randomValue1, $randomValue2,$randomValue3)
-     {
+        {
          echo "<div id='output'>";
          if($randomValue1 == $randomValue2 && $randomValue2 == $randomValue3)
          {
             switch ($randomValue1) {
                 case 0: $totalPoints = 1000;
+                        echo "<h1>Jackpot!</h1>";
                     break;
                 
                 case 1: $totalPoints = 600;
@@ -53,8 +56,14 @@
             echo "<h3> Try Again! </h3>";   
          }
          echo"</div>";
-     }
+       }
        
-    
+       function play(){
+           for($i=1; $i<4; $i++){
+               ${"random_value" . $i} = rand(0,2);
+               displaySymbol(${"random_value" . $i},$i);
+           }
+           displayPoints( $random_value1, $random_value2, $random_value3);
+       }
 
 ?>

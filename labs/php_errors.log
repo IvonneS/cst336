@@ -25,3 +25,36 @@
 [21-Sep-2018 03:58:50 UTC] PHP Fatal error:  Call to undefined function displaySymbol() in /home/ubuntu/workspace/cst336/labs/lab2/index.php on line 17
 [21-Sep-2018 03:58:50 UTC] PHP Stack trace:
 [21-Sep-2018 03:58:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab2/index.php:0
+[21-Sep-2018 04:15:18 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/cst336/labs/lab2/functions.php on line 64
+[21-Sep-2018 04:15:18 UTC] PHP Stack trace:
+[21-Sep-2018 04:15:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab2/index.php:0
+[21-Sep-2018 05:16:40 UTC] PHP Warning:  rand() expects exactly 2 parameters, 1 given in /home/ubuntu/workspace/cst336/labs/lab2/functions.php on line 61
+[21-Sep-2018 05:16:40 UTC] PHP Stack trace:
+[21-Sep-2018 05:16:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab2/index.php:0
+[21-Sep-2018 05:16:40 UTC] PHP   2. play() /home/ubuntu/workspace/cst336/labs/lab2/index.php:27
+[21-Sep-2018 05:16:40 UTC] PHP   3. rand() /home/ubuntu/workspace/cst336/labs/lab2/functions.php:61
+[21-Sep-2018 05:16:40 UTC] PHP Warning:  rand() expects exactly 2 parameters, 1 given in /home/ubuntu/workspace/cst336/labs/lab2/functions.php on line 61
+[21-Sep-2018 05:16:40 UTC] PHP Stack trace:
+[21-Sep-2018 05:16:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab2/index.php:0
+[21-Sep-2018 05:16:40 UTC] PHP   2. play() /home/ubuntu/workspace/cst336/labs/lab2/index.php:27
+[21-Sep-2018 05:16:40 UTC] PHP   3. rand() /home/ubuntu/workspace/cst336/labs/lab2/functions.php:61
+[21-Sep-2018 05:16:40 UTC] PHP Warning:  rand() expects exactly 2 parameters, 1 given in /home/ubuntu/workspace/cst336/labs/lab2/functions.php on line 61
+[21-Sep-2018 05:16:40 UTC] PHP Stack trace:
+[21-Sep-2018 05:16:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab2/index.php:0
+[21-Sep-2018 05:16:40 UTC] PHP   2. play() /home/ubuntu/workspace/cst336/labs/lab2/index.php:27
+[21-Sep-2018 05:16:40 UTC] PHP   3. rand() /home/ubuntu/workspace/cst336/labs/lab2/functions.php:61
+[21-Sep-2018 05:16:40 UTC] PHP Warning:  rand() expects exactly 2 parameters, 1 given in /home/ubuntu/workspace/cst336/labs/lab2/functions.php on line 61
+[21-Sep-2018 05:16:40 UTC] PHP Stack trace:
+[21-Sep-2018 05:16:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab2/index.php:0
+[21-Sep-2018 05:16:40 UTC] PHP   2. play() /home/ubuntu/workspace/cst336/labs/lab2/index.php:27
+[21-Sep-2018 05:16:40 UTC] PHP   3. rand() /home/ubuntu/workspace/cst336/labs/lab2/functions.php:61
+[21-Sep-2018 05:16:40 UTC] PHP Warning:  rand() expects exactly 2 parameters, 1 given in /home/ubuntu/workspace/cst336/labs/lab2/functions.php on line 61
+[21-Sep-2018 05:16:40 UTC] PHP Stack trace:
+[21-Sep-2018 05:16:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab2/index.php:0
+[21-Sep-2018 05:16:40 UTC] PHP   2. play() /home/ubuntu/workspace/cst336/labs/lab2/index.php:27
+[21-Sep-2018 05:16:40 UTC] PHP   3. rand() /home/ubuntu/workspace/cst336/labs/lab2/functions.php:61
+[21-Sep-2018 05:16:40 UTC] PHP Warning:  rand() expects exactly 2 parameters, 1 given in /home/ubuntu/workspace/cst336/labs/lab2/functions.php on line 61
+[21-Sep-2018 05:16:40 UTC] PHP Stack trace:
+[21-Sep-2018 05:16:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab2/index.php:0
+[21-Sep-2018 05:16:40 UTC] PHP   2. play() /home/ubuntu/workspace/cst336/labs/lab2/index.php:27
+[21-Sep-2018 05:16:40 UTC] PHP   3. rand() /home/ubuntu/workspace/cst336/labs/lab2/functions.php:61
