@@ -27,6 +27,8 @@
                       break;
                 case 4: $symbol = "orange";
                       break;
+                case 5: $symbol = "strawberry";
+                      break;
           }
            //echo "<img id='reel$iHelper' src='img/$symbol.png' alt='$symbol' title='$symbol'>";
            
@@ -50,6 +52,10 @@
                 
                 case 2: $totalPoints = 900;
                     break;
+                    
+                case 3: $totalPoints = 500;
+                    break;
+    
             }
             echo "<h2>You Won $totalPoints Points!</h2>";
          }else{
@@ -60,7 +66,7 @@
        
        function play(){
            for($i=1; $i<4; $i++){
-               ${"random_value" . $i} = rand(0,2);
+               ${"random_value" . $i} = rand(0,4);
                displaySymbol(${"random_value" . $i},$i);
            }
            displayPoints( $random_value1, $random_value2, $random_value3);

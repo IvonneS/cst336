@@ -33,6 +33,7 @@
         </div>
     </body>
        <footer>
+            <img src="img/csumb.png" alt = "CSUMB logo"/>
            <p><b>Image sources: </b><br>
                http://www.modern-canvas-art.com/ekmps/shops/robboweb1/images/slot-machine-symbols-pop-art-canvas-print-<br>4252-p.jpg 
                http://www.freeslotmachines.me.uk/ <br>
