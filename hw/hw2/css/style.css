@@ -1,0 +1,17 @@
+/*Must have at least 15*/
+body{
+    text-align: center;
+    font-family: times;
+    background: url("img/notas.jpg");
+}
+.column{
+    float: left;
+    padding:10px;
+    font-size: medium;
+    margin-left: 100px;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
