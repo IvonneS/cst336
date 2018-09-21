@@ -21,13 +21,13 @@
                       break;
                 case 1: $symbol = "cherry";
                       break;
-                case 2: $symbol = "lemon";
+                case 2: $symbol = "strawberry";
                       break;
                 case 3: $symbol = "grapes";
                       break;
                 case 4: $symbol = "orange";
                       break;
-                case 5: $symbol = "strawberry";
+                case 5: $symbol = "lemon";
                       break;
           }
            //echo "<img id='reel$iHelper' src='img/$symbol.png' alt='$symbol' title='$symbol'>";
