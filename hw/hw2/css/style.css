@@ -2,7 +2,7 @@
 body{
     text-align: center;
     font-family: times;
-    background: url("img/notas.jpg");
+    background-image: url("../img/back.jpg");
 }
 .column{
     float: left;
