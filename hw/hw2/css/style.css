@@ -1,8 +1,15 @@
 /*Must have at least 15*/
 body{
     text-align: center;
-    font-family: times;
-    background-image: url("../img/back.jpg");
+    font-family: cursive;
+    background-image: url("../img/backg.jpg");
+    height: 100%;
+    overflow: hidden;
+    background-size: cover;
+}
+.row{
+    margin-top: 50px;
+    margin-left: 100px;
 }
 .column{
     float: left;
@@ -10,6 +17,7 @@ body{
     font-size: medium;
     margin-left: 100px;
 }
+
 .row::after{
     content: "";
     clear: both;
