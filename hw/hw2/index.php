@@ -55,6 +55,14 @@ Date: 9/25/2018-->
             </form>
             
         </div>
+        <div>
+            <form method="post">
+                <button class = "b1"  type="select" name = "comb1"><b>Combine 1st and 2nd</b> </button>
+                <button class = "b1" type="select" name = "comb2"><b>Combine 3rd and 4th</b> </button>
+                 
+            </form>
+            
+        </div>
     </body>
      <hr width="100%"/>
        <footer>

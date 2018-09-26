@@ -2,10 +2,13 @@
 <!--display function-->
 <!--random function-->
 
-
-<!--3.CSS 15-->
 <!--5.at least two images .. Done-->
 <!--7.Uses at least three array functions
+*array()
+*count(arrayname)
+*sorth(arrayname)
+*array_merge(array1,arra2)
+
 -->
 
 <!DOCTYPE html>
@@ -21,7 +24,7 @@
     //  6 at least one array
      $rockArr = array("acdc","iron","led","metallica","pantera");
      $popArr = array("michael","pink","lanaDeRey","madonna","maroon5");
-     $jazzArr = array("jim","latinoBlue","clifford","artpepper","johnKirby");
+     $jazzArr = array("jim","latinoBlue","sweetClifford","artpepper","johnKirby");
      $cowboyArr = array("calibre","carnaval","jaguar","ms","recodo");
      
     //2. At least two condition
@@ -108,7 +111,32 @@
         echo "<br>";
         }
     }
-      
+      if(isset($_POST['comb1'])){
+         
+        $newA =(array_merge($rockArr,$cowboyArr));
+        
+         $randomNumber = rand(0, (count($newA) - 1));
+
+    $image= $newAArr[$randomNumber];
+    
+     echo '<div class="column2">';
+     echo "<img src=\"img/$image.jpg\" alt='$image'  width= '200px'/>";
+     echo '</div>';
+          
+      }
+      if(isset($_POST['comb2'])){
+        
+        $newA =(array_merge($popArr,$jazzArr));
+        
+         $randomNumber = rand(0, (count($newA) - 1));
+
+    $image= $newAArr[$randomNumber];
+    
+     echo '<div class="column2">';
+     echo "<img src=\"img/$image.jpg\" alt='$image'  width= '200px'/>";
+     echo '</div>';
+          
+      }
   
 
 ?>
