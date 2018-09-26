@@ -2,7 +2,7 @@
 <!--display function-->
 <!--random function-->
 
-<!--1.Must include at least two loops-->
+
 <!--3.CSS 15-->
 <!--5.at least two images .. Done-->
 <!--7.Uses at least three array functions
@@ -20,8 +20,8 @@
      
     //  6 at least one array
      $rockArr = array("acdc","iron","led","metallica","pantera");
-     $popArr = array("p1","p2","p3","p4","p5");
-     $jazzArr = array("pic1","pic2","pic3","pic4","pic5");
+     $popArr = array("michael","pink","lanaDeRey","madonna","maroon5");
+     $jazzArr = array("jim","latinoBlue","clifford","artpepper","johnKirby");
      $cowboyArr = array("calibre","carnaval","jaguar","ms","recodo");
      
     //2. At least two condition
@@ -64,28 +64,51 @@
      echo '</div>';
     }
    
-    if(isset($_POST['list'])){
+    if(isset($_POST['listA'])){
         
     
         sort($rockArr);
-        
+        //1.Must include at least two loops
         for($x=0;$x<count($rockArr);$x++)
         {
         echo "<li>$rockArr[$x]</li>";
         echo "<br>";
         }
+    }
+      if(isset($_POST['listB'])){
         
-
+    
+        sort($cowboyArr);
+        //1.Must include at least two loops
+        for($x=0;$x<count($cowboyArr);$x++)
+        {
+        echo "<li>$cowboyArr[$x]</li>";
+        echo "<br>";
+        }
     }
-      if(isset($_POST['combination2'])){
-        $newA = array_combine($popArr,$jazzArr);
-         $randomNumber = rand(0, (count($newA) - 1));
-         
-           $image= $newA[$randomNumber];
-        echo '<div class="column2">';
-        echo "<img src=\"img/$image.jpg\" alt='$image'  width= '200px'/>";
-        echo '</div>';
+      if(isset($_POST['listC'])){
+        
+    
+        sort($popArr);
+        //1.Must include at least two loops
+        for($x=0;$x<count($popArr);$x++)
+        {
+        echo "<li>$popArr[$x]</li>";
+        echo "<br>";
+        }
     }
+      if(isset($_POST['listD'])){
+        
+    
+        sort($jazzArr);
+        //1.Must include at least two loops
+        for($x=0;$x<count($jazzArr);$x++)
+        {
+        echo "<li>$jazzArr[$x]</li>";
+        echo "<br>";
+        }
+    }
+      
   
 
 ?>

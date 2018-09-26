@@ -48,8 +48,10 @@ Date: 9/25/2018-->
         <hr width="100%"/>
         <div class = "options">
             <form method="post">
-                <button type="select" name = "list"><b>Show list of albums</b> </button>
-                <button type="select" name = "combination2"><b>Combine 3rd and 4th </b> </button>
+                <button type="select" name = "listA"><b>Show list of Rock albums</b> </button>
+                <button type="select" name = "listB"><b>Show list of Band albums</b> </button>
+                 <button type="select" name = "listC"><b>Show list of Pop albums</b> </button>
+                  <button type="select" name = "listD"><b>Show list of Jazz albums</b> </button>
             </form>
             
         </div>
