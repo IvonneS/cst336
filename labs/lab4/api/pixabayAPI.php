@@ -28,3 +28,4 @@ function getImageURLs($keyword, $orientation="horizontal") {
 }
 
 ?>
+<!--return other info, create an array-->

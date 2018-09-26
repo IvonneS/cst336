@@ -1,5 +1,5 @@
 <!--Need array for images-->
-<!--display function-->
+<!-- 3 functions -->
 <!--random function-->
 
 <!--5.at least two images .. Done-->
@@ -27,6 +27,9 @@
      $jazzArr = array("jim","latinoBlue","sweetClifford","artpepper","johnKirby");
      $cowboyArr = array("calibre","carnaval","jaguar","ms","recodo");
      
+     
+    // ********************************************************************************
+    // Create a functio called display()
     //2. At least two condition
     if(isset($_POST['icon1'])){
         // 4.rand function
@@ -67,6 +70,9 @@
      echo '</div>';
     }
    
+   
+//   ********************************************************************************
+    // Create a function called displayButton()
     if(isset($_POST['listA'])){
         
     
@@ -111,6 +117,8 @@
         echo "<br>";
         }
     }
+    
+    // **********************************************************************************
       if(isset($_POST['comb1'])){
          
         $newA =(array_merge($rockArr,$cowboyArr));
