@@ -33,7 +33,7 @@
         $image= $rockArr[$randomNumber];
     
      echo '<div class="column2">';
-     echo "<img src=\"img/rock/$image.jpg\" alt='$image'  width= '200px'/>";
+     echo "<img src=\"img/$image.jpg\" alt='$image'  width= '200px'/>";
      echo '</div>';
     }
     if(isset($_POST['icon2'])){
@@ -42,7 +42,7 @@
     $image= $cowboyArr[$randomNumber];
     
      echo '<div class="column2">';
-     echo "<img src=\"img/cowboy/$image.jpg\" alt='$image'  width= '200px'/>";
+     echo "<img src=\"img/$image.jpg\" alt='$image'  width= '200px'/>";
      echo '</div>';
     }
     if(isset($_POST['icon3'])){
@@ -51,7 +51,7 @@
     $image= $jazzArr[$randomNumber];
     
      echo '<div class="column2">';
-     echo "<img src=\"img/jazz/$image.jpg\" alt='$image'  width= '200px'/>";
+     echo "<img src=\"img/$image.jpg\" alt='$image'  width= '200px'/>";
      echo '</div>';
     }
     if(isset($_POST['icon4'])){
@@ -60,22 +60,17 @@
     $image= $popArr[$randomNumber];
     
      echo '<div class="column2">';
-     echo "<img src=\"img/pop/$image.jpg\" alt='$image'  width= '200px'/>";
+     echo "<img src=\"img/$image.jpg\" alt='$image'  width= '200px'/>";
      echo '</div>';
     }
    
-     
-    function display($arr, $ext) {
-    
-    $randomNumber = rand(0, (count($arr) - 1));
-
-    $image= $arr[$randomNumber];
-    
-     echo '<div class="column2">';
-     echo "<img src=\"img/$e/$image.jpg\" alt='$image'  width= '200px'/>";
-     echo '</div>';
-   
-    }
+    // if(isset($_POST['combination'])){
+    //     $newA = array_combine($rockArr,$cowboyArr);
+    //      $randomNumber = rand(0, (count($newA) - 1));
+    //     echo '<div class="column2">';
+    //     echo "<img src=\"img/rock/$image.jpg\" alt='$image'  width= '200px'/>";
+    //     echo '</div>';
+    // }
   
 
 ?>

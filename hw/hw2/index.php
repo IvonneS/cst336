@@ -48,7 +48,7 @@ Date: 9/25/2018-->
         <hr width="100%"/>
         <div class = "options">
             <form method="post">
-                <button type="select" name = "combination">Combine 1st and 2nd</button>
+                <button type="select" name = ""></button>
             </form>
         </div>
     </body>
