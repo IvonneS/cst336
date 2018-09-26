@@ -12,7 +12,7 @@ body{
     margin-left: 100px;
 }
 .column{
-    float: center;
+    float: left;
     padding:10px;
     font-size: medium;
     margin-left: 100px;
