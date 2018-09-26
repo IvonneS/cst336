@@ -48,12 +48,15 @@ Date: 9/25/2018-->
         <hr width="100%"/>
         <div class = "options">
             <form method="post">
-                <button type="select" name = "combination1"><b>Combine 1st and 2nd </b> </button>
+                <button type="select" name = "list"><b>Show list of albums</b> </button>
                 <button type="select" name = "combination2"><b>Combine 3rd and 4th </b> </button>
             </form>
             
         </div>
     </body>
+     <hr width="100%"/>
        <footer>
+            <em> CST336 Internet Programming. 2018&copy; Garcia<br /></em>
+             <img src="../../img/csumb.png" alt = "csumb logo"/>
        </footer>
 </html>

@@ -64,14 +64,18 @@
      echo '</div>';
     }
    
-    if(isset($_POST['combination1'])){
-        $newA = array_combine($rockArr,$cowboyArr);
-         $randomNumber = rand(0, (count($newA) - 1));
-         
-           $image= $newA[$randomNumber];
-        echo '<div class="column2">';
-        echo "<img src=\"img/$image.jpg\" alt='$image'  width= '200px'/>";
-        echo '</div>';
+    if(isset($_POST['list'])){
+        
+    
+        sort($rockArr);
+        
+        for($x=0;$x<count($rockArr);$x++)
+        {
+        echo "<li>$rockArr[$x]</li>";
+        echo "<br>";
+        }
+        
+
     }
       if(isset($_POST['combination2'])){
         $newA = array_combine($popArr,$jazzArr);
