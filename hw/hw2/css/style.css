@@ -10,6 +10,8 @@ body{
 .row{
     margin-top: 50px;
     margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
 }
 .column{
     float: left;
@@ -26,3 +28,15 @@ body{
     clear: both;
     display: table;
 }
+.options{
+    background-color: #FF5733;
+}
+button {
+        background-color: #F5B7B1;
+        color: #C0392B;
+        padding: 10px;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        margin:10px
+    }

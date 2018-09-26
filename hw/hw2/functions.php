@@ -4,8 +4,9 @@
 
 <!--1.Must include at least two loops-->
 <!--3.CSS 15-->
-<!--5.at least two images-->
-<!--7.Uses at least three array functions-->
+<!--5.at least two images .. Done-->
+<!--7.Uses at least three array functions
+-->
 
 <!DOCTYPE html>
 <html>
@@ -26,6 +27,7 @@
     //2. At least two condition
     if(isset($_POST['icon1'])){
         // 4.rand function
+        //one array function called count
         $randomNumber = rand(0, (count($rockArr) - 1));
 
         $image= $rockArr[$randomNumber];

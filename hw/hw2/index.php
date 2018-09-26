@@ -1,3 +1,8 @@
+<!--This Album Generator will display random albums depending on what the user wants to see
+Author: Ivonne G
+Date: 9/25/2018-->
+
+
 <?php
         include 'functions.php';
     ?>
@@ -35,12 +40,16 @@
            
              <div class = "column">
                  <form method="post">
-                <button type="select" name = "icon4"><img src="img/pop.jpg" alt = "4th image" width = "75px"/></button>
+                <button type="select" name = "icon4"><img src="img/pop.jpg" alt = "4th image" width = "75px" /></button>
                 </<form>
                    
              </div>
-             
-       
+        </div>
+        <hr width="100%"/>
+        <div class = "options">
+            <form method="post">
+                <button type="select" name = "combination">Combine 1st and 2nd</button>
+            </form>
         </div>
     </body>
        <footer>
