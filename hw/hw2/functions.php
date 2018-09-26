@@ -64,13 +64,24 @@
      echo '</div>';
     }
    
-    // if(isset($_POST['combination'])){
-    //     $newA = array_combine($rockArr,$cowboyArr);
-    //      $randomNumber = rand(0, (count($newA) - 1));
-    //     echo '<div class="column2">';
-    //     echo "<img src=\"img/rock/$image.jpg\" alt='$image'  width= '200px'/>";
-    //     echo '</div>';
-    // }
+    if(isset($_POST['combination1'])){
+        $newA = array_combine($rockArr,$cowboyArr);
+         $randomNumber = rand(0, (count($newA) - 1));
+         
+           $image= $newA[$randomNumber];
+        echo '<div class="column2">';
+        echo "<img src=\"img/$image.jpg\" alt='$image'  width= '200px'/>";
+        echo '</div>';
+    }
+      if(isset($_POST['combination2'])){
+        $newA = array_combine($popArr,$jazzArr);
+         $randomNumber = rand(0, (count($newA) - 1));
+         
+           $image= $newA[$randomNumber];
+        echo '<div class="column2">';
+        echo "<img src=\"img/$image.jpg\" alt='$image'  width= '200px'/>";
+        echo '</div>';
+    }
   
 
 ?>
