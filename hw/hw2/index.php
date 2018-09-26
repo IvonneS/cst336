@@ -15,7 +15,7 @@ Date: 9/25/2018-->
         <title>Homework2 </title>
     </head>
     <body>
-        <h2>Albumm Generator</h2>
+        <h2>Album Generator</h2>
       <div class ="row">
              <div class = "column">
                   <form method="post">
