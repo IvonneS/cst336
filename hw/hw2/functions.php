@@ -114,27 +114,25 @@
       if(isset($_POST['comb1'])){
          
         $newA =(array_merge($rockArr,$cowboyArr));
-        
-         $randomNumber = rand(0, (count($newA) - 1));
-
-    $image= $newAArr[$randomNumber];
+         
+    echo '<div class="column2">';
+         for($i = 0; $i < count($newA);$i++){
+             echo "<img src=\"img/$newA[$i].jpg\"  width= '200px'/>";
+         }
     
-     echo '<div class="column2">';
-     echo "<img src=\"img/$image.jpg\" alt='$image'  width= '200px'/>";
      echo '</div>';
           
       }
       if(isset($_POST['comb2'])){
-        
-        $newA =(array_merge($popArr,$jazzArr));
-        
-         $randomNumber = rand(0, (count($newA) - 1));
-
-    $image= $newAArr[$randomNumber];
+         $newA =(array_merge($popArr,$jazzArr));
+         
+    echo '<div class="column2">';
+         for($i = 0; $i < count($newA);$i++){
+             echo "<img src=\"img/$newA[$i].jpg\"  width= '200px'/>";
+         }
     
-     echo '<div class="column2">';
-     echo "<img src=\"img/$image.jpg\" alt='$image'  width= '200px'/>";
      echo '</div>';
+        
           
       }
   
