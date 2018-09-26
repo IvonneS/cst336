@@ -12,10 +12,13 @@ body{
     margin-left: 100px;
 }
 .column{
-    float: left;
+    float: center;
     padding:10px;
     font-size: medium;
     margin-left: 100px;
+}
+.column2{
+    float: center;
 }
 
 .row::after{

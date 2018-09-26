@@ -7,41 +7,70 @@
 <!--5.at least two images-->
 <!--7.Uses at least three array functions-->
 
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @import url("css/style.css");
+        </style>
+    </head>
+</html>
 <?php
      
     //  6 at least one array
-     $rock = array("acdc","iron","led","metallica","pantera");
-     $pop = array("p1","p2","p3","p4","p5");
-     $jazz = array("pic1","pic2","pic3","pic4","pic5");
-     $cowboy = array("calibre","carnaval","jaguar","ms","recodo");
+     $rockArr = array("acdc","iron","led","metallica","pantera");
+     $popArr = array("p1","p2","p3","p4","p5");
+     $jazzArr = array("pic1","pic2","pic3","pic4","pic5");
+     $cowboyArr = array("calibre","carnaval","jaguar","ms","recodo");
      
     //2. At least two condition
     if(isset($_POST['icon1'])){
-        $e = "rock";
-        display($rock,$e);
+        // 4.rand function
+        $randomNumber = rand(0, (count($rockArr) - 1));
+
+        $image= $rockArr[$randomNumber];
+    
+     echo '<div class="column2">';
+     echo "<img src=\"img/rock/$image.jpg\" alt='$image'  width= '200px'/>";
+     echo '</div>';
     }
     if(isset($_POST['icon2'])){
-         $e = "cowboy";
-        display($cowboy,$e);
+        $randomNumber = rand(0, (count($cowboyArr) - 1));
+
+    $image= $cowboyArr[$randomNumber];
+    
+     echo '<div class="column2">';
+     echo "<img src=\"img/cowboy/$image.jpg\" alt='$image'  width= '200px'/>";
+     echo '</div>';
     }
     if(isset($_POST['icon3'])){
-         $e = "jazz";
-        display($jazz,$e);
+        $randomNumber = rand(0, (count($jazzArr) - 1));
+
+    $image= $jazzArr[$randomNumber];
+    
+     echo '<div class="column2">';
+     echo "<img src=\"img/jazz/$image.jpg\" alt='$image'  width= '200px'/>";
+     echo '</div>';
     }
     if(isset($_POST['icon4'])){
-         $e = "pop";
-        display($pop,$e);
+        $randomNumber = rand(0, (count($popArr) - 1));
+
+    $image= $popArr[$randomNumber];
+    
+     echo '<div class="column2">';
+     echo "<img src=\"img/pop/$image.jpg\" alt='$image'  width= '200px'/>";
+     echo '</div>';
     }
    
      
     function display($arr, $ext) {
-    // 4.rand function
+    
     $randomNumber = rand(0, (count($arr) - 1));
 
     $image= $arr[$randomNumber];
     
-     echo '<div class="column">';
-     echo "<img src=\"img/rock/$image.jpg\" alt='$image'  width= '200px'/>";
+     echo '<div class="column2">';
+     echo "<img src=\"img/$e/$image.jpg\" alt='$image'  width= '200px'/>";
      echo '</div>';
    
     }
