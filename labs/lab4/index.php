@@ -9,15 +9,15 @@ include "api/pixabayAPI.php";
 //print_r($_GET);//print is used to display the values in the array
 
 
-//if(isset($_GET["keyword"])){
+if(isset($_GET["keyword"])){
 
   $keyword =  $_GET['keyword'];
-  
-    //$imageURLs = getImagesURLs($keyword);//, $_GET["layout"]);
-    //print_r($imagesURLs);
-    //$backgroundImage = $imagesURLs[array_rand($imagesURLs)];
-//}
-$backgroundImage = "img/sea.jpg";
+   //echo $keyword;
+    $imageURLs = getImageURLs($keyword);//, $_GET["layout"]);
+    print_r($imagesURLs);
+    $backgroundImage = $imageURLs[array_rand($imageURLs)];
+}
+//$backgroundImage = "img/sea.jpg";
 //$backgroundImage = $imagesURLs[array_rand($imagesURLs)];
 
 ?>
