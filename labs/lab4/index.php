@@ -1,37 +1,36 @@
 <!--
 Lab#4 
-Dates; 
-from 9/26/2018 to 10/6/2018
+Dates: from 9/26/2018 to 10/6/2018
 -->
 
 <?php
 
 include "api/pixabayAPI.php";
 //print_r($_GET);//print is used to display the values in the array
-$backgroundImage = "img/sea.jpg";
+
 
 //if(isset($_GET["keyword"])){
-  //  include "api/pixabayAPI.php";
+
   $keyword =  $_GET['keyword'];
-    //echo "you searched for: $keyword";
-    //echo "Layout: " . $_GET["layout"];
-    
-    $imagesURLs = getImagesURLs($keyword);//, $_GET["layout"]);
-    print_r($imagesURLs);
+  
+    //$imageURLs = getImagesURLs($keyword);//, $_GET["layout"]);
+    //print_r($imagesURLs);
     //$backgroundImage = $imagesURLs[array_rand($imagesURLs)];
 //}
-
+$backgroundImage = "img/sea.jpg";
+//$backgroundImage = $imagesURLs[array_rand($imagesURLs)];
 
 ?>
 
 <!DOCTYPE html>
 <html>
     <head>
-        
+          
         <title> Lab 4: Pixabay Slideshow</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" type="text/css" />
-          <link rel="stylesheet" href="css/styles.css" type="text/css" />
+        
        <style>
+             @import url("css/styles.css");
            body{
                 background-image: url(<?=$backgroundImage?>);
                 background: cover;
@@ -39,14 +38,29 @@ $backgroundImage = "img/sea.jpg";
        </style>
     </head>
     <body>
-        
+        <br/><br/>
       <form method="GET">
-            
+            <div id = "second_div">
             <input type="text" name="keyword" size="15" placeholder="Keyword"/>
-            <input type="radio" name="layout" value="horizontal"> Horizontal
+            <input type="radio" name="layout" value="horizontal"> Horizontal 
             <input type="radio" name="layout" value="vertical"> Vertical
-            
-            <input type="submit" name="submitBtn" value="Submit!!" />
+            </div>
+            <div>
+              <br/>
+              <select name = "select">
+              <option value = "select">- Select One-</option>
+              <option value = "sea">Sea</option>
+              <option value = "sky">Sky</option>
+              <option value = "mountains">Mountains</option>
+              <option value = "forest">Forest</option>
+              </select>
+              
+            </div>
+            <br/>
+            <div>
+              <input type="submit" name="submitBtn" value="Submit!!" />
+            </div>
+            <br/><br/>
             
         </form>
 
@@ -87,6 +101,7 @@ $backgroundImage = "img/sea.jpg";
 
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+       <br/><br/>
     </body>
 </html>
 
