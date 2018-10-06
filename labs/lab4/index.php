@@ -13,7 +13,7 @@ if(isset($_GET["keyword"])){
 
   $keyword =  $_GET['keyword'];
    //echo $keyword;
-    $imageURLs = getImageURLs($keyword);//, $_GET["layout"]);
+    $imageURLs = getImageURLs($keyword, $_GET["layout"]);
     print_r($imagesURLs);
     $backgroundImage = $imageURLs[array_rand($imageURLs)];
 }
@@ -33,7 +33,7 @@ if(isset($_GET["keyword"])){
              @import url("css/styles.css");
            body{
                 background-image: url(<?=$backgroundImage?>);
-                background: cover;
+                background-size: cover;
            }
        </style>
     </head>
