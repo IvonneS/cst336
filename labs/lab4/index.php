@@ -13,6 +13,9 @@ if(isset($_GET["keyword"])){
 
   $keyword =  $_GET['keyword'];
    //echo $keyword;
+   if(!empty($_GET['selectOne'])){
+     $keyword = $_GET['selectOne'];
+   }
     $imageURLs = getImageURLs($keyword, $_GET["layout"]);
    // print_r($imageURLs);
     shuffle($imageURLs);
@@ -50,7 +53,7 @@ if(isset($_GET["keyword"])){
             <div>
               <br/>
               <select name = "select">
-              <option value = "select">- Select One-</option>
+              <option value = "selectOne">- Select One-</option>
               <option value = "sea">Sea</option>
               <option value = "sky">Sky</option>
               <option value = "mountains">Mountains</option>
@@ -65,8 +68,13 @@ if(isset($_GET["keyword"])){
             <br/><br/>
             
         </form>
-
-        <!--<h1>You must type a keyword or select a category</h1>-->
+         
+        
+           <?php 
+        if (isset($imageURLs) &&  formIsValid() ) { ?>
+         
+        
+       
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -100,6 +108,15 @@ if(isset($_GET["keyword"])){
             <span class="sr-only">Next</span>
           </a>
         </div>
+        <?php
+        }
+        ?>
+        else {
+            
+            echo "<br>><h1>Enter a Keyword or Select a Category!</h1>";     
+             
+         }
+        ?>
 
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
