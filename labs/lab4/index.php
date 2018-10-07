@@ -71,7 +71,7 @@ if(isset($_GET["keyword"])){
          
         
            <?php 
-        if (isset($imageURLs) &&  formIsValid() ) { ?>
+        if (isset($imageURLs)) { ?>
          
         
        
@@ -110,7 +110,7 @@ if(isset($_GET["keyword"])){
         </div>
         <?php
         }
-        ?>
+        
         else {
             
             echo "<br>><h1>Enter a Keyword or Select a Category!</h1>";     
