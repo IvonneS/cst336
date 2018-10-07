@@ -35,6 +35,7 @@ if(isset($_GET["keyword"])){
                 background-image: url(<?=$backgroundImage?>);
                 background-size: cover;
            }
+           
        </style>
     </head>
     <body>
@@ -42,8 +43,8 @@ if(isset($_GET["keyword"])){
       <form method="GET">
             <div id = "second_div">
             <input type="text" name="keyword" size="15" placeholder="Keyword"/>
-            <input type="radio" name="layout" value="horizontal"> Horizontal 
-            <input type="radio" name="layout" value="vertical"> Vertical
+            <input type="radio" name="layout" value="horizontal"> <b>Horizontal </b>
+            <input type="radio" name="layout" value="vertical"> <b>Vertical</b>
             </div>
             <div>
               <br/>
@@ -57,7 +58,7 @@ if(isset($_GET["keyword"])){
               
             </div>
             <br/>
-            <div>
+            <div id = "third_div">
               <input type="submit" name="submitBtn" value="Submit!!" />
             </div>
             <br/><br/>
