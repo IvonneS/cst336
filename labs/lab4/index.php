@@ -14,7 +14,8 @@ if(isset($_GET["keyword"])){
   $keyword =  $_GET['keyword'];
    //echo $keyword;
     $imageURLs = getImageURLs($keyword, $_GET["layout"]);
-    print_r($imagesURLs);
+   // print_r($imageURLs);
+    shuffle($imageURLs);
     $backgroundImage = $imageURLs[array_rand($imageURLs)];
 }
 //$backgroundImage = "img/sea.jpg";

@@ -44,3 +44,4 @@
 [05-Oct-2018 21:52:42 UTC] PHP Stack trace:
 [05-Oct-2018 21:52:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/index.php:0
 [05-Oct-2018 21:52:42 UTC] PHP   2. array_rand() /home/ubuntu/workspace/cst336/labs/lab4/index.php:18
+[07-Oct-2018 01:58:34 UTC] PHP Fatal error:  Only variables can be passed by reference in /home/ubuntu/workspace/cst336/labs/lab4/index.php on line 18
