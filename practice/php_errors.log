@@ -138,3 +138,9 @@
 [24-Sep-2018 19:35:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/p3/reviews.php:0
 [24-Sep-2018 19:35:43 UTC] PHP   2. movieReviews() /home/ubuntu/workspace/cst336/practice/p3/reviews.php:62
 [24-Sep-2018 19:35:43 UTC] PHP   3. sort() /home/ubuntu/workspace/cst336/practice/p3/reviews.php:10
+[08-Oct-2018 20:21:47 UTC] PHP Parse error:  syntax error, unexpected '$number' (T_VARIABLE) in /home/ubuntu/workspace/cst336/practice/p5/index.php on line 9
+[08-Oct-2018 20:22:07 UTC] PHP Parse error:  syntax error, unexpected '$number' (T_VARIABLE) in /home/ubuntu/workspace/cst336/practice/p5/index.php on line 9
+[08-Oct-2018 20:22:24 UTC] PHP Parse error:  syntax error, unexpected '$number' (T_VARIABLE) in /home/ubuntu/workspace/cst336/practice/p5/index.php on line 9
+[08-Oct-2018 20:23:03 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ';' in /home/ubuntu/workspace/cst336/practice/p5/index.php on line 27
+[08-Oct-2018 21:36:39 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/cst336/practice/zodiac/index.php on line 10
+[08-Oct-2018 21:36:41 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/cst336/practice/zodiac/index.php on line 10
