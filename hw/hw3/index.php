@@ -11,26 +11,33 @@ Requirements: *There are at least four different types of Form Elements.
 <html>
     <head>
         <title> homework #3</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
         <h1>Quiz Generator</h1>
     </head>
     <body>
         <form method = "GET">
             
              <h2>Choose one</h2>
-             <input type="radio" name="high"/> Advanced
-             <input type="radio" name="middle"/> Intermediate
-             <input type="radio" name="low"/> Beginner <br/><br/>
+             <input type="radio" name = "option" id="high"/> Advanced
+             <input type="radio" name = "option" id="middle"/> Intermediate
+             <input type="radio" name = "option" id="low"/> Beginner <br/><br/>
              
              <select name = "select">
               <option value = "selectOne">- Select Topic -</option>
-              <option value = "math">Math</option>
-              <option value = "art">Art</option>
-              <option value = "css">CSS</option>
-              <option value = "tv">TV</option>
+              <option value = "1">1</option>
+              <option value = "2">2</option>
+              <option value = "3">3</option>
+              <option value = "4">4</option>
+              <option value = "5">5</option>
+              <option value = "6">6</option>
+              <option value = "7">7</option>
+              <option value = "8">8</option>
+              <option value = "9">9</option>
+              <option value = "10">10</option>
               </select>
               <br/><br/>
                how many questions? <input type="text" name="question_num" size="5" id="question_num"/> <br/>
-              <input type="checkbox" name="checkbox" id="digits" value ="digits" unchecked="unchecked"/> Include digits(up to 3 digits will be part of the password)</font><br/><br/>
+              <input type="checkbox" name="checkbox" id="digits" value ="digits" unchecked="unchecked"/> Include Something</font><br/><br/>
      
             <div>
                  <br/>
