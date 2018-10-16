@@ -17,5 +17,10 @@ body{
 }
 #b1:hover {
     background-color: white; /* Green */
-    color: pink;
+    color: #0099CC;
+}
+#output{
+    font-family: fantasy;
+    color: red;
+    font-size: 2em;
 }

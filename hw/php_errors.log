@@ -1,0 +1,7 @@
+[16-Oct-2018 13:59:24 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 104
+[16-Oct-2018 14:01:20 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 104
+[16-Oct-2018 14:50:22 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 125
+[16-Oct-2018 14:51:20 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 119
+[16-Oct-2018 14:53:22 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 125
+[16-Oct-2018 14:55:02 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 123
+[16-Oct-2018 14:57:03 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 121
