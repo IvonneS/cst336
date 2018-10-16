@@ -6,7 +6,12 @@ Requirements: *There are at least four different types of Form Elements.
               *Upon submission of the form, the form is displayed again,
               with the submitted values pre-filled.
 -->
+<?php
 
+include "../../inc/dbConnection.php";
+$dbConn = startConnection();
+
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -24,20 +29,15 @@ Requirements: *There are at least four different types of Form Elements.
              
              <select name = "select">
               <option value = "selectOne">- Select Topic -</option>
-              <option value = "1">1</option>
-              <option value = "2">2</option>
-              <option value = "3">3</option>
-              <option value = "4">4</option>
-              <option value = "5">5</option>
-              <option value = "6">6</option>
-              <option value = "7">7</option>
-              <option value = "8">8</option>
-              <option value = "9">9</option>
-              <option value = "10">10</option>
+              <option value = "1">Arithmetic</option>
+              <option value = "2">Algebra</option>
+              <option value = "3">Geometry</option>
+              <option value = "4">Random</option>
+             
               </select>
               <br/><br/>
                how many questions? <input type="text" name="question_num" size="5" id="question_num"/> <br/>
-              <input type="checkbox" name="checkbox" id="digits" value ="digits" unchecked="unchecked"/> Include Something</font><br/><br/>
+              <input type="checkbox" name="checkbox" id="digits" value ="digits" unchecked="unchecked"/>Show answers at the end?</font><br/><br/>
      
             <div>
                  <br/>
@@ -47,3 +47,4 @@ Requirements: *There are at least four different types of Form Elements.
 
     </body>
 </html>
+<!--http://eroi.com/create-your-very-own-interactive-quiz/-->

@@ -15,24 +15,39 @@ function displayCategories(){
     //echo $records[2] . "<br>";
     //echo $records[1]['catDescription'] . "<br>";
     foreach($records as $record){
-   echo "<option>" . $record['catName']  . "</option>" . "<br>";
+        echo "<option value=".$record['catId'].">" . $record['catName']  . "</option>" . "<br>";
+    }
 }
 
 function filterProducts(){
     global $dbConn;
-    $produc = $_GET['productName'];
-    $sql = "SELECT * FROM om_product
-            WHERE productName LIKE :product";
     
-    $namedParametes = array();
-    $namedParameters[':product'] = "%$products%";
+     $namedParameters = array();
+    $product = $_GET['productName'];
+    
+    
+    $sql = "SELECT * FROM om_product WHERE 1";
+    
+    if(!empty($product)){
+        //This sql prevents sql injection 
+        $sql .= " AND productName LIKE :product";
+         $namedParameters[':product'] = "%$products%";
+    }
+    if(!empty($_GET['category'])){
+        //This sql prevents sql injection 
+        $sql .= " AND catId = :category";
+        $namedParameters[':category'] = $_GET['category'];
+    }
+    //echo $sql;
+   
+   
     
     $stmt = $dbConn->prepare($sql);
-    $stmt->execute($namedParameters);
+    $stmt->execute($namedParameters);//error
     $records = $stmt->fetchAll(PDO::FETCH_ASSOC);  
     print_r($records);
     
-}
+
     
 }
 
@@ -58,7 +73,8 @@ function filterProducts(){
             
             Category: 
             <select name="category">
-               <option value=""> Select one </option>  
+                <option value=""> Select one </option> 
+                
                <?=displayCategories()?>
             </select>
             
