@@ -33,17 +33,6 @@ function check(){
         "When z =30 and y = 15, z * y ","450",
         "When k =45 and l = 29.5, k + l ","74.5",
         "When x =2 and y = 50, y / x ","25"),
-  array("","",
-        "","",
-        "","",
-        "","",
-        "","",
-        "","",
-        "","",
-        "","",
-        "","",
-        "",""),
-  
   );
 $middle = array(
   array("One way to write 25 percent of N is ","25 N",
@@ -68,17 +57,6 @@ $middle = array(
         "(x-4)/(-6) = 3","x = -14",
         "(-3x+1)/(x-2) = -3","no solution",
         "x/5 + (x-10)/3 = 1/5","x = 1"),
-  array("","",
-        "","",
-        "","",
-        "","",
-        "","",
-        "","",
-        "","",
-        "","",
-        "","",
-        "",""),
-  
     );
 $hard = array(
   array("The measures of two angles of a triangle are 35° and 45°. What is the measure of the third angle of the triangle ","100°",
@@ -102,35 +80,23 @@ $hard = array(
         "x + 1 > -x + 5","x > 2",
         "What is the y intercept of the line -4x + 6y = -12","(0,-2)",
         "What is the x intercept of the line -3x + y = 3","(-1,0)",
-        "",""),
-  
-  array("","",
-        "","",
-        "","",
-        "","",
-        "","",
-        "","",
-        "","",
-        "","",
-        "","",
-        "",""),
- 
+        "What is the slope of a line parallel to the x axis?","slope = 0"),
     );
+ //*************************************************************************************************
     
-//*************************************************************************************************
     
 
-  
     $level = $_GET['option'];
     $topic = $_GET['select'];
     $num = $_GET['question_num'];
     
   
     if(!isset($level)){
-        echo "<h3> Please select one difficulty level </h3>";
+        
+        echo "<h3 id = 'error'> Please select one difficulty level </h3>";
     }
     if($topic == "0"){
-        echo "<h3>You must select a Topic</h3>";
+        echo "<h3 id = 'error'>You must select a Topic</h3>";
     }
    
     else{
@@ -141,13 +107,15 @@ $hard = array(
          }
         
     echo '<hr width="100%"/>';
+    echo "<div id = 'output'>";
     echo "<h2>" . $topic . " Quiz</h2>";
          
     switch ($level) {
             
     case 'low':
         if($topic == 'Arithmetic'){
-           for($i = 0; $i < 1; $i++){
+            $j = 1;
+           for($i = 0; $i < $j; $i++){
                 for($k=0; $k < $num*2; $k++){
                     if($k%2==0){
                        
@@ -157,9 +125,15 @@ $hard = array(
                     }
                     }
             }
-        
+          if(isset($_GET['checkbox']))
+                    {
+                        echo "<div id = 'output2'>";
+                        getAns($num,$easy,$j);
+                         echo "</div>";
+                    } 
         }
          if($topic == 'Algebra'){
+             $j = 2;
             for($i = 1; $i < 2; $i++){
                 for($k=0; $k < $num*2; $k++){
                     if($k%2==0){
@@ -168,24 +142,18 @@ $hard = array(
                     }
                     }
             }
-            
+          if(isset($_GET['checkbox']))
+                    {
+                        echo "<div id = 'output2'>";
+                        getAns($num,$easy,$j);
+                         echo "</div>";
+                    }   
         }
-         if($topic == 'Geometry'){
-             for($i = 2; $i < 3; $i++){
-                for($k=0; $k < $num*2; $k++){
-                    if($k%2==0){
-                        echo  $count . ") " . $easy[$i][$k] . "? <br/>";
-                    $count++;
-                    }
-                    }
-            }
-            
-        }
-       
         break;
         
     case 'middle':
          if($topic == 'Arithmetic'){
+               $j = 1;
                for($i = 0; $i < 1; $i++){
                 for($k=0; $k < $num*2; $k++){
                     if($k%2==0){
@@ -196,8 +164,15 @@ $hard = array(
                     }
                     }
             }
+        if(isset($_GET['checkbox']))
+                    {
+                        echo "<div id = 'output2'>";
+                        getAns($num,$middle,$j);
+                         echo "</div>";
+                    } 
         }
          if($topic == 'Algebra'){
+             $j = 2;
              for($i = 1; $i < 2; $i++){
                 for($k=0; $k < $num*2; $k++){
                     if($k%2==0){
@@ -208,24 +183,19 @@ $hard = array(
                     }
                     }
             }
-        }
-         if($topic == 'Geometry'){
-             for($i = 2; $i < 3; $i++){
-                for($k=0; $k < $num*2; $k++){
-                    if($k%2==0){
-
-                        echo  $count . ") " . $middle[$i][$k] . "? <br/>";
-                       
-                    $count++;
+         if(isset($_GET['checkbox']))
+                    {
+                        echo "<div id = 'output2'>";
+                        getAns($num,$middle,$j);
+                         echo "</div>";
                     }
-                    }
-            }
         }
-       
         break;
        
     case 'high':
+        
           if($topic == 'Arithmetic'){
+              $j = 1;
               for($i = 0; $i < 1; $i++){
                 for($k=0; $k < $num*2; $k++){
                     if($k%2==0){
@@ -235,48 +205,44 @@ $hard = array(
                     $count++;
                     }
                     }
-                
             }
+            if(isset($_GET['checkbox']))
+                    {
+                        echo "<div id = 'output2'>";
+                        getAns($num,$hard,$j);
+                         echo "</div>";
+                    }
         }
          if($topic == 'Algebra'){
-             for($i = 1; $i < 0; $i++){
+             $j = 2;
+             for($i = 1; $i < 2; $i++){
                 for($k=0; $k < $num*2; $k++){
                     if($k%2==0){
-                        echo '<div id = "questions">';
                         echo  $count . ") " . $hard[$i][$k] . "? <br/>";
-                        echo '</div>';
                     $count++;
                     }
                     }
             }
+        if(isset($_GET['checkbox']))
+                    {
+                        echo "<div id = 'output2'>";
+                        getAns($num,$hard,$j);
+                         echo "</div>";
+                    }
             
         }
-         if($topic == 'Geometry'){
-             for($i = 2; $i < 3; $i++){
-                for($k=0; $k < $num*2; $k++){
-                    if($k%2==0){
-                        
-                        echo  $count . ") " . $hard[$i][$k] . "? <br/>";
-                        
-                    $count++;
-                    }
-                    }
-            }
-        }
-         
         break;
+    
     }
-        
-        
-    }
+    echo "</div>";
 }
 
-function getAns($num, $array){
+function getAns($num, $array, $j){
     
-    for($i = 0; $i < $num; $i++){
+    for($i = 0; $i < $j; $i++){
         for($k=0; $k < $num; $k++){
             if($k%2 != 0){
-                echo $count ."answer: " . $array[$i][$k]; 
+                echo $count ." answer: " . $array[$i][$k] . "<br/>"; 
                 $count++;
             }
            
@@ -308,7 +274,6 @@ function getAns($num, $array){
               <option value = "0">- Select Topic -</option>
               <option value = "Arithmetic">Arithmetic</option>
               <option value = "Algebra">Algebra</option>
-              <option value = "Geometry">Geometry</option>
               <!--<option value = "Random">Random</option>-->
              
               </select>
@@ -326,16 +291,7 @@ function getAns($num, $array){
                
                 if(isset($_GET['submitBtn']))
                  {
-                  echo "<div id = 'output'>";
                   check();
-                  echo "</div>";
-                    if(isset($_GET['checkbox']))
-                    {
-                        echo "<div id = 'output2'>";
-                         echo "HELLLOOOOOOOOOOOO";
-                         echo "</div>";
-                    } 
-                  
                  } 
                 
                  
