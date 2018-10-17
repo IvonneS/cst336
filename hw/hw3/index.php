@@ -59,7 +59,7 @@ $middle = array(
         "x/5 + (x-10)/3 = 1/5","x = 1"),
     );
 $hard = array(
-  array("The measures of two angles of a triangle are 35° and 45°. What is the measure of the third angle of the triangle ","100°",
+  array("The measures of two angles of a triangle are 35° and 45°. What is the measure of the third angle of the triangle ","100 percent",
   " Erica bought 3 1/2 yards of fabric. If she uses 2/3  of the fabric to make a curtain, how much will she have left "," 1  1/6 yd",
   "The ratio between the speeds of two trains is 7 : 8. If the second train runs 400 kms in 4 hours, then the speed of the first train is: ","87.5 km/hr",
   "The total of the ages of Amar, Akbar and Anthony is 80 years. What was the total of their ages three years ago ","71 years",
@@ -235,14 +235,15 @@ $hard = array(
     
     }
     echo "</div>";
+ }
 }
-
 function getAns($num, $array, $j){
-    
+    $count = 1;
+    echo "<h3>Answers...</h3>";
     for($i = 0; $i < $j; $i++){
-        for($k=0; $k < $num; $k++){
+        for($k=0; $k < $num*2; $k++){
             if($k%2 != 0){
-                echo $count ." answer: " . $array[$i][$k] . "<br/>"; 
+                echo $count .") " . $array[$i][$k] . "<br/>"; 
                 $count++;
             }
            
