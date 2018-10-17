@@ -20,7 +20,20 @@ body{
     color: #0099CC;
 }
 #output{
-    font-family: fantasy;
+    /*font-family: fantasy;
     color: red;
     font-size: 2em;
+    */
+     font-family: cursive;
+    font-size: 1em;
+    text-align-last: center;
+    background-color: #0099CC;
+    color: black;
+}
+#questions{
+    font-family: cursive;
+    font-size: 1em;
+    text-align-last: center;
+    background-color: #0099CC;
+    color: black;
 }

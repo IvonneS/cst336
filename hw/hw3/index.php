@@ -9,20 +9,23 @@ Date: 10/17/2018
 -->
 <?php
 
-
-$easy = array( //arith //algebra
+function check(){
+    $easy = array( //arith //algebra
     
-  array("2.75 + .003 + .158 ", 2.911, "7.86 × 4.6 =", 36.156, "7 /20 ", 0.35, "What is closest to 27.8 × 9.6? ", 280, "Which of the following is the least?  0.105, 0.501 
-0.015 or 0.15   ", 0.015, "2 ½ + 4 2/3", " 7  1/6", " 3 1/3 – 2 2/5", " 14/15 "),
-
-
+  array("2.75 + .003 + .158 ", "2.911",
+        "7.86 * 4.6 ", "36.156",
+        "7 /20 ", "0.35",
+        "What is closest to 27.8 * 9.6 ", "280",
+        "Which of the following is the least;  0.105, 0.015 or 0.15  ", "0.015",
+        "2*1/2 + 4*2/3 ","7 1/6",
+        " 3*1/3 - 2*2/5", "14/15"),
   array(),
   array(),
   
   );
 $middle = array(
-  array("All of the following are ways to write 25 percent of N  EXCEPT for: ","25 N", " 32 is 40 percent of what number? ", 80, "What is (1,345)/ (99) rounded to the nearest integer? ",14, "Three of four numbers have a sum of 22. If the average of the four numbers is 8,
-  what is the fourth number", 10, "46.2 × 10-2 ", 0.462, " If  (3/2) ÷(1/4)= n,  then n is between ", "5 and 7","What is 12% of 120? ",14.4),
+  array("All of the following are ways to write 25 percent of N  EXCEPT for: ","25 N", " 32 is 40 percent of what number? ", "What is (1,345)/ (99) rounded to the nearest integer? ", "Three of four numbers have a sum of 22. If the average of the four numbers is 8,
+  what is the fourth number", "46.2 × 10-2 ", " If  (3/2) ÷(1/4)= n,  then n is between ","What is 12% of 120? "),
   
   
   array(),
@@ -39,9 +42,10 @@ $hard = array(
  
     );
     
+//*************************************************************************************************
     
-    
-function check(){
+
+  
     $level = $_GET['option'];
     $topic = $_GET['select'];
     $num = $_GET['question_num'];
@@ -55,7 +59,13 @@ function check(){
         echo "You must select a Topic";
         echo "<br/>";
     }
+   
     else{
+        
+         $count = 1;
+         if(empty($num)){
+            $num = 10;
+         }
         
     echo '<hr width="100%"/>';
     echo "<h2>" . $topic . " Quiz</h2>";
@@ -64,39 +74,120 @@ function check(){
             
     case 'low':
         if($topic == 'Arithmetic'){
-             echo $easy[0][0] . " = " . $easy[0][1] . "<br>";
+           for($i = 0; $i < 1; $i++){
+                for($k=0; $k < $num*2; $k++){
+                    if($k%2==0){
+                        echo '<div id = "questions">';
+                        echo  $count . ") " . $easy[$i][$k] . "? <br/>";
+                        echo '</div>';
+                    $count++;
+                    }
+                    }
+            }
+        
         }
          if($topic == 'Algebra'){
-             echo $easy[1][0]." = ".$easy[1][1]."<br>";
+            for($i = 1; $i < 2; $i++){
+                for($k=0; $k < $num*2; $k++){
+                    if($k%2==0){
+                        echo  $count . ") " . $easy[$i][$k] . "? <br/>";
+                    $count++;
+                    }
+                    }
+            }
+            
         }
          if($topic == 'Geometry'){
-             echo $easy[2][0]." = ".$easy[2][1]."<br>";
+             for($i = 2; $i < 3; $i++){
+                for($k=0; $k < $num*2; $k++){
+                    if($k%2==0){
+                        echo  $count . ") " . $easy[$i][$k] . "? <br/>";
+                    $count++;
+                    }
+                    }
+            }
+            
         }
        
         break;
         
     case 'middle':
          if($topic == 'Arithmetic'){
-              echo $middle[0][0]." = ".$middle[0][1]."<br>";
+               for($i = 0; $i < 1; $i++){
+                for($k=0; $k < $num*2; $k++){
+                    if($k%2==0){
+                        echo '<div id = "questions">';
+                        echo  $count . ") " . $middle[$i][$k] . "? <br/>";
+                        echo '</div>';
+                    $count++;
+                    }
+                    }
+            }
         }
          if($topic == 'Algebra'){
-             echo $middle[1][0]." = ".$middle[1][1]."<br>";
+             for($i = 1; $i < 2; $i++){
+                for($k=0; $k < $num*2; $k++){
+                    if($k%2==0){
+                        echo '<div id = "questions">';
+                        echo  $count . ") " . $middle[$i][$k] . "? <br/>";
+                        echo '</div>';
+                    $count++;
+                    }
+                    }
+            }
         }
          if($topic == 'Geometry'){
-             echo $middle[2][0]." = ".$middle[2][1]."<br>";
+             for($i = 2; $i < 3; $i++){
+                for($k=0; $k < $num*2; $k++){
+                    if($k%2==0){
+                        echo '<div id = "questions">';
+                        echo  $count . ") " . $middle[$i][$k] . "? <br/>";
+                        echo '</div>';
+                    $count++;
+                    }
+                    }
+            }
         }
        
         break;
        
     case 'high':
           if($topic == 'Arithmetic'){
-              echo $hard[0][0]." = ".$hard[0][1]."<br>";
+              for($i = 0; $i < 1; $i++){
+                for($k=0; $k < $num*2; $k++){
+                    if($k%2==0){
+                        echo '<div id = "questions">';
+                        echo  $count . ") " . $hard[$i][$k] . "? <br/>";
+                        echo '</div>';
+                    $count++;
+                    }
+                    }
+            }
         }
          if($topic == 'Algebra'){
-             echo $hard[1][0]." = ".$hard[1][1]."<br>";
+             for($i = 1; $i < 0; $i++){
+                for($k=0; $k < $num*2; $k++){
+                    if($k%2==0){
+                        echo '<div id = "questions">';
+                        echo  $count . ") " . $hard[$i][$k] . "? <br/>";
+                        echo '</div>';
+                    $count++;
+                    }
+                    }
+            }
+            
         }
          if($topic == 'Geometry'){
-             echo $hard[2][0]." = ".$hard[2][1]."<br>";
+             for($i = 2; $i < 3; $i++){
+                for($k=0; $k < $num*2; $k++){
+                    if($k%2==0){
+                        echo '<div id = "questions">';
+                        echo  $count . ") " . $hard[$i][$k] . "? <br/>";
+                        echo '</div>';
+                    $count++;
+                    }
+                    }
+            }
         }
          
         break;
@@ -106,10 +197,18 @@ function check(){
     }
 }
 
-
-
-
-
+function getAns($num, $array){
+    
+    for($i = 0; $i < $num; $i++){
+        for($k=0; $k < $num; $k++){
+            if($k%2 != 0){
+                echo "answer: " . $array[$i][$k]; 
+            }
+           
+        }
+    }
+    
+}
 ?>
 
 
