@@ -240,7 +240,9 @@ $hard = array(
 function getAns($num, $array, $j){
     $count = 1;
     echo "<h3>Answers...</h3>";
-    for($i = 0; $i < $j; $i++){
+    if($j == 2){$i =1;}
+    if($j == 1){$i =0;}
+    for($i; $i < $j; $i++){
         for($k=0; $k < $num*2; $k++){
             if($k%2 != 0){
                 echo $count .") " . $array[$i][$k] . "<br/>"; 
