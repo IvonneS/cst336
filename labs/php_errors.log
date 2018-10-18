@@ -231,3 +231,12 @@ Stack trace:
 #1 /home/ubuntu/workspace/cst336/labs/lab6/index.php(85): filterProducts()
 #2 {main}
   thrown in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 46
+[17-Oct-2018 22:26:31 UTC] PHP Fatal error:  Call to undefined function displayCategories() in /home/ubuntu/workspace/cst336/labs/lab6/productInfo.php on line 40
+[17-Oct-2018 22:26:31 UTC] PHP Stack trace:
+[17-Oct-2018 22:26:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/productInfo.php:0
+[17-Oct-2018 22:26:33 UTC] PHP Fatal error:  Call to undefined function displayCategories() in /home/ubuntu/workspace/cst336/labs/lab6/productInfo.php on line 40
+[17-Oct-2018 22:26:33 UTC] PHP Stack trace:
+[17-Oct-2018 22:26:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/productInfo.php:0
+[17-Oct-2018 23:27:38 UTC] PHP Fatal error:  Call to undefined function displayCategories() in /home/ubuntu/workspace/cst336/labs/lab6/productInfo.php on line 40
+[17-Oct-2018 23:27:38 UTC] PHP Stack trace:
+[17-Oct-2018 23:27:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/productInfo.php:0

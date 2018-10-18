@@ -11,12 +11,7 @@ function play(){
         
         // shuffle deck
         $deck = deckShuffle($sortedDeck);
-        //echo "<div class='cardsTitle'>";
-        //echo "<p>Player 1:</p>";
-        //echo "<p>Player 2:</p>";
-        //echo "<p>Player 3:</p>";
-        //echo "<p>Player 4:</p>";
-        //echo "</div>";
+        
        while(!$used1 || !$used2 || !$used3 || !$used4 ){
         // deal player 1
         $random = rand(1, 4);
@@ -83,20 +78,13 @@ function play(){
         }
        }
         
-        // call getWinner with an array of each players hand sum
         $players = array($p1Sum,$p2Sum,$p3Sum,$p4Sum);
         $results = getWinner($players);
         $winner = $results["winner"];
         $winnerPoints = $results["total"];
         displayWinner($winner,$winnerPoints);
         
-        // display points 
-        //echo "<div class='cardPoints'>";
-        //echo "<p>$p1Sum</p>";
-        //echo "<p>$p2Sum</p>";
-        //echo "<p>$p3Sum</p>";
-        //echo "<p>$p4Sum</p>";
-       // echo "</div>";
+        
         echo "<br>";
     }
     function displayWinner($winner,$points){
