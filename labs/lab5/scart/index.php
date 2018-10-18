@@ -1,5 +1,22 @@
 <?php
-   include 'functions.php';
+if(isset($_SESSION['cart'])){
+    $_SESSION['cart'] = array();
+}
+
+//check if an item has been added to the cart
+if(isset($_POST['itmeName'])){
+    //Creating an array to hold an item's properties
+    $newItem = array();
+    $newItem['name'] = $_POST['itemName'];
+    $newItem['id'] = $_POST['itemId'];
+    $newItem['price'] = $_POST['itemPrice'];
+    $newItem['image'] = $_POST['itemImage'];
+    //storing the item to the cart array
+    array_push($_SESSION['cart'], $newItem);
+    
+}
+
+include 'functions.php';
 if(isset($_GET['query'])){
     //Get access to out API function 
     include 'wmapi.php';
