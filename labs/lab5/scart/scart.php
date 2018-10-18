@@ -1,6 +1,16 @@
 <?php
+include 'functions.php';
+session_start();
+
 if(isset($_SESSION['cart'])){
     echo $_SESSION['cart'];
+}
+if(isset($_POST['removeId'])){
+    foreach($_SESSION['cart'] as $itemKey => $item){
+        if($item['id'] == $_POST['removeId']){
+            unset($_SESSION['cart'][$itemKey]);
+        }
+    }
 }
 
 

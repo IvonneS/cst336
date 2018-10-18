@@ -1,4 +1,6 @@
 <?php
+include 'functions.php';
+
 if(isset($_SESSION['cart'])){
     $_SESSION['cart'] = array();
 }
@@ -16,7 +18,7 @@ if(isset($_POST['itmeName'])){
     
 }
 
-include 'functions.php';
+
 if(isset($_GET['query'])){
     //Get access to out API function 
     include 'wmapi.php';
