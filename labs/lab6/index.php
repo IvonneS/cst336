@@ -74,10 +74,12 @@ function filterProducts(){
 <html>
     <head>
         <title>Lab 6: Otter Product Search </title>
+          <link href="css/style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         
-        <h1> Ottermart</h1>
+        <h1> OTTERMART</h1>
+        <hr width="80%"/>
         <h2> Product Search</h2>
         
         <form>
