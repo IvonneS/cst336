@@ -44,3 +44,94 @@
 [19-Oct-2018 21:39:08 UTC] PHP Stack trace:
 [19-Oct-2018 21:39:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:0
 [19-Oct-2018 21:39:08 UTC] PHP   2. array_push() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:32
+[19-Oct-2018 22:06:56 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php on line 24
+[19-Oct-2018 22:06:56 UTC] PHP Stack trace:
+[19-Oct-2018 22:06:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:0
+[19-Oct-2018 22:06:56 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php on line 32
+[19-Oct-2018 22:06:56 UTC] PHP Stack trace:
+[19-Oct-2018 22:06:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:0
+[19-Oct-2018 22:06:56 UTC] PHP   2. array_push() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:32
+[19-Oct-2018 22:07:02 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php on line 24
+[19-Oct-2018 22:07:02 UTC] PHP Stack trace:
+[19-Oct-2018 22:07:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:0
+[19-Oct-2018 22:07:02 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php on line 32
+[19-Oct-2018 22:07:02 UTC] PHP Stack trace:
+[19-Oct-2018 22:07:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:0
+[19-Oct-2018 22:07:02 UTC] PHP   2. array_push() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:32
+[19-Oct-2018 22:07:05 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php on line 24
+[19-Oct-2018 22:07:05 UTC] PHP Stack trace:
+[19-Oct-2018 22:07:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:0
+[19-Oct-2018 22:07:05 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php on line 32
+[19-Oct-2018 22:07:05 UTC] PHP Stack trace:
+[19-Oct-2018 22:07:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:0
+[19-Oct-2018 22:07:05 UTC] PHP   2. array_push() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:32
+[19-Oct-2018 22:12:53 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php on line 24
+[19-Oct-2018 22:12:53 UTC] PHP Stack trace:
+[19-Oct-2018 22:12:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:0
+[19-Oct-2018 22:12:53 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php on line 32
+[19-Oct-2018 22:12:53 UTC] PHP Stack trace:
+[19-Oct-2018 22:12:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:0
+[19-Oct-2018 22:12:53 UTC] PHP   2. array_push() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:32
+[19-Oct-2018 22:12:56 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php on line 24
+[19-Oct-2018 22:12:56 UTC] PHP Stack trace:
+[19-Oct-2018 22:12:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:0
+[19-Oct-2018 22:12:56 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php on line 32
+[19-Oct-2018 22:12:56 UTC] PHP Stack trace:
+[19-Oct-2018 22:12:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:0
+[19-Oct-2018 22:12:56 UTC] PHP   2. array_push() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:32
+[19-Oct-2018 22:12:57 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php on line 24
+[19-Oct-2018 22:12:57 UTC] PHP Stack trace:
+[19-Oct-2018 22:12:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:0
+[19-Oct-2018 22:12:57 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php on line 32
+[19-Oct-2018 22:12:57 UTC] PHP Stack trace:
+[19-Oct-2018 22:12:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:0
+[19-Oct-2018 22:12:57 UTC] PHP   2. array_push() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:32
+[19-Oct-2018 22:13:00 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php on line 24
+[19-Oct-2018 22:13:00 UTC] PHP Stack trace:
+[19-Oct-2018 22:13:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:0
+[19-Oct-2018 22:13:00 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php on line 32
+[19-Oct-2018 22:13:00 UTC] PHP Stack trace:
+[19-Oct-2018 22:13:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:0
+[19-Oct-2018 22:13:00 UTC] PHP   2. array_push() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:32
+[19-Oct-2018 22:13:02 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php on line 24
+[19-Oct-2018 22:13:02 UTC] PHP Stack trace:
+[19-Oct-2018 22:13:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:0
+[19-Oct-2018 22:13:02 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php on line 32
+[19-Oct-2018 22:13:02 UTC] PHP Stack trace:
+[19-Oct-2018 22:13:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:0
+[19-Oct-2018 22:13:02 UTC] PHP   2. array_push() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:32
+[19-Oct-2018 22:13:03 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php on line 24
+[19-Oct-2018 22:13:03 UTC] PHP Stack trace:
+[19-Oct-2018 22:13:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:0
+[19-Oct-2018 22:13:03 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php on line 32
+[19-Oct-2018 22:13:03 UTC] PHP Stack trace:
+[19-Oct-2018 22:13:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:0
+[19-Oct-2018 22:13:03 UTC] PHP   2. array_push() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:32
+[19-Oct-2018 22:13:06 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php on line 24
+[19-Oct-2018 22:13:06 UTC] PHP Stack trace:
+[19-Oct-2018 22:13:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:0
+[19-Oct-2018 22:13:06 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php on line 32
+[19-Oct-2018 22:13:06 UTC] PHP Stack trace:
+[19-Oct-2018 22:13:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:0
+[19-Oct-2018 22:13:06 UTC] PHP   2. array_push() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:32
+[19-Oct-2018 22:13:09 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php on line 24
+[19-Oct-2018 22:13:09 UTC] PHP Stack trace:
+[19-Oct-2018 22:13:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:0
+[19-Oct-2018 22:13:09 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php on line 32
+[19-Oct-2018 22:13:09 UTC] PHP Stack trace:
+[19-Oct-2018 22:13:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:0
+[19-Oct-2018 22:13:09 UTC] PHP   2. array_push() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:32
+[19-Oct-2018 22:13:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php on line 24
+[19-Oct-2018 22:13:14 UTC] PHP Stack trace:
+[19-Oct-2018 22:13:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:0
+[19-Oct-2018 22:13:14 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php on line 32
+[19-Oct-2018 22:13:14 UTC] PHP Stack trace:
+[19-Oct-2018 22:13:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:0
+[19-Oct-2018 22:13:14 UTC] PHP   2. array_push() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:32
+[19-Oct-2018 22:17:44 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php on line 24
+[19-Oct-2018 22:17:44 UTC] PHP Stack trace:
+[19-Oct-2018 22:17:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:0
+[19-Oct-2018 22:17:44 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php on line 32
+[19-Oct-2018 22:17:44 UTC] PHP Stack trace:
+[19-Oct-2018 22:17:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:0
+[19-Oct-2018 22:17:44 UTC] PHP   2. array_push() /home/ubuntu/workspace/cst336/labs/lab5/scart/index.php:32

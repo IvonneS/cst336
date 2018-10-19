@@ -1,9 +1,9 @@
 <?php
 include 'functions.php';
 session_start();
-if(isset($_SESSION['cart'])){
-    $_SESSION['cart'] = array();
-}
+
+//check to see if an item has been added to the car
+
 if(isset($_GET['query'])){
     //Get access to out API function 
     include 'wmapi.php';
@@ -13,15 +13,19 @@ if(isset($_GET['query'])){
 //check if an item has been added to the cart
 if(isset($_POST['itemName'])){
     //Creating an array to hold an item's properties
+    //$_SESSION['cart'] need to be declared here... not using global
+    if(isset($_SESSION['cart'])){
+    $_SESSION['cart'] = array();
+    }
     $newItem = array();
     $newItem['name'] = $_POST['itemName'];
     $newItem['id'] = $_POST['itemId'];
     $newItem['price'] = $_POST['itemPrice'];
-    $newItem['img'] = $_POST['itemImg'];
+    $newItem['img'] = $_POST['itemImage'];
     //storing the item to the cart array
     //array_push($_SESSION['cart'], $newItem);
     
-    foreach ($_SESSION['cart'] as &$item){
+    foreach($_SESSION['cart'] as &$item){
     if($newItem['id'] == $item['id']){
         $item['quantity'] += 1;
         $found = true;
