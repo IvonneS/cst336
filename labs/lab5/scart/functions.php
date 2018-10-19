@@ -41,14 +41,14 @@ function displayResults(){
         echo "<table class = 'table'>";
         foreach ($items as $item){
             $itemName = $item['name'];
-            $itemPrice = $item['saleprice'];
+            $itemPrice = $item['salePrice'];
             $itemImage = $item['thumbnailImage'];
             $itemId = $item['itemId'];
             
             echo '<tr>';
             echo "<td><img src='$itemImage'></td>";
             echo "<td><h4>$itemName</h4></td>";
-            echo "<td><h4>$itemPrice</h4></td>";
+            echo "<td>$<h4>$itemPrice</h4></td>";
             //button
             echo "<form method= 'post'>";
             echo "<input type= 'hidden' name= 'itemName' value= '$itemName'>";
@@ -60,7 +60,7 @@ function displayResults(){
             if($_POST['itemId'] == $itemId){
                 echo '<td><button class = "btn btn-success">Added</button></td>';
             }else{
-                echo '<td><button class= "btn btn-warning">Add</button>Add</td>';
+                echo '<td><button class= "btn btn-warning">Add</button></td>';
             }
             echo "</tr>";
             echo "</form>";
