@@ -1,10 +1,11 @@
 <?php
-include 'functions.php';
 session_start();
+include 'functions.php';
 
-if(isset($_SESSION['cart'])){
-    echo $_SESSION['cart'];
-}
+
+//if(isset($_SESSION['cart'])){
+  //  echo $_SESSION['cart'];
+//}
 if(isset($_POST['removeId'])){
     foreach($_SESSION['cart'] as $itemKey => $item){
         if($item['id'] == $_POST['removeId']){
@@ -12,7 +13,13 @@ if(isset($_POST['removeId'])){
         }
     }
 }
-
+if(isset($_POST['itemId'])){
+    foreach($_SESSION['cart'] as &$item){
+        if($item['id'] == $_POST['itemId']){
+           $item['quantity'] = $_POST['update'];   
+        }
+    }
+}
 
 ?>
 <!DOCTYPE html>

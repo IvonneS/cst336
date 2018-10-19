@@ -6,7 +6,7 @@ if(isset($_SESSION['cart'])){
 }
 
 //check if an item has been added to the cart
-if(isset($_POST['itmeName'])){
+if(isset($_POST['itemName'])){
     //Creating an array to hold an item's properties
     $newItem = array();
     $newItem['name'] = $_POST['itemName'];
@@ -24,6 +24,16 @@ if(isset($_GET['query'])){
     include 'wmapi.php';
     $items = getProducts($_GET['query']);
     
+}
+foreach ($_SESSION['cart'] as &$item){
+    if($newItem['id'] == $item['id']){
+        $item['quantity'] += 1;
+        $found = true;
+    }
+}
+if($found != true){
+    $newItem['quantity'] = 1;
+    array_push($_SESSION['cart'], $newItem);
 }
 
 
@@ -54,6 +64,8 @@ if(isset($_GET['query'])){
                     <ul class='nav navbar-nav'>
                         <li><a href='index.php'>Home</a></li>
                         <li><a href='scart.php'>Cart</a></li>
+                        <span class='glyphicon glyphicon-shopping-cart' aria-hidden='true'>
+                        </span> Cart <?php displayCartCount?> </a></li>
                     </ul>
                 </div>
             </nav>
