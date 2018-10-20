@@ -2,7 +2,10 @@
 include 'functions.php';
 session_start();
 
-//check to see if an item has been added to the car
+//creating an array with session
+if(isset($_SESSION['cart'])){
+    $_SESSION['cart'] = array();
+}
 
 if(isset($_GET['query'])){
     //Get access to out API function 
@@ -14,9 +17,9 @@ if(isset($_GET['query'])){
 if(isset($_POST['itemName'])){
     //Creating an array to hold an item's properties
     //$_SESSION['cart'] need to be declared here... not using global
-    if(isset($_SESSION['cart'])){
+    
     $_SESSION['cart'] = array();
-    }
+    
     $newItem = array();
     $newItem['name'] = $_POST['itemName'];
     $newItem['id'] = $_POST['itemId'];

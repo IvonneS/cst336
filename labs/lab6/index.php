@@ -79,6 +79,9 @@ function filterProducts(){
     <body>
         
         <h1> OTTERMART</h1>
+        <div id= "logo">
+        <img src="../../img/csumb.png" alt = "csumb logo"/>
+        </div>
         <hr width="80%"/>
         <h2> Product Search</h2>
         
