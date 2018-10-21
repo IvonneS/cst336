@@ -18,8 +18,6 @@ if(isset($_POST['itemName'])){
     //Creating an array to hold an item's properties
     //$_SESSION['cart'] need to be declared here... not using global
     
-    $_SESSION['cart'] = array();
-    
     $newItem = array();
     $newItem['name'] = $_POST['itemName'];
     $newItem['id'] = $_POST['itemId'];
