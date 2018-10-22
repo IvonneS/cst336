@@ -1,4 +1,5 @@
 <?php
+
 include '../../inc/dbConnection.php';
 $dbConn = startConnection("ottermart");
 
@@ -7,28 +8,40 @@ function displayProductInfo(){
     
     $productId = $_GET['productId'];
     $sql = "SELECT * 
-            FROM om_product 
-            NATURAL LEFT JOIN om_purchase 
+            FROM om_purchase 
+            NATURAL RIGHT JOIN om_product 
             WHERE productId = $productId";
     $stmt = $dbConn->prepare($sql);
     $stmt->execute();
-    $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    echo "<img src = " . $records[0]['productImage']."'>";
+    $records = $stmt->fetchAll(PDO::FETCH_ASSOC); //fetchAll returns an Array of Arrays
+    
+    echo "<img src='" . $records[0]['productImage'] . "'  width='150'>";
+    
+    if (empty($records[0]['purchaseId'])) {
+        
+        echo "<h3> Product hasn't been purchased yet </h3>";
+        
+    }
+    
     echo "<table>";
     echo "<tr>";
-    echo "<th>Quantity</th><th>Init Price</th><th>Purchase Day</th>";//title in table 
-    
-    foreach($records as $record){
-        echo "<tr>";
-        echo "<td>" . $record[quantity]. "</td>";
-        echo "<td>" . $record[unitPrice]. "</td>";
-        echo "<td>" . $record[purchaseDay]. "</td>";
-        echo "</tr>";
+    echo "<th>Quantity</th><th>Unit Price</th><th> Purchase Date</th>";
+    foreach ($records as $record) {
+        echo "<tr>";    
+        echo "<td>" . $record[quantity] . "</td>";
+        echo "<td>" . $record[unitPrice] . "</td>";
+        echo "<td>" . $record[purchaseDate] . "</td>";
+        echo "</tr>";  
     }
-    echo "</tr>";
+    echo "</table>";
+    
+    //print_r($records);
+    
 }
 
+
 ?>
+
 
 <!DOCTYPE html>
 <html>
@@ -36,12 +49,13 @@ function displayProductInfo(){
         <title> Product Purchase History </title>
     </head>
     <body>
-            <h2>Product Purchase History </h2>
-            
-            <?=displayCategories()?>
+
+        <h2>Product Purchase History</h2>
+        
+        <?=displayProductInfo()?>
+        
     </body>
 </html>
-
 
 <!-- Class notes:
 in line 12 we did not use single quotes because an integer, other wise it should use it-->

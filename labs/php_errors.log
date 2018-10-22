@@ -252,3 +252,87 @@ Stack trace:
 #1 /home/ubuntu/workspace/cst336/labs/lab6/index.php(107): filterProducts()
 #2 {main}
   thrown in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 55
+[22-Oct-2018 22:41:52 UTC] PHP Warning:  Illegal string offset 'productName' in /home/ubuntu/workspace/cst336/labs/lab7/admin.php on line 17
+[22-Oct-2018 22:41:52 UTC] PHP Stack trace:
+[22-Oct-2018 22:41:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:0
+[22-Oct-2018 22:41:52 UTC] PHP   2. displayAllProducts() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:34
+[22-Oct-2018 22:41:52 UTC] PHP Warning:  Illegal string offset 'price' in /home/ubuntu/workspace/cst336/labs/lab7/admin.php on line 17
+[22-Oct-2018 22:41:52 UTC] PHP Stack trace:
+[22-Oct-2018 22:41:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:0
+[22-Oct-2018 22:41:52 UTC] PHP   2. displayAllProducts() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:34
+[22-Oct-2018 22:41:52 UTC] PHP Warning:  Illegal string offset 'productName' in /home/ubuntu/workspace/cst336/labs/lab7/admin.php on line 17
+[22-Oct-2018 22:41:52 UTC] PHP Stack trace:
+[22-Oct-2018 22:41:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:0
+[22-Oct-2018 22:41:52 UTC] PHP   2. displayAllProducts() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:34
+[22-Oct-2018 22:41:52 UTC] PHP Warning:  Illegal string offset 'price' in /home/ubuntu/workspace/cst336/labs/lab7/admin.php on line 17
+[22-Oct-2018 22:41:52 UTC] PHP Stack trace:
+[22-Oct-2018 22:41:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:0
+[22-Oct-2018 22:41:52 UTC] PHP   2. displayAllProducts() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:34
+[22-Oct-2018 22:41:52 UTC] PHP Warning:  Illegal string offset 'productName' in /home/ubuntu/workspace/cst336/labs/lab7/admin.php on line 17
+[22-Oct-2018 22:41:52 UTC] PHP Stack trace:
+[22-Oct-2018 22:41:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:0
+[22-Oct-2018 22:41:52 UTC] PHP   2. displayAllProducts() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:34
+[22-Oct-2018 22:41:52 UTC] PHP Warning:  Illegal string offset 'price' in /home/ubuntu/workspace/cst336/labs/lab7/admin.php on line 17
+[22-Oct-2018 22:41:52 UTC] PHP Stack trace:
+[22-Oct-2018 22:41:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:0
+[22-Oct-2018 22:41:52 UTC] PHP   2. displayAllProducts() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:34
+[22-Oct-2018 22:41:52 UTC] PHP Warning:  Illegal string offset 'productName' in /home/ubuntu/workspace/cst336/labs/lab7/admin.php on line 17
+[22-Oct-2018 22:41:52 UTC] PHP Stack trace:
+[22-Oct-2018 22:41:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:0
+[22-Oct-2018 22:41:52 UTC] PHP   2. displayAllProducts() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:34
+[22-Oct-2018 22:41:52 UTC] PHP Warning:  Illegal string offset 'price' in /home/ubuntu/workspace/cst336/labs/lab7/admin.php on line 17
+[22-Oct-2018 22:41:52 UTC] PHP Stack trace:
+[22-Oct-2018 22:41:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:0
+[22-Oct-2018 22:41:52 UTC] PHP   2. displayAllProducts() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:34
+[22-Oct-2018 22:41:52 UTC] PHP Warning:  Illegal string offset 'productName' in /home/ubuntu/workspace/cst336/labs/lab7/admin.php on line 17
+[22-Oct-2018 22:41:52 UTC] PHP Stack trace:
+[22-Oct-2018 22:41:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:0
+[22-Oct-2018 22:41:52 UTC] PHP   2. displayAllProducts() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:34
+[22-Oct-2018 22:41:52 UTC] PHP Warning:  Illegal string offset 'price' in /home/ubuntu/workspace/cst336/labs/lab7/admin.php on line 17
+[22-Oct-2018 22:41:52 UTC] PHP Stack trace:
+[22-Oct-2018 22:41:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:0
+[22-Oct-2018 22:41:52 UTC] PHP   2. displayAllProducts() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:34
+[22-Oct-2018 22:41:52 UTC] PHP Warning:  Illegal string offset 'productName' in /home/ubuntu/workspace/cst336/labs/lab7/admin.php on line 17
+[22-Oct-2018 22:41:52 UTC] PHP Stack trace:
+[22-Oct-2018 22:41:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:0
+[22-Oct-2018 22:41:52 UTC] PHP   2. displayAllProducts() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:34
+[22-Oct-2018 22:41:52 UTC] PHP Warning:  Illegal string offset 'price' in /home/ubuntu/workspace/cst336/labs/lab7/admin.php on line 17
+[22-Oct-2018 22:41:52 UTC] PHP Stack trace:
+[22-Oct-2018 22:41:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:0
+[22-Oct-2018 22:41:52 UTC] PHP   2. displayAllProducts() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:34
+[22-Oct-2018 22:41:52 UTC] PHP Warning:  Illegal string offset 'productName' in /home/ubuntu/workspace/cst336/labs/lab7/admin.php on line 17
+[22-Oct-2018 22:41:52 UTC] PHP Stack trace:
+[22-Oct-2018 22:41:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:0
+[22-Oct-2018 22:41:52 UTC] PHP   2. displayAllProducts() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:34
+[22-Oct-2018 22:41:52 UTC] PHP Warning:  Illegal string offset 'price' in /home/ubuntu/workspace/cst336/labs/lab7/admin.php on line 17
+[22-Oct-2018 22:41:52 UTC] PHP Stack trace:
+[22-Oct-2018 22:41:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:0
+[22-Oct-2018 22:41:52 UTC] PHP   2. displayAllProducts() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:34
+[22-Oct-2018 22:42:16 UTC] PHP Warning:  Illegal string offset 'productName' in /home/ubuntu/workspace/cst336/labs/lab7/admin.php on line 17
+[22-Oct-2018 22:42:16 UTC] PHP Stack trace:
+[22-Oct-2018 22:42:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:0
+[22-Oct-2018 22:42:16 UTC] PHP   2. displayAllProducts() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:34
+[22-Oct-2018 22:42:16 UTC] PHP Warning:  Illegal string offset 'productName' in /home/ubuntu/workspace/cst336/labs/lab7/admin.php on line 17
+[22-Oct-2018 22:42:16 UTC] PHP Stack trace:
+[22-Oct-2018 22:42:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:0
+[22-Oct-2018 22:42:16 UTC] PHP   2. displayAllProducts() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:34
+[22-Oct-2018 22:42:16 UTC] PHP Warning:  Illegal string offset 'productName' in /home/ubuntu/workspace/cst336/labs/lab7/admin.php on line 17
+[22-Oct-2018 22:42:16 UTC] PHP Stack trace:
+[22-Oct-2018 22:42:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:0
+[22-Oct-2018 22:42:16 UTC] PHP   2. displayAllProducts() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:34
+[22-Oct-2018 22:42:16 UTC] PHP Warning:  Illegal string offset 'productName' in /home/ubuntu/workspace/cst336/labs/lab7/admin.php on line 17
+[22-Oct-2018 22:42:16 UTC] PHP Stack trace:
+[22-Oct-2018 22:42:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:0
+[22-Oct-2018 22:42:16 UTC] PHP   2. displayAllProducts() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:34
+[22-Oct-2018 22:42:16 UTC] PHP Warning:  Illegal string offset 'productName' in /home/ubuntu/workspace/cst336/labs/lab7/admin.php on line 17
+[22-Oct-2018 22:42:16 UTC] PHP Stack trace:
+[22-Oct-2018 22:42:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:0
+[22-Oct-2018 22:42:16 UTC] PHP   2. displayAllProducts() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:34
+[22-Oct-2018 22:42:16 UTC] PHP Warning:  Illegal string offset 'productName' in /home/ubuntu/workspace/cst336/labs/lab7/admin.php on line 17
+[22-Oct-2018 22:42:16 UTC] PHP Stack trace:
+[22-Oct-2018 22:42:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:0
+[22-Oct-2018 22:42:16 UTC] PHP   2. displayAllProducts() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:34
+[22-Oct-2018 22:42:16 UTC] PHP Warning:  Illegal string offset 'productName' in /home/ubuntu/workspace/cst336/labs/lab7/admin.php on line 17
+[22-Oct-2018 22:42:16 UTC] PHP Stack trace:
+[22-Oct-2018 22:42:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:0
+[22-Oct-2018 22:42:16 UTC] PHP   2. displayAllProducts() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:34

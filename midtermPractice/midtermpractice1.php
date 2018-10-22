@@ -20,10 +20,14 @@ function start(){
     
     }
     if(!isset($location)){
+        echo "<div id = 'error'>";
         echo "You must specify the number of locations!";
+        echo "</div>";
     }
-    if(!isset($month)){
+    if($month == "selectOne"){
+        echo "<div id = 'error'>";
         echo "You must select a Month!";
+        echo "</div>";
     }
 
 
@@ -32,6 +36,7 @@ function table($month){
     //nov = 30 days
     //dec, jan = 31 days
     //febr = 28 days 4weeks
+    echo "<table>";
     if($month == "November"){
         for($i = 0; $i < 4; $i++){
             for($k = 0; $k < 8; $k++){
@@ -54,7 +59,7 @@ function table($month){
 <html>
     <head>
         <title> Winder Vacation Planner</title>
-        
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
         <h1>Winder Vacation Planner!</h1>
     </head>
     <body>
