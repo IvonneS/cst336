@@ -6,6 +6,9 @@ body{
     font-family: inherit;
     font-size: 1.5em;
 }
-table, th, td {
+table, tr, td {
     border: 1px solid black;
+    font-size: 1.5em;
+    text-align: center;
+    
 }

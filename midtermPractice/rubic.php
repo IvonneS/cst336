@@ -1,12 +1,12 @@
   
     <table border="1" width="600">
     <tbody><tr><th>#</th><th>Task Description</th><th>Points</th></tr>
-    <tr style="background-color:#FFC0C0">
+    <tr style="background-color:#808000">
       <td>1</td>
       <td>The page includes the form elements as the Program Sample: dropdown menu, radio buttons, etc.</td>
       <td width="20" align="center">5</td>
     </tr>
-    <tr style="background-color:green">
+    <tr style="background-color:#808000">
       <td>2</td>
       <td>Errors are displayed if month or number of locations are not submitted.</td>
       <td width="20" align="center">5</td>
@@ -16,12 +16,12 @@
       <td>Header and Subheader are displayed with info submitted. </td>
       <td align="center">5</td>
     </tr>    
-	<tr style="background-color:#FFC0C0">
+	<tr style="background-color:#808000">
       <td>4</td>
       <td>A table with days and weeks is displayed when submitting the form</td>
       <td align="center">5</td>
     </tr> 
-    <tr style="background-color:#FFC0C0">
+    <tr style="background-color:#808000">
       <td>5</td>
       <td>The number of days in the table correspond to the month selected</td>
       <td align="center">10</td>
