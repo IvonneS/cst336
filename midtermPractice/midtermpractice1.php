@@ -71,6 +71,18 @@ function table($month){
     }
 
 }
+function getPic($country, $order, $location){
+    if($country == 'USA'){
+        echo "<img src=\"img/USA/$image.png\" width= '90px'>";
+        
+    }
+     if($country == 'Mexico'){
+        echo "<img src=\"img/Mexico/$image.png\" alt='$image' width= '90px'>";
+    }
+     if($country == 'France'){
+        echo "<img src=\"img/France/$image.png\" alt='$image' width= '90px'>";
+    }
+}
 ?>
 
 <!DOCTYPE html>
