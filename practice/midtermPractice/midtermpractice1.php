@@ -17,6 +17,7 @@ function start(){
         echo "Visiting " . $location . " places in " . $country;
         echo '<br/>';
         table($month);
+        getPic($country, $order, $location);
     
     }
     if(!isset($location)){
@@ -73,7 +74,7 @@ function table($month){
 }
 function getPic($country, $order, $location){
     if($country == 'USA'){
-        echo "<img src=\"img/USA/$image.png\" width= '90px'>";
+        echo "<img src=\"img/USA/chicago.png\"  width= '90px'>";
         
     }
      if($country == 'Mexico'){

@@ -144,3 +144,15 @@
 [08-Oct-2018 20:23:03 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ';' in /home/ubuntu/workspace/cst336/practice/p5/index.php on line 27
 [08-Oct-2018 21:36:39 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/cst336/practice/zodiac/index.php on line 10
 [08-Oct-2018 21:36:41 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/cst336/practice/zodiac/index.php on line 10
+[24-Oct-2018 05:34:06 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '000 AND 80,000' at line 1' in /home/ubuntu/workspace/cst336/practice/midtermPractice/midtermPractice2.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/midtermPractice/midtermPractice2.php(10): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/practice/midtermPractice/midtermPractice2.php(59): displayCities()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/midtermPractice/midtermPractice2.php on line 10
+[24-Oct-2018 05:43:02 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'midterm.mp_country' doesn't exist' in /home/ubuntu/workspace/cst336/practice/midtermPractice/midtermPractice2.php:43
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/midtermPractice/midtermPractice2.php(43): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/practice/midtermPractice/midtermPractice2.php(67): displayCountry()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/midtermPractice/midtermPractice2.php on line 43
