@@ -1,3 +1,6 @@
+<!--https://www.w3schools.com/sql/sql_syntax.asp-->
+
+
 <?php
 include '../../inc/dbConnection.php';
 $dbConn = startConnection("midterm");

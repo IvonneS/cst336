@@ -99,25 +99,25 @@ function getPic($country, $order, $location){
             <select name = "select"> 
                 
               <option value = "selectOne">select</option>
-              <option value = "November">November</option></option>
-              <option value = "December">December</option>
-              <option value = "January">January</option>
-              <option value = "February">February</option>
+              <option value = "November"<?php if($_GET["select"] == 'November') {echo 'selected';}?>>November</option></option>
+              <option value = "December"<?php if($_GET["select"] == 'December') {echo 'selected';}?>>December</option>
+              <option value = "January"<?php if($_GET["select"] == 'January') {echo 'selected';}?>>January</option>
+              <option value = "February"<?php if($_GET["select"] == 'February') {echo 'selected';}?>>February</option>
              
               </select>
               <br><br>
              Number of locations:
-            <input type="radio" name="option" value = "3"/><b>Three</b>
-            <input type="radio" name="option" value = "4"/><b>Four</b>
-            <input type="radio" name="option" value = "5"/><b>Five</b>
+            <input type="radio" name="option" value = "3"<?php if($_POST["option"] == '3') {echo 'checked';}?>/><b>Three</b>
+            <input type="radio" name="option" value = "4"<?php if($_POST["option"] == '4') {echo 'checked';}?>/><b>Four</b>
+            <input type="radio" name="option" value = "5"<?php if($_POST["option"] == '5') {echo 'checked';}?>/><b>Five</b>
             
             <br/><br/>
             Select Country:
             <select name = "select2"> 
                 
-              <option value = "USA">USA</option></option>
-              <option value = "Mexico">Mexico</option>
-              <option value = "France">France</option>
+              <option value = "USA"<?php if($_GET["select2"] == 'USA') {echo 'selected';}?>>USA</option>
+              <option value = "Mexico"<?php if($_GET["select2"] == 'Mexico') {echo 'selected';}?>>Mexico</option>
+              <option value = "France"<?php if($_GET["select2"] == 'France') {echo 'selected';}?>>France</option>
              
              
               </select>
