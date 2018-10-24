@@ -107,9 +107,9 @@ function getPic($country, $order, $location){
               </select>
               <br><br>
              Number of locations:
-            <input type="radio" name="option" value = "3"<?php if($_POST["option"] == '3') {echo 'checked';}?>/><b>Three</b>
-            <input type="radio" name="option" value = "4"<?php if($_POST["option"] == '4') {echo 'checked';}?>/><b>Four</b>
-            <input type="radio" name="option" value = "5"<?php if($_POST["option"] == '5') {echo 'checked';}?>/><b>Five</b>
+            <input type="radio" name="option" value = "3"<?php if($_GET["option"] == '3') {echo 'checked';}?>/><b>Three</b>
+            <input type="radio" name="option" value = "4"<?php if($_GET["option"] == '4') {echo 'checked';}?>/><b>Four</b>
+            <input type="radio" name="option" value = "5"<?php if($_GET["option"] == '5') {echo 'checked';}?>/><b>Five</b>
             
             <br/><br/>
             Select Country:
@@ -123,8 +123,8 @@ function getPic($country, $order, $location){
               </select>
               <br/><br/>
             Visit locations in alphabetical order:
-            <input type="radio" name="option2" value = "a-z"/><b>A-Z</b>
-            <input type="radio" name="option2" value = "z-a"/><b>Z-A</b>
+            <input type="radio" name="option2" value = "a-z"<?php if($_GET["option2"] == 'a-z') {echo 'checked';}?>/><b>A-Z</b>
+            <input type="radio" name="option2" value = "z-a"<?php if($_GET["option2"] == 'z-a') {echo 'checked';}?>/><b>Z-A</b>
             <br>
             <br>
        
