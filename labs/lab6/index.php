@@ -118,3 +118,11 @@ function filterProducts() {
 
     </body>
 </html>
+
+<!--
+Things to implement:
+1.error messahge when using both; text area and select
+2.css style
+3.showing nothing when start
+
+-->

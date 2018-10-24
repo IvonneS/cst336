@@ -1,0 +1,16 @@
+body{
+    text-align: center;
+}
+#error{
+    color: red;
+    font-family: inherit;
+    font-size: 1.5em;
+}
+footer{
+     text-align: center; 
+}
+#md2{
+   color: red;
+   text-align: left;
+   
+}
