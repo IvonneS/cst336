@@ -11,20 +11,7 @@ function displayCategories() {
     global $text;
     global $option;
     
-    if(empty($text)){
-        if($option == ""){
-            echo "<div id='error'>";
-            echo "Please select one option";
-            echo "</div>";
-        }
-    }
-     /*
-    if(isset($text) && isset($option)){
-        echo "<div id='error'>";
-        echo "Please select only one option";
-        echo "</div>";
-    }
-    else{*/
+   
     $sql = "SELECT * FROM om_category ORDER BY catName";
     $stmt = $dbConn->prepare($sql);
     $stmt->execute();
@@ -32,7 +19,7 @@ function displayCategories() {
     foreach ($records as $record) {
         echo "<option value='".$record['catId']."'>" . $record['catName'] . "</option>";
     }
-    // }
+    
 }
 
 function filterProducts() {
@@ -40,39 +27,39 @@ function filterProducts() {
     
     $namedParameters = array();
     $product = $_GET['productName'];
+    //$sql = "SELECT * FROM om_product WHERE 1"; //Gettting all records from database
     
-    //This SQL works but it doesn't prevent SQL INJECTION (due to the single quotes)
-    //$sql = "SELECT * FROM om_product
-    //        WHERE productName LIKE '%$product%'";
-  
-    $sql = "SELECT * FROM om_product WHERE 1"; //Gettting all records from database
+    if(empty($text)){
+            echo "<div id='error'>";
+            echo "<b>" . "Please select one option" . "</b>";
+            echo "</div>";
+        }else{
+        $sql = "SELECT * FROM om_product WHERE 1"; //Gettting all records from database
     
-    if (!empty($product)){
+        if (!empty($product)){
         //This SQL prevents SQL INJECTION by using a named parameter
          $sql .=  " AND productName LIKE :product";
          $namedParameters[':product'] = "%$product%";
-    }
+        }
     
-    if (!empty($_GET['category'])){
+        if (!empty($_GET['category'])){
         //This SQL prevents SQL INJECTION by using a named parameter
          $sql .=  " AND catId =  :category";
           $namedParameters[':category'] = $_GET['category'] ;
-    }
-    
-    //echo $sql;
-    
-    if (isset($_GET['orderBy'])) {
-        
-        if ($_GET['orderBy'] == "productPrice") {
-            
-            $sql .= " ORDER BY price";
-        } else {
-            
-              $sql .= " ORDER BY productName";
         }
+    
+        //echo $sql;
+    
+        if (isset($_GET['orderBy'])) {
         
-        
-    }
+            if ($_GET['orderBy'] == "productPrice") {
+                
+                $sql .= " ORDER BY price";
+            } else {
+            
+                  $sql .= " ORDER BY productName";
+            }
+        }
 
     $stmt = $dbConn->prepare($sql);
     $stmt->execute($namedParameters);
@@ -89,9 +76,8 @@ function filterProducts() {
         
     }
 
-
-}
-
+   }
+ }
 ?>
 
 <!DOCTYPE html>
@@ -131,9 +117,6 @@ function filterProducts() {
         
         <?= filterProducts() ?>
         
-    
-
-
     </body>
 </html>
 

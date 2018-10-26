@@ -10,7 +10,9 @@ body{
     text-align: center;
 }
 #error{
-    color: red;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
 }
 #b1{
     width: 100px;

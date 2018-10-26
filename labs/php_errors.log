@@ -336,3 +336,7 @@ Stack trace:
 [22-Oct-2018 22:42:16 UTC] PHP Stack trace:
 [22-Oct-2018 22:42:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:0
 [22-Oct-2018 22:42:16 UTC] PHP   2. displayAllProducts() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:34
+[26-Oct-2018 05:04:57 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 36
+[26-Oct-2018 05:39:56 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 128
+[26-Oct-2018 05:58:48 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 32
+[26-Oct-2018 06:28:37 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 32
