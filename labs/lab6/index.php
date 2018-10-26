@@ -3,21 +3,36 @@
 include '../../inc/dbConnection.php';
 $dbConn = startConnection("ottermart");
 
+$text = $_GET['productName'];
+$option = $_GET['category'];
+
 function displayCategories() { 
     global $dbConn;
+    global $text;
+    global $option;
     
+    if(empty($text)){
+        if($option == ""){
+            echo "<div id='error'>";
+            echo "Please select one option";
+            echo "</div>";
+        }
+    }
+     /*
+    if(isset($text) && isset($option)){
+        echo "<div id='error'>";
+        echo "Please select only one option";
+        echo "</div>";
+    }
+    else{*/
     $sql = "SELECT * FROM om_category ORDER BY catName";
     $stmt = $dbConn->prepare($sql);
     $stmt->execute();
     $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    //print_r($records);
-    //echo "<hr>";
-    //echo $records[2] . "<br>";
-    //echo $records[1]['catDescription'] . "<br>";
-    
     foreach ($records as $record) {
         echo "<option value='".$record['catId']."'>" . $record['catName'] . "</option>";
     }
+    // }
 }
 
 function filterProducts() {
@@ -82,31 +97,34 @@ function filterProducts() {
 <!DOCTYPE html>
 <html>
     <head>
+        <style>
+            @import url("css/style.css");
+        </style>
         <title> Lab 6: Ottermart Product Search</title>
     </head>
     <body>
-        
-        <h1> Ottermart </h1>
+        <img src="../../img/csumb.png" alt = "csumb logo"/>
+        <h1> OTTERMART </h1>
         <h2> Product Search </h2>
         
-        <form>
+        <form method="GET">
             
             Product: <input type="text" name="productName" placeholder="Product keyword" /> <br />
-            
+            <br>
             Category: 
             <select name="category">
                <option value=""> Select one </option>  
                <?=displayCategories()?>
             </select>
             
-            Price: From: <input type="text" name="priceFrom"  /> 
-             To: <input type="text" name="priceTo"  />
-            <br>
+            Price: From: <input type="text" name="priceFrom" size="10"/> 
+             To: <input type="text" name="priceTo" size="10" />
+            <br><br>
             Order By:
             Price <input type="radio" name="orderBy" value="productPrice">
             Name <input type="radio" name="orderBy" value="productName">
-            <br>
-            <input type="submit" name="submit" value="Search!"/>
+            <br><br>
+            <input type="submit" name="submit" id = "b1" value="Search!"/>
         </form>
         <br>
         <hr>
