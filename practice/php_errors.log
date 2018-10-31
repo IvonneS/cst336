@@ -156,3 +156,24 @@ Stack trace:
 #1 /home/ubuntu/workspace/cst336/practice/midtermPractice/midtermPractice2.php(67): displayCountry()
 #2 {main}
   thrown in /home/ubuntu/workspace/cst336/practice/midtermPractice/midtermPractice2.php on line 43
+[29-Oct-2018 20:11:06 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty' in /home/ubuntu/workspace/cst336/practice/p7/index.php:41
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p7/index.php(41): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/practice/p7/index.php(93): getOrder()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p7/index.php on line 41
+[29-Oct-2018 20:11:12 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty' in /home/ubuntu/workspace/cst336/practice/p7/index.php:41
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p7/index.php(41): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/practice/p7/index.php(93): getOrder()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p7/index.php on line 41
+[29-Oct-2018 20:13:06 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty' in /home/ubuntu/workspace/cst336/practice/p7/index.php:43
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p7/index.php(43): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/practice/p7/index.php(95): getOrder()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p7/index.php on line 43
+[29-Oct-2018 20:29:02 UTC] PHP Fatal error:  Call to undefined function getOrder() in /home/ubuntu/workspace/cst336/practice/p7/index.php on line 103
+[29-Oct-2018 20:29:02 UTC] PHP Stack trace:
+[29-Oct-2018 20:29:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/p7/index.php:0
