@@ -1,46 +1,49 @@
 <?php
-include 'functions.php';
-session_start();
-
-//creating an array with session
-if(isset($_SESSION['cart'])){
-    $_SESSION['cart'] = array();
-}
-
-if(isset($_GET['query'])){
-    //Get access to out API function 
-    include 'wmapi.php';
-    $items = getProducts($_GET['query']);
+    include 'functions.php';
     
-}
-//check if an item has been added to the cart
-if(isset($_POST['itemName'])){
-    //Creating an array to hold an item's properties
-    //$_SESSION['cart'] need to be declared here... not using global
+    //start the session in any php file where you will be using sessions
+    session_start();
     
-    $newItem = array();
-    $newItem['name'] = $_POST['itemName'];
-    $newItem['id'] = $_POST['itemId'];
-    $newItem['price'] = $_POST['itemPrice'];
-    $newItem['img'] = $_POST['itemImage'];
-    //storing the item to the cart array
-    //array_push($_SESSION['cart'], $newItem);
-    
-    foreach($_SESSION['cart'] as &$item){
-    if($newItem['id'] == $item['id']){
-        $item['quantity'] += 1;
-        $found = true;
-       }
+    //create an array in the Session to hold our cart items
+    if (!isset($_SESSION['cart'])){
+        $_SESSION['cart'] = array();
     }
-    if($found != true){
-    $newItem['quantity'] = 1;
-    array_push($_SESSION['cart'], $newItem);
+    
+    //Checks to see if the search form has been submitted
+    if(isset($_GET['query'])){
+        //Get access to our API function
+        include 'wmapi.php';
+        $items= getProducts($_GET['query']);
+        //print_r($items);
     }
-
-}
-
+    
+    //If the 'itemName' is set, put it in the session cart and direct the user to the shopping cart.
+    if(isset($_POST['itemName'])){
+        //Create associative array for item properties
+        $newItem= array();
+        $newItem['name']= $_POST['itemName'];
+        $newItem['price']= $_POST['itemPrice'];
+        $newItem['img']= $_POST['itemImg'];        
+        $newItem['id']= $_POST['itemId'];
+           
+        
+        //Check to see if other items with this id are in the array
+        //If so, this item isn't new. Only update quantity
+        //must be passed by reference so that each item can be updated!
+        foreach($_SESSION['cart'] as &$item){
+            if($newItem['id'] == $item['id']){
+                $item['quantity'] +=1;
+                $found= true;
+            }
+        }
+        
+        //else add it to array
+        if($found != true){
+            $newItem['quantity']= 1;
+            array_push($_SESSION['cart'], $newItem);
+        }
+    }
 ?>
-
 
 <!DOCTYPE html>
 <html>
@@ -66,15 +69,15 @@ if(isset($_POST['itemName'])){
                     <ul class='nav navbar-nav'>
                         <li><a href='index.php'>Home</a></li>
                         <li><a href='scart.php'>
-                        <span class='glyphicon glyphicon-shopping-cart' aria-hidden='true'>
-                        </span> Cart <?php displayCartCount?> </a></li>
+                        <span class= 'glyphicon glyphicon-shopping-cart' aria-hidden='true'>
+                        </span> Cart: <?php displayCartCount(); ?> </a><li>
                     </ul>
                 </div>
             </nav>
             <br /> <br /> <br />
             
             <!-- Search Form -->
-            <form enctype="text/plain" method = "GET">
+            <form enctype="text/plain">
                 <div class="form-group">
                     <label for="pName">Product Name</label>
                     <input type="text" class="form-control" name="query" id="pName" placeholder="Name">
@@ -84,7 +87,7 @@ if(isset($_POST['itemName'])){
             </form>
             
             <!-- Display Search Results -->
-            <?php displayResults();?>
+            <?php displayResults(); ?>
         </div>
     </div>
     </body>
