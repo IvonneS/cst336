@@ -23,8 +23,6 @@ function displaySearchResults() {
     
     $namedParameters= array();
     $product = $_GET['productName'];
-    $from = $_GET['priceFrom'];
-    $to = $_GET['priceTo'];
     $sql= "SELECT * FROM om_product WHERE 1";
     
     
@@ -40,11 +38,15 @@ function displaySearchResults() {
          $sql .=  " AND catId =  :category";
          $namedParameters[':category'] = $_GET['category'] ;
     }
-    if(!empty($from) && !empty($to)){
-       
-        $sql .=  "WHERE price > '$from' AND price < '$to'";
-        $namedParameters[':price'] = $_GET['priceFrom'];
+    if(!empty($_GET['priceFrom'])){
+        $sql .=  "AND price >= :priceFrom";
+        $namedParameters[':priceFrom'] = $_GET['priceFrom'];
+    } 
+    if(!empty($_GET['priceTo'])){
+        $sql .= "AND price <= :priceTo";
+        $namedParameters[':priceTo'] = $_GET['priceTo'];
     }
+      
     if (isset($_GET['orderBy'])) {
         
         if ($_GET['orderBy'] == "productPrice") {

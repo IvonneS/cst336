@@ -377,3 +377,63 @@ Stack trace:
 #1 /home/ubuntu/workspace/cst336/labs/lab6/index.php(113): displaySearchResults()
 #2 {main}
   thrown in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 58
+[01-Nov-2018 00:18:34 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/labs/lab6/index.php:62
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/index.php(62): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/labs/lab6/index.php(117): displaySearchResults()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 62
+[01-Nov-2018 00:19:53 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/labs/lab6/index.php:62
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/index.php(62): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/labs/lab6/index.php(117): displaySearchResults()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 62
+[01-Nov-2018 00:19:55 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/labs/lab6/index.php:62
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/index.php(62): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/labs/lab6/index.php(117): displaySearchResults()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 62
+[01-Nov-2018 00:20:33 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/labs/lab6/index.php:62
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/index.php(62): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/labs/lab6/index.php(117): displaySearchResults()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 62
+[01-Nov-2018 00:21:53 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/labs/lab6/index.php:62
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/index.php(62): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/labs/lab6/index.php(117): displaySearchResults()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 62
+[01-Nov-2018 00:21:55 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/labs/lab6/index.php:62
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/index.php(62): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/labs/lab6/index.php(117): displaySearchResults()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 62
+[01-Nov-2018 00:22:06 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/labs/lab6/index.php:62
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/index.php(62): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/labs/lab6/index.php(117): displaySearchResults()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 62
+[01-Nov-2018 00:22:33 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/labs/lab6/index.php:62
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/index.php(62): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/labs/lab6/index.php(117): displaySearchResults()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 62
+[01-Nov-2018 00:23:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/labs/lab6/index.php:62
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/index.php(62): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/labs/lab6/index.php(117): displaySearchResults()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 62
+[01-Nov-2018 00:35:34 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/cst336/labs/lab6/index.php:60
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/index.php(60): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/labs/lab6/index.php(115): displaySearchResults()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 60
