@@ -1,6 +1,5 @@
 <?php
 session_start();
-//session_destroy();
 include 'functions.php';
 
 
@@ -30,22 +29,15 @@ if (isset($_POST['itemName'])) {
     $newItem['description'] = $_POST['itemDescription'];
 
     $found = false;
-    //echo $_POST['itemName'];
-
-    
- //   array_push($_SESSION['cart'], $newItem);
-
-
+   
 foreach($_SESSION['cart'] as &$item) {
     if($newItem['id'] == $item['id']) {
         $item['quantity'] += 1;
-       // echo "MATCH FOUND";
         $found = true;
     }
 }
 
 if($found != true) {
-   // echo "PUSHING";
     $newItem['quantity'] = 1;
     array_push($_SESSION['cart'], $newItem);
 }
@@ -70,8 +62,7 @@ if($found != true) {
     <body id="background1">
             <ul>
                 <li><a class="active" href="index.php">Home</a></li>
-                
-                <!--<span class='glyphicon glyphicon-shooping-cart' aria-hidden='true'>-->
+               
                 <li><a href="cart.php">Cart</a></li>
                 <li><a href = "explanation.php">Explanation</a></li>
             </ul>
