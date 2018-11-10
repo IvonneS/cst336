@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 include '../../inc/dbConnection.php';
 $dbConn = startConnection("ottermart");
@@ -10,5 +11,7 @@ $stmt=$dbConn->prepare($sql);
 $stmt->execute();
 
 header("Location: admin.php");
+
+
 
 ?>
