@@ -1,7 +1,9 @@
 <?php
 session_start();
 
-
+if(isset($_SESSION['Login'])){
+    header("Location: index.php");
+}
 
 include '../../inc/dbConnection.php';
 $dbConn = startConnection("ottermart");
@@ -15,6 +17,7 @@ validateSession();
 <html>
     <head>
         <title> Admin Main Page </title>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
         <style>
             form {
                 display: inline-block;
@@ -41,7 +44,7 @@ validateSession();
         </script>
     
     </head>
-    <body>
+    <body id="adminBody">
         
         <h1> ADMIN SECTION - OTTERMART </h1>
         

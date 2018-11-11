@@ -1,0 +1,27 @@
+#b1{
+    width: 100px;
+    height: 30px;
+    font-family: serif;
+    font-size: 1em;
+    background-color: #008080;
+    color: white;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}
+#b1:hover {
+    background-color: white; /* Green */
+    color: black;
+}
+#indexBody{
+    text-align: center;
+    background-color: #D3D3D3;
+}
+#adminBody{
+    background-color: #FFB6C1;
+}
+.errorMessage{
+    color: #FF6347;
+    text-align: center;
+    font-family: serif;
+    font-size: 2em;
+}
