@@ -42,8 +42,9 @@ if (isset($_GET['productId'])) {
 <html>
     <head>
         <title> Update Products! </title>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body>
+    <body id="indexBody">
 
         <h1> Updating a Product </h1>
         
@@ -70,7 +71,7 @@ if (isset($_GET['productId'])) {
               ?>
            </select> <br />
            Set Image Url: <input type="text" name="productImage" value="<?=$productInfo['productImage']?>"><br>
-           <input type="submit" name="updateProduct" value="Update Product">
+           <input type="submit" name="updateProduct" value="Update Product" id="b1" size = "10">
         </form>
         
         

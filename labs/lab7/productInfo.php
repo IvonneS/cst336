@@ -20,8 +20,9 @@ if (isset($_GET['productId'])) {
 <html>
     <head>
         <title> Product Info </title>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body>
+    <body id="indexBody">
     
     <h3><?=$productInfo['productName']?></h3>
      <?=$productInfo['productDescription']?><br>
