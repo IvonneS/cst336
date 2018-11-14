@@ -18,8 +18,8 @@ You post a clickable link to the assignment (10 pts)
 <html>
     <head>
         <title> homework #4</title>
-         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-         <link href="css/style.css" rel="stylesheet" type="text/css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
          <script>
          
         </script>
@@ -58,12 +58,12 @@ You post a clickable link to the assignment (10 pts)
                /* global $ */ 
                 function validateForm(){
                     var num = document.getElementById("question_num").value;
-                    if(num > 10 || num < 1){
-                        alert('Plase enter a number of questions between 1 and 10');
-                    }
                     var topic = document.forms["myform"]["select"].value;
                     var level = document.forms["myform"]["option"].value;
                          
+                    if(num > 10 || num < 1){
+                        alert('Plase enter a number of questions between 1 and 10');
+                    }
                     if (topic == "0") {
                         alert("Please select a topic");
                         return false;
@@ -73,11 +73,8 @@ You post a clickable link to the assignment (10 pts)
                         return false;
                     }
                     else{
-                      
-                                $("#imageId").hide();
-                     
-                    
-                        display(num, topic, level);
+                                $("#imageId").hide(2000);
+                          //display(num, topic, level);
             
                     }
                 }
