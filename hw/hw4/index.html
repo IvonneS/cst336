@@ -1,0 +1,52 @@
+<!--
+Idea: Create a multiple choice quiz generator
+Requirements: *There are at least four different types of Form Elements.
+              *Upon submission of the form, the data is "processed" and new data is displayed.
+              *Validation for all unset or empty values with error messages. 
+              *Upon submission of the form, the form is displayed again,
+              with the submitted values pre-filled.
+Date: 11/13/2018
+Recreate the assigment using JavaScript and jQuery
+
+Program uses some of the elements used in Assignments 2 or 3 (conditions, loops, arrays, form elements) (40 pts)
+Program processes data and not just displays again the values entered (20 pts)
+Program uses both JavaScript and jQuery (15 pts)
+Program uses Bootstrap (or has a nice look and feel) (15 pts)
+You post a clickable link to the assignment (10 pts)
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> homework #4</title>
+         <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <h1>Quiz Generator</h1>
+    </head>
+    <body>
+        <script>SRC="js/functions.js"</script>
+        <form method = "GET">
+            
+             <h2>Choose one</h2>
+             <input type="radio" name = "option" value="high"/> Advanced
+             <input type="radio" name = "option" value="middle"/> Intermediate
+             <input type="radio" name = "option" value="low"/> Beginner <br/><br/>
+             
+             <select name = "select">
+              <option value = "0">- Select Topic -</option>
+              <option value = "Arithmetic">Arithmetic</option>
+              <option value = "Algebra">Algebra</option>
+             
+              </select>
+              <br/><br/>
+               how many questions? <input type="text" name="question_num" size="5" id="question_num"/>(from 1 to 10) <br/>
+              <input type="checkbox" name="checkbox" id="digits" value ="digits" unchecked="unchecked"/>Show answers at the end?</font><br/><br/>
+     
+            <div>
+                 <br/>
+              <input type="submit" name="submitBtn" id = "b1" value="Create Quiz" />
+            </div>
+             </form>
+            
+        
+    
+    </body>
+</html>
