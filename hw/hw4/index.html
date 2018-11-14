@@ -49,8 +49,20 @@ You post a clickable link to the assignment (10 pts)
                  <br/>
                  <button onclick="validateForm()" id="b1">SUBMIT</button>
              </form>
+             <br><br>
+             <div id ="myContainer">
+              <img src="img/pic.png" id="img"></img>
+              </div>
              
              <script type="text/javascript">
+                $(document).ready(function(){
+                       $("#b1").click(function(){
+                      $("#img").hide();
+                      });
+                    });
+             
+             
+             
                 function validateForm(){
                     var num = document.getElementById("question_num").value;
                     if(num > 10 || num < 1){
