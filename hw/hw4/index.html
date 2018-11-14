@@ -18,19 +18,25 @@ You post a clickable link to the assignment (10 pts)
 <html>
     <head>
         <title> homework #4</title>
+         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
          <link href="css/style.css" rel="stylesheet" type="text/css"/>
+         <script>
+         
+        </script>
         <h1>Quiz Generator</h1>
+       <!--<script>SRC="js/functions.js"</script>-->
     </head>
-    <body>
-        <script>SRC="js/functions.js"</script>
-        <form method = "GET">
+    <body id="mainBody">
+       
+        
+        <form name="myform">
             
              <h2>Choose one</h2>
-             <input type="radio" name = "option" value="high"/> Advanced
-             <input type="radio" name = "option" value="middle"/> Intermediate
-             <input type="radio" name = "option" value="low"/> Beginner <br/><br/>
+             <input type="radio" id = "option" value="high"/> Advanced
+             <input type="radio" id = "option" value="middle"/> Intermediate
+             <input type="radio" id = "option" value="low"/> Beginner <br/><br/>
              
-             <select name = "select">
+             <select name = "select" id="topic">
               <option value = "0">- Select Topic -</option>
               <option value = "Arithmetic">Arithmetic</option>
               <option value = "Algebra">Algebra</option>
@@ -39,13 +45,47 @@ You post a clickable link to the assignment (10 pts)
               <br/><br/>
                how many questions? <input type="text" name="question_num" size="5" id="question_num"/>(from 1 to 10) <br/>
               <input type="checkbox" name="checkbox" id="digits" value ="digits" unchecked="unchecked"/>Show answers at the end?</font><br/><br/>
-     
-            <div>
+              
                  <br/>
-              <input type="submit" name="submitBtn" id = "b1" value="Create Quiz" />
-            </div>
+                 <button onclick="validateForm()" id="b1">SUBMIT</button>
              </form>
-            
+             
+             <script type="text/javascript">
+                function validateForm(){
+                    var num = document.getElementById("question_num").value;
+                    if(num > 10 || num < 1){
+                        alert('Plase enter a number of questions between 1 and 10');
+                    }
+                    var topic = document.forms["myform"]["select"].value;
+                    var level = document.forms["myform"]["option"].value;
+                         
+                    if (topic == "0") {
+                        alert("Please select a topic");
+                        return false;
+                    }
+                    if(isEmpty(level)== true){
+                        alert("Please select a level");
+                        return false;
+                    }
+                    else{
+                        display(num, topic, level);
+                    }
+                }
+                
+                function isEmpty(obj) {
+                    for(var key in obj) {
+                        if(obj.hasOwnProperty(key))
+                        return false;
+                }   
+                return true;
+                }
+                function display(num, topic, level){
+                    
+                }
+                   
+                
+                
+            </script>
         
     
     </body>

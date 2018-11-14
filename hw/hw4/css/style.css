@@ -1,12 +1,11 @@
 /*There is an external CSS with at least 20 rules*/
 body{
-    background-color:pink;
+    /*background-image: url("../img/q.jpg");*/
     text-align: center;
 }
 #b1{
-    width: 250px;
+    width: 150px;
     height: 50px;
-    font-family: cursive;
     font-size: 1.5em;
     border-radius: 15px;
     background-color: #0099CC;
