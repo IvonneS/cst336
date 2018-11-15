@@ -55,6 +55,7 @@ You post a clickable link to the assignment (10 pts)
               </div>
              <hr width="100%"/>;
              <script type="text/javascript">
+             
                /* global $ */
                /* global array*/
                /* global getAritQuestion*/
@@ -141,25 +142,44 @@ You post a clickable link to the assignment (10 pts)
                     case "low":
                         if(topic == "Arithmetic"){
                             getAritQuestion(num, easy);
+                            
+                            if (document.test.checkbox.checked==true){
+                                getAns(num,easy, 1);
+                            }
                         }
                         if(topic == "Algebra"){
                             getAlgQuestion(num, easy);
+                            if (document.test.checkbox.checked==true){
+                                getAns(num,easy, 2);
+                            }
                         }
      
                     case "high":
                         if(topic == "Arithmetic"){
                             getAritQuestion(num, hard);
+                            if (document.test.checkbox.checked==true){
+                                getAns(num,hard, 1);
+                            }
                         }
                         if(topic == "Algebra"){
                             getAlgQuestion(num, hard);
+                            if (document.test.checkbox.checked==true){
+                                getAns(num,hard, 2);
+                            }
                         }
                         break;
                     case "middle":
                         if(topic == "Arithmetic"){
                             getAritQuestion(num, mid);
+                            if (document.test.checkbox.checked==true){
+                                getAns(num,mid, 1);
+                            }
                         }
                         if(topic == "Algebra"){
                             getAlgQuestion(num, mid);
+                            if (document.test.checkbox.checked==true){
+                                getAns(num,mid, 2);
+                            }
                         }
                         break;
                         
@@ -204,7 +224,7 @@ You post a clickable link to the assignment (10 pts)
                             }
                 }
  
-}
+
             </script>
         
     
