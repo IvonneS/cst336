@@ -32,9 +32,9 @@ You post a clickable link to the assignment (10 pts)
         <form name="myform">
             
              <h2>Choose one</h2>
-             <input type="radio" id = "option" value="high"/> Advanced
-             <input type="radio" id = "option" value="middle"/> Intermediate
-             <input type="radio" id = "option" value="low"/> Beginner <br/><br/>
+             <input type="radio" name = "option" value="high"/> Advanced
+             <input type="radio" name = "option" value="middle"/> Intermediate
+             <input type="radio" name = "option" value="low"/> Beginner <br/><br/>
              
              <select name = "select" id="topic">
               <option value = "0">- Select Topic -</option>
@@ -58,8 +58,7 @@ You post a clickable link to the assignment (10 pts)
              
                /* global $ */
                /* global array*/
-               /* global getAritQuestion*/
-               /* global getAlgQuestion*/
+               
                  var count = 1;
                 function validateForm(){
                     var num = document.getElementById("question_num").value;
@@ -73,10 +72,10 @@ You post a clickable link to the assignment (10 pts)
                         alert("Please select a topic");
                         return false;
                     }
-                    if(isEmpty(level)== true){
-                        alert("Please select a level");
-                        return false;
-                    }
+                    //if(isEmpty(level)== true){
+                      //  alert("Please select a level");
+                    //return false;
+                    //}
                     else{
                          $("#imageId").hide(2000);
                          display(num, topic, level);
@@ -91,6 +90,44 @@ You post a clickable link to the assignment (10 pts)
                 }   
                 return true;
                 }
+                 function getAns(num,array,k){
+                  count = 1;
+                  var i, x;
+                  //Display answers
+                  if(k == 2){i = 1;}
+                  if(k == 1){i = 0;}    
+                  for(i; i < k; i++){
+                      for(x=0; x<num*2; x++){
+                          if(x%2 != 0){
+                              document.write(count + ") " + array[i][x] + "<br/>");
+                            count++;
+                      }
+                  }
+                }
+                function getAlgQuestion(num, array){
+                    var k = 2;
+                            for(var i = 1;i < k; i++){
+                                for(k = 0; k < num*2; k++){
+                                    if(k%2 == 0){
+                                        document.write(count + " )" + array[i][k] + "? ");
+                                        count++;
+                                    }
+                                }
+                            }
+                }
+                }
+                function getAritQuestion(num, array){
+                   var k = 1;
+                            for(var i = 0;i < k; i++){
+                                for(k = 0; k < num*2; k++){
+                                    if(k%2 == 0){
+                                        document.write(count + " )" + array[i][k] + "? ");
+                                        count++;
+                                    }
+                                }
+                            }
+                }
+ 
                 function display(num, topic, level){
                     var easy = [];
                     var mid = [];
@@ -186,44 +223,7 @@ You post a clickable link to the assignment (10 pts)
                  }
                 
                 }
-                function getAns(num,array,k){
-                  count = 1;
-                  var i, x;
-                  //Display answers
-                  if(k == 2){i = 1;}
-                  if(k == 1){i = 0;}    
-                  for(i; i < k; i++){
-                      for(x=0; x<num*2; x++){
-                          if(x%2 != 0){
-                              count + ") " + array[i][x] + "<br/>";
-                            count++;
-                      }
-                  }
-                }
-                function getAlgQuestion(num, array){
-                    var k = 2;
-                            for(var i = 1;i < k; i++){
-                                for(k = 0; k < num*2; k++){
-                                    if(k%2 == 0){
-                                        count + " )" + array[i][k] + "? ";
-                                        count++;
-                                    }
-                                }
-                            }
-                }
-                }
-                function getAritQuestion(num, array){
-                   var k = 1;
-                            for(var i = 0;i < k; i++){
-                                for(k = 0; k < num*2; k++){
-                                    if(k%2 == 0){
-                                        count + " )" + array[i][k] + "? ";
-                                        count++;
-                                    }
-                                }
-                            }
-                }
- 
+               
 
             </script>
         
