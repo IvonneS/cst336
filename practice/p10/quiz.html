@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head><script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+        <script>
+$("document").ready(function(){
+    $("#userName").change(function() {
+        $.ajax({
+
+        type: "GET",
+        url: "",
+        dataType: "",
+        data: { "user":$("#userName").val() },
+        success: function(data,status) {
+            
+        
+    },
+    complete: function(data,status) { //optional, used for debugging purposes
+   // alert(status);
+    }
+
+});//ajax
+      
+    });
+    
+    
+    
+    
+     $("#password").change(function() {
+        $.ajax({
+
+        type: "GET",
+        url: "",
+        dataType: "",
+        data: { "password":$("#password").val() },
+        success: function(data,status) {
+        
+
+    },
+    complete: function(data,status) { //optional, used for debugging purposes
+    //alert(status);
+    }
+ 
+     });//ajax
+    });
+});
+</script>
+        <title> Quiz</title>
+         <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <h1>Login</h1>
+    </head>
+    <body>
+    
+    </body>
+    <form action = "verifyUser.php">
+        
+    </form>
+</html>

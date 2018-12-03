@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head><script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+        <script>
+$("document").ready(function(){
+    $("#userName").change(function() {
+        $.ajax({
+
+        type: "GET",
+        url: "",
+        dataType: "",
+        data: { "user":$("#userName").val() },
+        success: function(data,status) {
+            
+        
+    },
+    complete: function(data,status) { //optional, used for debugging purposes
+   // alert(status);
+    }
+
+});//ajax
+      
+    });
+    
+    
+    
+    
+     $("#password").change(function() {
+        $.ajax({
+
+        type: "GET",
+        url: "",
+        dataType: "",
+        data: { "password":$("#password").val() },
+        success: function(data,status) {
+        
+
+    },
+    complete: function(data,status) { //optional, used for debugging purposes
+    //alert(status);
+    }
+ 
+     });//ajax
+    });
+});
+</script>
+        <title> Practice10</title>
+         <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <h1>Login</h1>
+    </head>
+    <body>
+    <h2>Credentials required before submiting form.
+    </h2>
+    You can log in using usernames <b>user_1</b> or <b>user_2.</b> The password is <b>s3cr3t.</b>
+    </body>
+    <form action = "verifyUser.php">
+         <input type="text" placeholder = "Username" id="userName"><br> 
+         <input type="text" placeholder = "Password" id="password"><br> 
+         <input type="submit" value="Login" size = "5" id="b1"> 
+    </form>
+</html>
