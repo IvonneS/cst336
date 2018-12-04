@@ -38,10 +38,29 @@ function getAllPets(){
 	  <script>
 	      $('document').ready(function() {
 	        $('.petLink').click(function(){
-	           alert($(this).attr('id'));//this is the elemtn we are interact with 
-	        
-	      });
-	      });
+	           //alert($(this).attr('id'));//this is the elemtn we are interact with 
+	             $.ajax({
+
+                    type: "GET",
+                    url: "api/getPetInfo.php",
+                    dataType: "json",
+                    data: { "petid": $(this).attr('id') }, //question!
+                    success: function(data, status) {
+                        $("#petname").html(data.name);
+                        $("#description").html(data.description);
+                        $("#petImage").attr('src', 'img/' + data.pictureURL);//javascript
+
+                        // alert(data); 
+                       
+                        
+                    
+                    },
+	          }); // ajax closing
+	          
+	           //   alert($(this).attr('id'));
+	          }); // petlink click
+	          
+	      }); // doc end
 	  </script>
 	  <?php
 	  getAllPets();
@@ -50,6 +69,11 @@ function getAllPets(){
 	      echo "<li> Type: " . $pet['type'] . "</li></ul>";
 	  }
 	  ?>
+	  <div>
+	      <h1 id = "petname">Name</h1>
+	      <img src="" id = "petImage"></img>
+	       <div id="description">Description: </div>
+	  </div>
 	  
         <?php
         include 'inc/footer.php';
