@@ -32,7 +32,7 @@
         
 	  <?php 
 	    include 'inc/header.php';
-	   // <span class="sr-only">(current)</span>
+	   
 	  ?>
 	
         <!-- Display Carousel here  -->
