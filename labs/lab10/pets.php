@@ -119,8 +119,7 @@ function getAllPets(){
         <div>
 	      
 	      <img id = "petImage" src="">
-	      <div id="more info">Age: 25</div>
-	      
+	      <div id="more info">Age: La neta nose </div>
 	      <div id="description">Description: </div>
 	      
 	      </div>
