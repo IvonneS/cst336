@@ -15,10 +15,11 @@
    
     </head>
     <body>
-     <?php
-     include 'inc/header.php';
-     ?>
         
+	  <?php 
+	    include 'inc/header.php';
+	    
+	  ?>
         <!-- Display Carousel here  -->
         
         
@@ -26,9 +27,8 @@
         <br><br><br>
         <?php
         include 'inc/footer.php';
-        ?>
-       
         
+        ?>
         </body>
 
 </html>

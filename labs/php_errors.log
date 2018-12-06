@@ -452,3 +452,6 @@ Stack trace:
 [03-Dec-2018 23:59:03 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/cst336/labs/lab10/pets.php on line 67
 [03-Dec-2018 23:59:03 UTC] PHP Stack trace:
 [03-Dec-2018 23:59:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/pets.php:0
+[05-Dec-2018 22:21:46 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/cst336/labs/lab10/pets.php on line 67
+[05-Dec-2018 22:21:46 UTC] PHP Stack trace:
+[05-Dec-2018 22:21:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/pets.php:0

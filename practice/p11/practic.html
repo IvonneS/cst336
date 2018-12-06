@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> practice11</title>
+        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+        <script>
+$("document").ready(function(){
+    $(".opt").click(function() {
+        var option = $("input[name=option]:checked").val();
+         $.ajax({
+
+                    type: "GET",
+                    url: "db.php",
+                    data: { "option": option },
+                    success: function(data, status) {
+                        var total = parseInt(data[0]) + parseInt(data[1]) + parseInt(data[2]) + parseInt(data[3]);
+                      $("#totalR").html(total);
+                    },
+                    complete: function(data, status) { //optional, used for debugging purposes
+                        // alert(status);
+                        // alert(data);
+                           
+                    }
+
+                }); //ajax
+            
+        });
+        });
+       
+       
+        </script>
+    </head>
+    <body>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jYUCZXh79Ds" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           <br><br>
+           <form>
+                <h2>Stars: </h2>
+             <input type="radio" name = "option" value="1" class = "opt"/> One 
+             <input type="radio" name = "option" value="2" class = "opt"/> Two
+             <input type="radio" name = "option" value="3" class = "opt"/> Three
+             <input type="radio" name = "option" value="4" class = "opt"/> Four
+             <br/><br/>
+           </form>
+           <div>
+               Total Ratings: <label id="totalR"></label>
+           </div>
+    </body>
+</html>

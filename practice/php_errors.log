@@ -304,3 +304,13 @@ Stack trace:
 #0 /home/ubuntu/workspace/cst336/practice/poll/db.php(23): PDOStatement->fetchAll(2)
 #1 {main}
   thrown in /home/ubuntu/workspace/cst336/practice/poll/db.php on line 23
+[05-Dec-2018 23:33:54 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/practice/p11/db.php:26
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p11/db.php(26): PDOStatement->fetchAll(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p11/db.php on line 26
+[05-Dec-2018 23:35:17 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/practice/p11/db.php:26
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p11/db.php(26): PDOStatement->fetchAll(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p11/db.php on line 26

@@ -4,16 +4,18 @@ $dbConn = startConnection("c9");
 
 function getAllPets(){
     global $dbConn;
-    $sql = "SELECT name, type FROM pets ORDER BY name ASC";
-
+    
+    $sql = "SELECT id, name, type FROM pets ORDER BY name ASC";
+    
     $stmt = $dbConn->prepare($sql);
     $stmt->execute();
-    $record = $stmt->fetchAll(PDO::FETCH_ASSOC); 
+    $records = $stmt->fetchAll(PDO::FETCH_ASSOC); 
     
-    print_r($record);
+    return $records;
 }
 
 ?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -34,23 +36,26 @@ function getAllPets(){
         
 	  <?php 
 	    include 'inc/header.php';
+	    
 	  ?>
 	  <script>
 	      $('document').ready(function() {
-	        $('.petLink').click(function(){
-	           //alert($(this).attr('id'));//this is the elemtn we are interact with 
-	             $.ajax({
+	          $('.petLink').click(function() {
+	              $("#container").html("<img src='img/loading.gif' />");
+	              
+	              $('#petModal').modal("show");
+	              $.ajax({
 
                     type: "GET",
                     url: "api/getPetInfo.php",
                     dataType: "json",
-                    data: { "petid": $(this).attr('id') }, //question!
+                    data: { "petid": $(this).attr('id') },
                     success: function(data, status) {
                         $("#petname").html(data.name);
                         $("#description").html(data.description);
-                        $("#petImage").attr('src', 'img/' + data.pictureURL);//javascript
-
-                        // alert(data); 
+                        $("#petImage").attr('src', "img/" + data.pictureURL);
+                        $("#container").html("");
+                        //alert(data); 
                        
                         
                     
@@ -63,18 +68,40 @@ function getAllPets(){
 	      }); // doc end
 	  </script>
 	  <?php
-	  getAllPets();
-	  foreach($pets as $pet){//displaying with ID
-	      echo "<ul><li>Name: " ."<ahref='#' class = 'petLink' id = '". $pet['id']."'>" .  $pet['name'] . "</a></li>";
-	      echo "<li> Type: " . $pet['type'] . "</li></ul>";
-	  }
+	    $pets = getAllPets();
+	    foreach($pets as $pet) {
+	        echo "<ul><li>Name: " ."<a href='#' class = 'petLink' id = '". $pet['id']. "'>". $pet['name'] ." </a>" ."</li>";
+	        echo "<li>Type: ".$pet['type']."</li></ul>";
+	    }
 	  ?>
-	  <div>
-	      <h1 id = "petname">Name</h1>
-	      <img src="" id = "petImage"></img>
-	       <div id="description">Description: </div>
-	  </div>
 	  
+	  <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="petModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="petname">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div id="container"></div>
+        <div>
+	      
+	      <img id = "petImage" src="">
+	      <div id="description">Description: </div>
+	      
+	      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
         <?php
         include 'inc/footer.php';
         
