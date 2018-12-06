@@ -14,6 +14,8 @@
             #about{
                 text-align: left;
                 background-color: LightGray;
+                margin-top: 3px;
+                
             }
         </style>
    
@@ -25,7 +27,10 @@
 	    
 	  ?>
 	  <div id="about">
-	      About Us!
+	     <h1>About Us!</h1> 
+	     <p>
+	         
+	     </p>
 	  </div>
 	     
         <?php
