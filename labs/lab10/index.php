@@ -1,3 +1,8 @@
+<?php
+ $imgs = array("alex.jpg","bear.jpg","carl.jpg","charlie.jpg","lion.jpg","otter.jpg","sally.jpg","samantha.jpg","ted.jpg","tiger.jpg");
+
+
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -11,6 +16,15 @@
             body {
                 text-align: center;
             }
+            #carousel-example-generic {
+             margin: 0 auto;   
+             width: 500px;
+             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+           #carouselExampleIndicators{
+             margin: 0 auto;   
+              width: 500px
+            }
         </style>
    
     </head>
@@ -18,11 +32,44 @@
         
 	  <?php 
 	    include 'inc/header.php';
-	    
+	   // <span class="sr-only">(current)</span>
 	  ?>
+	
         <!-- Display Carousel here  -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <?php
+              for ($i=1; $i < 10; $i++) { 
+                echo "<li data-target='#carouselExampleIndicators' data-slide-to='$i'></li>";
+              }
+             ?>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="img/alex.jpg" alt="image">
+              </div>
+              <?php
+                for ($i = 1; $i < 10; $i++) {
+                  echo "<div class=\"carousel-item\">";
+                  echo "<img class=\"d-block w-100\" src=\"".'img/'.$imgs[$i]."\" alt=\"Image\">";
+                  echo "</div>";
+                }
+               ?>
+             </div>
+             
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
         
-        
+         <!-------------------------------------------------------------------------------------------------------- -->
+        <br><br>
         <a class="btn btn-outline-success" href="pets.php" role="button">Adopt Now</a>
         <br><br><br>
         <?php

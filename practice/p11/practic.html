@@ -13,7 +13,7 @@ $("document").ready(function(){
                     url: "db.php",
                     data: { "option": option },
                     success: function(data, status) {
-                        var total = parseInt(data[0]) + parseInt(data[1]) + parseInt(data[2]) + parseInt(data[3]);
+                        var total = parseInt(data[0]) + parseInt(data[1]) + parseInt(data[2]) + parseInt(data[3]);//adding the values to diplay
                       $("#totalR").html(total);
                     },
                     complete: function(data, status) { //optional, used for debugging purposes
