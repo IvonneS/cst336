@@ -94,11 +94,11 @@ function getAllPets(){
 	  <?php
 	    $pets = getAllPets();
 	    foreach($pets as $pet) {
-	        echo "<div id='petContainers'>";
+	        //echo "<div id='petContainers'>";
 	        echo "Name: " ."<a href='#' class = 'petLink' id = '". $pet['id']. "'>". $pet['name'] ." </a> ". "<br>";
 	        echo "Type: ".$pet['type']."<br>";
-	        echo "<button type='button' id='ab'>" . "Adopt Me!" . "</button>";
-	        echo "</div>" . "<br>";
+	        //echo "<button type='button' id='ab'>" . "Adopt Me!" . "</button>";
+	        //echo "</div>" . "<br>";
 	    }
 	  ?>
 	  
