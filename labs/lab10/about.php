@@ -15,6 +15,8 @@
                 text-align: left;
                 background-color: LightGray;
                 margin-top: 3px;
+                padding-left: 60px;
+   
                 
             }
         </style>
@@ -29,7 +31,13 @@
 	  <div id="about">
 	     <h1>About Us!</h1> 
 	     <p>
-	         
+	       CSUMB have create this page to help with the reservation and adoption of pets/animals that need a home. <br>
+	       All of them having the best treatment and always being looked after by veterinarians and people specialized<br>
+	       to attend their needs.<br>
+	       If you want to support our organization you can conctac us by: <br>
+	       <b>call: </b>(903)529-1226 <br>
+	       <b>email: </b>csumb_petShelther@gmail.edu.com<br>
+	       <b>fax number: </b>(903)256-1125<br>
 	     </p>
 	  </div>
 	     
