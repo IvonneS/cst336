@@ -46,3 +46,24 @@ Stack trace:
 #1 /home/ubuntu/workspace/cst336/midterm/midterm_program2.php(84): displayRandom()
 #2 {main}
   thrown in /home/ubuntu/workspace/cst336/midterm/midterm_program2.php on line 52
+[07-Dec-2018 09:16:02 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'otter'' in /home/ubuntu/workspace/cst336/inc/dbConnection.php:21
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/inc/dbConnection.php(21): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ubuntu/workspace/cst336/FinalProject/index.php(3): startConnection('otter')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 21
+[07-Dec-2018 09:40:27 UTC] PHP Warning:  include(inc/dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/FinalProject/functions.php on line 2
+[07-Dec-2018 09:40:27 UTC] PHP Stack trace:
+[07-Dec-2018 09:40:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/FinalProject/index.php:0
+[07-Dec-2018 09:40:27 UTC] PHP   2. include() /home/ubuntu/workspace/cst336/FinalProject/index.php:2
+[07-Dec-2018 09:40:27 UTC] PHP Warning:  include(): Failed opening 'inc/dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/FinalProject/functions.php on line 2
+[07-Dec-2018 09:40:27 UTC] PHP Stack trace:
+[07-Dec-2018 09:40:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/FinalProject/index.php:0
+[07-Dec-2018 09:40:27 UTC] PHP   2. include() /home/ubuntu/workspace/cst336/FinalProject/index.php:2
+[07-Dec-2018 09:40:27 UTC] PHP Fatal error:  Call to undefined function startConnection() in /home/ubuntu/workspace/cst336/FinalProject/functions.php on line 3
+[07-Dec-2018 09:40:27 UTC] PHP Stack trace:
+[07-Dec-2018 09:40:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/FinalProject/index.php:0
+[07-Dec-2018 09:40:27 UTC] PHP   2. include() /home/ubuntu/workspace/cst336/FinalProject/index.php:2
+[07-Dec-2018 09:41:46 UTC] PHP Fatal error:  Call to undefined function diplayBrand() in /home/ubuntu/workspace/cst336/FinalProject/index.php on line 19
+[07-Dec-2018 09:41:46 UTC] PHP Stack trace:
+[07-Dec-2018 09:41:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/FinalProject/index.php:0

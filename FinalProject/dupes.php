@@ -1,11 +1,7 @@
-<?php
-include 'functions.php';
-
-
-?>
 <!DOCTYPE html>
 <html>
     <head>
+        <title> How-To</title>
         <title>User Page</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
@@ -19,42 +15,21 @@ include 'functions.php';
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.php">Home</span></a>
+          <li class="nav-item ">
+            <a class="nav-link" href="index.php">Home </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="howTo.html">How-To ??</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="dupes.php">Dupes</a>
           </li>
         </ul>
       </div>
     </nav>
-    </head>
-    <style>
         
-    </style>
+    </head>
     <body>
-        <h1>Welcome!</h1>
-        <form>
-            <b> Product Name: </b><input type="text" name="product_name" placeholder="product" /> <br />
-            <br>
-            <b> Brand:</b> 
-            <select name="brand">
-               <option value=""> Select Brand </option>
-               <?php displayBrand(); ?>
-            </select>
-            <br><br>
-            <b>Price:  From: </b> <input type="number" name="priceFrom" size="6"/> 
-            <b> To: </b> <input type="number" name="priceTo" size="6" />
-            <br>
-            <b>Low to High Price</b> <input  type="radio"  name="orderBy" value="LToH"><br>
-            <b>High to Low Price</b><input   type="radio"   name="orderBy" value="HToL">
-            <br>
-            <br>
-            <input type="submit" name="searchForm" value="Search" id="b1" />
-        </form>
-            
+
     </body>
 </html>
