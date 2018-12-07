@@ -29,6 +29,33 @@ function getAllPets(){
             body {
                 text-align: center;
             }
+             #petContainers{
+  
+            border-style: solid;
+           background-color: LightGray;
+             text-align: left;
+    	    border-width: 2px;
+	      border-radius: 10px;
+	     margin-top: 10px;
+	     margin-bottom: 3px;
+ 	     margin-right: 300px;
+	     margin-left: 300px;
+	     padding-left: 30px;
+	     padding-bottom:5px;
+   }
+	 #ab{
+	       border-radius: 10px;
+	      margin-left: 600px;
+	     margin-right: 5px;
+	      margin-bottom: 15px;
+	       margin-top: 5px;
+           }
+           
+	 #ab:hover {
+	     background-color: black;
+        color: white;
+   }
+       
         </style>
    
     </head>
@@ -70,8 +97,12 @@ function getAllPets(){
 	  <?php
 	    $pets = getAllPets();
 	    foreach($pets as $pet) {
-	        echo "<ul><li>Name: " ."<a href='#' class = 'petLink' id = '". $pet['id']. "'>". $pet['name'] ." </a>" ."</li>";
-	        echo "<li>Type: ".$pet['type']."</li></ul>";
+	        echo "<div id='petContainers'>";
+        	echo "Name: " ."<a href='#' class = 'petLink' id = '". $pet['id']. "'>". $pet['name'] ." </a> ". "<br>";
+        	echo "Type: ".$pet['type']."<br>";
+        	echo "<button type='button' id='ab'>" . "Adopt Me!" . "</button>";
+        	echo "</div>" . "<br>";
+	 
 	    }
 	  ?>
 	  
