@@ -63,4 +63,13 @@ include 'functions.php';
         </form>
                 
     </body>
+    <div class="hr"><hr /></div>
+    <footer> <!--Add image backgroud-->
+       <b>About: </b>
+      <p>
+                  This website that helps searching makeup products with different prices; <br>
+                    Easy search for different brand for different needs. <br>
+                    Also, this web contains tutorials for the newbies in the world of makeup. 
+      </p>
+    </footer>
 </html>

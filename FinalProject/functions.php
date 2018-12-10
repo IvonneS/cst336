@@ -2,6 +2,12 @@
 include '../inc/dbConnection.php';
 $dbConn = startConnection("cosmetics");
 
+function validateSession(){
+    
+}
+
+
+
 function displayBrand(){
     global $dbConn;
     $sql = "SELECT DISTINCT(branch) FROM `product` WHERE 1";
