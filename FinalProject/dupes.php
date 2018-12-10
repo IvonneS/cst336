@@ -30,6 +30,20 @@
         
     </head>
     <body>
-
+      <div style="text-align: center;" >
+        <p>
+          <h1>Duples?</h1>
+           Dupes are cheaper products that are comparable to a more expensive, often higher quality products.<br>
+           They're usually similar in color and/or consistency. 
+        </p>
+      </div>
+      <div style="float:left;" " margin-left: 50px;">
+                 <!--duples in spanish-->
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/kBH-oYbdMdM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+        <div style="float:right;" "margin-right: 50px;">
+                  <!--duples in english-->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bow3W0mw1cA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
     </body>
 </html>

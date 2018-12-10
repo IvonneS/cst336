@@ -23,11 +23,15 @@ include 'functions.php';
             <a class="nav-link" href="index.php">Home</span></a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="login.php">Log In</a></a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="howTo.html">How-To ??</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="dupes.php">Dupes</a>
           </li>
+          
         </ul>
       </div>
     </nav>
@@ -53,8 +57,10 @@ include 'functions.php';
             <b>High to Low Price</b><input   type="radio"   name="orderBy" value="HToL">
             <br>
             <br>
-            <input type="submit" name="searchForm" value="Search" id="b1" />
-        </form>
+            <input type="submit" name="searchForm" value="Search" id="b1" /><br>
             
+          
+        </form>
+                
     </body>
 </html>
