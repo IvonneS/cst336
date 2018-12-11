@@ -1,7 +1,5 @@
 <?php
-include 'functions.php';
-
-
+include "functions.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -64,7 +62,7 @@ include 'functions.php';
     <body>
         <h1>Welcome!</h1>
         <form id = "body1">
-            <b> Product Name: </b><input type="text" name="product_name" placeholder="product" /> <br />
+            <b> Product Name: </b><input type="text" name="product_name" placeholder="product" value = '<?php echo $_GET["product_name"] ?>' /> <br />
             <br>
             <b> Brand:</b> 
             <select name="brand">
@@ -72,14 +70,8 @@ include 'functions.php';
                <?php displayBrand(); ?>
             </select>
             <br> <br>
-            <b>Category:</b>
-            <select name="cate">
-               <option value=""> Select One</option>
-               <?php displayCate(); ?>
-            </select>
-            <br><br>
-            <b>Price:  From: </b> <input type="number" name="priceFrom" size="6"'<?php echo ($_GET['priceFrom']) ?  $_GET['priceFrom']  : ''; ?>'/> 
-            <b> To: </b> <input type="number" name="priceTo" size="6" '<?php echo ($_GET['priceTo']) ?  $_GET['priceTo']  : ''; ?>'/>
+            <b>Price:  From: </b> <input type="number" name="priceFrom" size="6"  <?php echo $_GET["priceFrom"] ?>/> 
+            <b> To: </b> <input type="number" name="priceTo" size="6" <?php echo $_GET["priceTo"] ?>/>
             <br>
             <input  type="radio"  name="orderBy" value="LToH" <?php echo ($_GET['orderBy'] == 'LToH') ? 'checked="checked"' : ''; ?>>   Low to High Price  
             <input   type="radio"   name="orderBy" value="HToL" <?php echo ($_GET['orderBy'] == 'HToL') ? 'checked="checked"' : ''; ?>>   High to Low Price 

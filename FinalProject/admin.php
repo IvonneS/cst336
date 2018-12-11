@@ -1,16 +1,7 @@
 <!--Page to do changes in database from admin -->
 <? php
+include "functions.php ";
 
-session_start();
-
-if(isset($_SESSION['Login'])){
-    header("Location: login.php");
-}
-
-include '../inc/dbConnection.php';
-$dbConn = startConnection("cosmetics");
-include 'functions.php';
-validateSession();
 
 ?>
 <!DOCTYPE html>
@@ -55,10 +46,15 @@ validateSession();
             }
             
         </style>
-
-    
+         <script>
+        
+            function confirmDelete() {
+                return confirm("Are you sure you want to delete this product?");
+            }
+            
+        </script>
     </head>
-    <body id="adminBody">
+    <body>
         
         <h1> ADMIN SECTION </h1>
         
@@ -76,10 +72,11 @@ validateSession();
 
            <br><br>
           <div id="productList">
-                     <!--display-->
+                <?php
+                 display();
+                ?>
+            </div>
         </div>
-        <!--<form action="deleteProduct.php">-->
-        <!--      <input type="submit" value="Delete Product">-->
-        <!--  </form>-->
+      
     </body>
 </html>

@@ -1,7 +1,5 @@
 <?php
-session_start();
 include "functions.php";
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -20,34 +18,33 @@ include "functions.php";
         <h1> Updating A Product </h1>
         
         <form>
-            <input type="hidden" name="productId" value="<?=$productInfo['productId']?>">
-           <b>Product name:</b> <input type="text" name="productName" value="<?=$productInfo['productName']?>"><br><br>
-           <b>Description:</b></b> <textarea name="description" cols="50" rows="4"> <?=$productInfo['productDescription']?> </textarea><br>
-           <b>Price:</b> <input type="text" name="price" value="<?=$productInfo['price']?>"><br>
+            <input type="hidden" name="product_Id" value="<?=$productInfo['product_Id']?>">
+           <b>Product name:</b> <input type="text" name="product_Name" value="<?=$productInfo['product_Name']?>"><br><br>
+           <b>Description:</b></b> <textarea name="product_Description" cols="50" rows="4"> <?=$productInfo['product_Description']?> </textarea><br>
            <b>Category:</b> 
-           <select name="catId">
-              <option value="">Select One</option>
+           <select name="category_Id">
+              <option value="">Select Brand</option>
               <?php
               
-            //   $categories = getCategories();
+              $categorie = getCategories();
               
-            //   foreach ($categories as $category) {
+              foreach ($categories as $category) {
                   
-            //       echo "<option  "; 
-            //       echo  ($category['catId']==$productInfo['catId'])?"selected":"";
-            //       echo " value='".$category['catId']."'>" . $category['catName'] . "</option>";
+                  echo "<option  "; 
+                  echo  ($category['category_Id']==$productInfo['category_Id'])?"selected":"";
+                  echo " value='".$category['category_Id']."'>" . $category['category_Name'] . "</option>";
                   
-             // }
+              }
               
               ?>
            </select> <br />
-           <b>Set Image Url:</b> <input type="text" name="productImage" value="<?=$productInfo['productImage']?>"><br>
+           <b>Set Image Url:</b> <input type="text" name="product_Image" value="<?=$productInfo['product_Image']?>"><br>
            <input type="submit" name="updateProduct" value="Update Product" id="b1" size = "10"><br><br>
                        
             <button formaction="admin.php">Go Back</button>
-
+                
         </form>
-        
+                
         
     </body>
 </html>

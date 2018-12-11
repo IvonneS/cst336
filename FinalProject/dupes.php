@@ -27,10 +27,26 @@
         </ul>
       </div>
     </nav>
-        
     </head>
+    <style>
+      .column{
+    float: left;
+    padding:10px;
+    font-size: medium;
+    text-align:center;
+    margin-left: 100px;
+      }
+    .row::after{
+    content: "";
+    clear: both;
+    display: table;
+    }
+    #text{
+      text-align: center;
+    }
+    </style>
     <body>
-      <div style="text-align: center;" >
+      <div id="text" >
         <p>
           <h1>Duples?</h1>
            Dupes are cheaper products that are comparable to a more expensive, often higher quality products.<br>
@@ -38,14 +54,16 @@
            <b>Here some examples:</b>
         </p>
       </div>
-      <div style="float:left;" " margin-right: 100px;">
-                 <!--duples in spanish-->
-           <iframe width="560" height="315" src="https://www.youtube.com/embed/kBH-oYbdMdM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-        <div style="float:right;" "margin-left: 100px;">
-                  <!--duples in english-->
+      <div class ="row">
+             <div class = "column">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/bow3W0mw1cA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
+                  
+             </div>
+             <div class = "column">
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/kBH-oYbdMdM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+             </div>
+         </div>
     
     </body>
     
