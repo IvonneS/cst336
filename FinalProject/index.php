@@ -37,11 +37,27 @@ include 'functions.php';
     </nav>
     </head>
     <style>
-        
+        #productList{
+          text-align: left;
+          margin-right: 300px;
+	        margin-left: 300px;
+	        font-family: serif;
+        }
+        #body1{
+           margin-left: 150px;
+        }
+        h1{
+          text-align: center;
+           font-family: serif;
+        }
+        footer{
+          text-align: center;
+          font-size: 11px;
+        }
     </style>
     <body>
         <h1>Welcome!</h1>
-        <form>
+        <form id = "body1">
             <b> Product Name: </b><input type="text" name="product_name" placeholder="product" /> <br />
             <br>
             <b> Brand:</b> 
@@ -49,27 +65,36 @@ include 'functions.php';
                <option value=""> Select Brand </option>
                <?php displayBrand(); ?>
             </select>
+            <br> <br>
+            <b>Category:</b>
+            <select name="cate">
+               <option value=""> Select One</option>
+               <?php displayCate(); ?>
+            </select>
             <br><br>
             <b>Price:  From: </b> <input type="number" name="priceFrom" size="6"/> 
             <b> To: </b> <input type="number" name="priceTo" size="6" />
             <br>
-            <b>Low to High Price</b> <input  type="radio"  name="orderBy" value="LToH"><br>
-            <b>High to Low Price</b><input   type="radio"   name="orderBy" value="HToL">
+            <input  type="radio"  name="orderBy" value="LToH" <?php echo ($_GET['orderBy'] == 'LToH') ? 'checked="checked"' : ''; ?>>   Low to High Price  
+            <input   type="radio"   name="orderBy" value="HToL" <?php echo ($_GET['orderBy'] == 'HToL') ? 'checked="checked"' : ''; ?>>   High to Low Price 
+            <input type="radio" name="orderBy" value="alphabetic" <?php echo ($_GET['orderBy'] == 'alphabetic') ? 'checked="checked"' : ''; ?>>   Alphabetical Order  
             <br>
             <br>
             <input type="submit" name="searchForm" value="Search" id="b1" /><br>
-            
-          
+            <br><br>
         </form>
-                
+           <div id="productList">
+                <?php
+                displayProduct();
+                ?>
+            </div>
     </body>
     <div class="hr"><hr /></div>
     <footer> <!--Add image backgroud-->
-       <b>About: </b>
+       <i><b>About: </b>
       <p>
-                  This website that helps searching makeup products with different prices; <br>
                     Easy search for different brand for different needs. <br>
-                    Also, this web contains tutorials for the newbies in the world of makeup. 
-      </p>
+                    Contained tutorials and tips for newbies in the world of makeup. 
+      </p></i>
     </footer>
 </html>

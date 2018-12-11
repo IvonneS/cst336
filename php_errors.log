@@ -67,3 +67,59 @@ Stack trace:
 [07-Dec-2018 09:41:46 UTC] PHP Fatal error:  Call to undefined function diplayBrand() in /home/ubuntu/workspace/cst336/FinalProject/index.php on line 19
 [07-Dec-2018 09:41:46 UTC] PHP Stack trace:
 [07-Dec-2018 09:41:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/FinalProject/index.php:0
+[11-Dec-2018 00:16:29 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/cst336/FinalProject/login.php on line 53
+[11-Dec-2018 00:37:24 UTC] PHP Fatal error:  Cannot redeclare startConnection() (previously declared in /home/ubuntu/workspace/cst336/inc/dbConnection.php:3) in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 3
+[11-Dec-2018 00:37:24 UTC] PHP Stack trace:
+[11-Dec-2018 00:37:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/FinalProject/login.php:0
+[11-Dec-2018 00:42:15 UTC] PHP Fatal error:  Call to undefined function check() in /home/ubuntu/workspace/cst336/FinalProject/login.php on line 36
+[11-Dec-2018 00:42:15 UTC] PHP Stack trace:
+[11-Dec-2018 00:42:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/FinalProject/login.php:0
+[11-Dec-2018 00:42:54 UTC] PHP Fatal error:  Cannot redeclare startConnection() (previously declared in /home/ubuntu/workspace/cst336/inc/dbConnection.php:3) in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 3
+[11-Dec-2018 00:42:54 UTC] PHP Stack trace:
+[11-Dec-2018 00:42:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/FinalProject/login.php:0
+[11-Dec-2018 00:42:54 UTC] PHP   2. check() /home/ubuntu/workspace/cst336/FinalProject/login.php:39
+[11-Dec-2018 00:44:35 UTC] PHP Fatal error:  Cannot redeclare startConnection() (previously declared in /home/ubuntu/workspace/cst336/inc/dbConnection.php:3) in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 3
+[11-Dec-2018 00:44:35 UTC] PHP Stack trace:
+[11-Dec-2018 00:44:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/FinalProject/login.php:0
+[11-Dec-2018 05:29:30 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'category_Name' in 'where clause'' in /home/ubuntu/workspace/cst336/FinalProject/functions.php:51
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/FinalProject/functions.php(51): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/FinalProject/index.php(88): displayProduct()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/FinalProject/functions.php on line 51
+[11-Dec-2018 05:29:33 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'category_Name' in 'where clause'' in /home/ubuntu/workspace/cst336/FinalProject/functions.php:51
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/FinalProject/functions.php(51): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/FinalProject/index.php(88): displayProduct()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/FinalProject/functions.php on line 51
+[11-Dec-2018 05:29:36 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'category_Name' in 'where clause'' in /home/ubuntu/workspace/cst336/FinalProject/functions.php:51
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/FinalProject/functions.php(51): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/FinalProject/index.php(88): displayProduct()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/FinalProject/functions.php on line 51
+[11-Dec-2018 05:48:06 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'category_Name' in 'where clause'' in /home/ubuntu/workspace/cst336/FinalProject/functions.php:51
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/FinalProject/functions.php(51): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/FinalProject/index.php(88): displayProduct()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/FinalProject/functions.php on line 51
+[11-Dec-2018 05:50:20 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'category_Name' in 'where clause'' in /home/ubuntu/workspace/cst336/FinalProject/functions.php:51
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/FinalProject/functions.php(51): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/FinalProject/index.php(88): displayProduct()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/FinalProject/functions.php on line 51
+[11-Dec-2018 05:50:22 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'category_Name' in 'where clause'' in /home/ubuntu/workspace/cst336/FinalProject/functions.php:51
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/FinalProject/functions.php(51): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/FinalProject/index.php(88): displayProduct()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/FinalProject/functions.php on line 51
+[11-Dec-2018 05:50:24 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'category_Name' in 'where clause'' in /home/ubuntu/workspace/cst336/FinalProject/functions.php:51
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/FinalProject/functions.php(51): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/FinalProject/index.php(88): displayProduct()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/FinalProject/functions.php on line 51

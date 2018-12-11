@@ -27,8 +27,6 @@ session_start();
     echo "Wrong username or password!!" ;
     echo "</div>";
     } else {
-   
-   $_SESSION['adminFullName'] = $record['firstName'] .  "   "  . $record['lastName'];
    header('Location: admin.php'); //redirects to another program
     
   }
