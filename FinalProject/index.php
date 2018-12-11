@@ -54,6 +54,12 @@ include 'functions.php';
           text-align: center;
           font-size: 11px;
         }
+        #b1{
+         
+          border-radius: 15px;
+          text-align: center;
+          
+        }
     </style>
     <body>
         <h1>Welcome!</h1>
@@ -72,8 +78,8 @@ include 'functions.php';
                <?php displayCate(); ?>
             </select>
             <br><br>
-            <b>Price:  From: </b> <input type="number" name="priceFrom" size="6"/> 
-            <b> To: </b> <input type="number" name="priceTo" size="6" />
+            <b>Price:  From: </b> <input type="number" name="priceFrom" size="6"'<?php echo ($_GET['priceFrom']) ?  $_GET['priceFrom']  : ''; ?>'/> 
+            <b> To: </b> <input type="number" name="priceTo" size="6" '<?php echo ($_GET['priceTo']) ?  $_GET['priceTo']  : ''; ?>'/>
             <br>
             <input  type="radio"  name="orderBy" value="LToH" <?php echo ($_GET['orderBy'] == 'LToH') ? 'checked="checked"' : ''; ?>>   Low to High Price  
             <input   type="radio"   name="orderBy" value="HToL" <?php echo ($_GET['orderBy'] == 'HToL') ? 'checked="checked"' : ''; ?>>   High to Low Price 

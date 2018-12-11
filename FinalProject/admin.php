@@ -1,6 +1,6 @@
 <!--Page to do changes in database from admin -->
 <? php
-include 'functions.php';
+
 session_start();
 
 if(isset($_SESSION['Login'])){
@@ -9,7 +9,7 @@ if(isset($_SESSION['Login'])){
 
 include '../inc/dbConnection.php';
 $dbConn = startConnection("cosmetics");
-
+include 'functions.php';
 validateSession();
 
 ?>
@@ -36,14 +36,26 @@ validateSession();
       </div>
     </nav>
         <title> Admin Main Page </title>
-        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+       
         <style>
+            #productList{
+          text-align: left;
+          margin-right: 300px;
+	        margin-left: 300px;
+	        font-family: serif;
+          }
             form {
                 display: inline-block;
             }
+            body{
+                text-align:center;
+                background-image: url("img/pic2.jpg");
+                background-size: cover;
+
+            }
+            
         </style>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" type="text/css" />
-      
+
     
     </head>
     <body id="adminBody">
@@ -58,14 +70,16 @@ validateSession();
            <form action="updateProduct.php">
               <input type="submit" value="Update Product">
           </form>
-           <form>
-              <input type="submit" value="Delete Product">
-          </form>
              <form action="logout.php">
               <input type="submit" value="Logout">
           </form>
 
            <br><br>
-        
+          <div id="productList">
+                     <!--display-->
+        </div>
+        <!--<form action="deleteProduct.php">-->
+        <!--      <input type="submit" value="Delete Product">-->
+        <!--  </form>-->
     </body>
 </html>
