@@ -9,7 +9,7 @@ function displayAll(){
     $sql = "SELECT * FROM product ORDER BY product_Name";
     $stmt = $dbConn->prepare($sql);
     $stmt->execute();
-    $records = $stmt->fetchAll(PDO::FETCH_ASSOC); //we're expecting multiple records
+    $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     foreach ($records as $record) {
         echo "Product: " . $record["product_Name"] . "</br>";
