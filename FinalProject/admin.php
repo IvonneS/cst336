@@ -36,7 +36,7 @@ include "functions.php";
             }
             body{
                 text-align:center;
-                background-image: url("img/pic2.jpg");
+                background-color: pink;
                 background-size: cover;
 
             }
