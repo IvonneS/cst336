@@ -70,28 +70,7 @@ function displayProduct(){
         }
                     
 }//function ends
-function display(){
- global $dbConn;
-    
-    $sql = "SELECT * FROM product ORDER BY product_Name";
-    $stmt = $dbConn->prepare($sql);
-    $stmt->execute();
-    $records = $stmt->fetchAll(PDO::FETCH_ASSOC); 
 
-    foreach ($records as $record) {
-        echo "Product: <b>" . $record['product_Name'] . "</b></br>";
-        echo "Brand:". $record['branch'] . "<br>";
-        echo "<td><img src = '". $record["product_Image"] . " width='200' height='150' '></br>";
-        echo "<a class='btn btn-warning' role='button' href='updateProduct.php?product_Id=".$record['product_Id']."'>Update</a>";
-        //echo "[<a href='deleteProduct.php?productId=".$record['productId']."'>Delete</a>]";
-        echo "<form action='deleteProduct.php' onsubmit='return confirmDelete()'>";
-        echo "   <input type='hidden' name='product_Id' value='".$record['product_Id']."'>";
-        echo "   <button class='btn btn-outline-danger' type='submit'>Delete</button>";
-        echo "</form>";
-        echo "</br></br>";
-        
-    }
-}
 function update(){
     if (isset($_GET['updateProduct'])){  //user has submitted update form
     

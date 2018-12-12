@@ -1,7 +1,13 @@
+
+<!--*****************************************************************************************************
+Administrators can generate at least three reports, which use aggregate functions 
+(e.g., average price of all products in the table)	
+
+-->
+
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Report Page </title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -20,10 +26,42 @@
         </ul>
       </div>
     </nav>
-        <title> Admin Main Page </title>
+        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+        <script>
+            $("document").ready(function(){
+                $("#cate").change(function() {
+                    $.ajax({
+            
+                    type: "GET",
+                    url: "",
+                    data: { "cate":$("#cate").val() },
+                    success: function(data,status) {
+                        $("#sum").html("$");
+                        $("#avg").html("$");
+                    
+            
+                },
+                complete: function(data,status) { //optional, used for debugging purposes
+               // alert(status);
+                }
+            
+                 });
+                  
+              });
+             
+          });
+</script>
+        <title>Admin</title>
+        <h1>Admin Report</h1>
+    </head>
         <style>
             form {
                 display: inline-block;
+            }
+            table{
+                text-align:center;
+                margin-left: 550px;
+                font-size: 20px;
             }
              body{
                 text-align:center;
@@ -32,14 +70,28 @@
 
             }
         </style>
-
-    
-    </head>
-    </head>
     <body>
-        <h1>Product Report</h1>
-      <form action="logout.php">
+        <table>
+            <tr>
+                <th>Brand </th>
+                <th>Sum  </th>
+                <th>Average </th>
+               
+                
+            </tr>
+            <tr>
+                <td><form><input type="text" name="category" size="5" id="cate"></input></form></td>
+                <td><label id= "sum"></label></td>
+                <td><label id= "avg"></label></td>
+            </tr>
+            
+        </table>
+             <br><br>
+            <form action="logout.php">
               <input type="submit" value="Logout">
           </form>
+        
+       
     </body>
 </html>
+

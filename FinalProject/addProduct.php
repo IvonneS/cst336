@@ -1,4 +1,9 @@
+<?pho
+session_start();
 
+include "functions.php";
+validateSession();
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -24,15 +29,6 @@
            <select name="brand">
               <option value="">Select One</option>
               <?php
-              
-            //   $categories = getCategories();
-              
-            //   foreach ($categories as $category) {
-                  
-            //       echo "<option value='".$category['catId']."'>" . $category['catName'] . "</option>";
-                  
-            //   }
-              
               ?>
            </select> <br><br>
            <b>Set Image Url:</b> <input type="text" name="productImage"><br><br>

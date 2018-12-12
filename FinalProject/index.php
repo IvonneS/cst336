@@ -35,6 +35,7 @@ include "functions.php";
     </nav>
     </head>
     <style>
+    
         #productList{
           text-align: left;
           margin-right: 300px;
@@ -43,7 +44,7 @@ include "functions.php";
         }
         #body1{
            margin-left: 150px;
-        }
+           }
         h1{
           text-align: center;
            font-family: serif;

@@ -61,7 +61,6 @@
              </div>
              <div class = "column">
            <iframe width="560" height="315" src="https://www.youtube.com/embed/kBH-oYbdMdM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
              </div>
          </div>
     

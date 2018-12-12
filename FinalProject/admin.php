@@ -1,6 +1,21 @@
 <!--Page to do changes in database from admin -->
 <? php
-include "functions.php ";
+include '../inc/dbConnection.php';
+$dbConn = startConnection("cosmetics");
+
+function displayAll(){
+ global $dbConn;
+
+    $sql = "SELECT * FROM product ORDER BY product_Name";
+    $stmt = $dbConn->prepare($sql);
+    $stmt->execute();
+    $records = $stmt->fetchAll(PDO::FETCH_ASSOC); //we're expecting multiple records
+
+    foreach ($records as $record) {
+        echo "Product: " . $record["product_Name"] . "</br>";
+
+    }
+}
 
 
 ?>
@@ -46,13 +61,7 @@ include "functions.php ";
             }
             
         </style>
-         <script>
-        
-            function confirmDelete() {
-                return confirm("Are you sure you want to delete this product?");
-            }
-            
-        </script>
+         
     </head>
     <body>
         
@@ -63,20 +72,14 @@ include "functions.php ";
           <form action="addProduct.php">
               <input type="submit" value="Add New Product">
           </form>
-           <form action="updateProduct.php">
-              <input type="submit" value="Update Product">
-          </form>
              <form action="logout.php">
               <input type="submit" value="Logout">
           </form>
 
            <br><br>
-          <div id="productList">
-                <?php
-                 display();
-                ?>
-            </div>
-        </div>
+        
+           <?= displayAll() ?>
+           </div>
       
     </body>
 </html>
