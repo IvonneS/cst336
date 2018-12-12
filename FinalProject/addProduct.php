@@ -80,7 +80,7 @@ function displayBrand(){
            <b>Set Image Url:</b> <input type="text" name="product_Image"><br><br>
            <input type="submit" name="addProduct" value="Add Product" id="b1"><br><br>
            
-            <button formaction="admin.php">Go Back</button>
+            <button formaction="admin.php">GO BACK</button>
 
         </form>
 

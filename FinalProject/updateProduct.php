@@ -9,14 +9,12 @@ if (isset($_GET['updateProduct'])){  //user has submitted update form
     $np[":product_Name"] = $_GET['product_Name'];
     $np[":product_Description"] = $_GET['product_Description'];
     $np[":product_Price"] = $_GET['product_Price'];
-    $np[":category_Id"] = $_GET['category_Id'];
     $np[":product_Image"] = $_GET['product_Image'];
     
     $sql = "UPDATE product 
             SET product_Name= :product_Name,
                product_Description = :product_Description,
                product_Price = :product_Price,
-            
                product_Image = :product_Image
             WHERE product_Id = " . $_GET['product_Id'];
     
@@ -68,6 +66,7 @@ function getProductInfo($productId) {
             <input type="hidden" name="product_Id" value="<?=$productInfo['product_Id']?>">
            <b>Product name:</b> <input type="text" name="product_Name" value="<?=$productInfo['product_Name']?>"><br><br>
            <b>Description:</b></b> <textarea name="product_Description" cols="50" rows="4"> <?=$productInfo['product_Description']?> </textarea><br>
+           <b>Price:</b> <input type="text" name="product_Price" value="<?=$productInfo['product_Price']?>"><br><br>
            <b>Set Image Url:</b> <input type="text" name="product_Image" value="<?=$productInfo['product_Image']?>"><br>
            <input type="submit" name="updateProduct" value="Update Product" id="b1" size = "10"><br><br>
                        

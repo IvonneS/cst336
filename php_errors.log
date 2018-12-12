@@ -606,3 +606,64 @@ Stack trace:
 #0 /home/ubuntu/workspace/cst336/FinalProject/deleteProduct.php(10): PDOStatement->execute()
 #1 {main}
   thrown in /home/ubuntu/workspace/cst336/FinalProject/deleteProduct.php on line 10
+[12-Dec-2018 20:40:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/ubuntu/workspace/cst336/FinalProject/deleteProduct.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/FinalProject/deleteProduct.php(10): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/FinalProject/deleteProduct.php on line 10
+[12-Dec-2018 20:43:10 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'otterclothes'' in /home/ubuntu/workspace/cst336/inc/dbConnection.php:21
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/inc/dbConnection.php(21): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ubuntu/workspace/cst336/FinalProject/deleteProduct.php(5): startConnection('otterclothes')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 21
+[12-Dec-2018 20:43:27 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'otterclothes'' in /home/ubuntu/workspace/cst336/inc/dbConnection.php:21
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/inc/dbConnection.php(21): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ubuntu/workspace/cst336/FinalProject/deleteProduct.php(5): startConnection('otterclothes')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 21
+[12-Dec-2018 20:43:50 UTC] PHP Fatal error:  Cannot redeclare startConnection() (previously declared in /home/ubuntu/workspace/cst336/inc/dbConnection.php:3) in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 3
+[12-Dec-2018 20:43:50 UTC] PHP Stack trace:
+[12-Dec-2018 20:43:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/FinalProject/deleteProduct.php:0
+[12-Dec-2018 20:43:50 UTC] PHP   2. include() /home/ubuntu/workspace/cst336/FinalProject/deleteProduct.php:6
+[12-Dec-2018 20:44:23 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/ubuntu/workspace/cst336/FinalProject/deleteProduct.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/FinalProject/deleteProduct.php(10): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/FinalProject/deleteProduct.php on line 10
+[12-Dec-2018 20:45:25 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/FinalProject/updateProduct.php:24
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/FinalProject/updateProduct.php(24): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/FinalProject/updateProduct.php on line 24
+[12-Dec-2018 20:45:53 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/FinalProject/updateProduct.php:24
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/FinalProject/updateProduct.php(24): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/FinalProject/updateProduct.php on line 24
+[12-Dec-2018 20:45:59 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/FinalProject/updateProduct.php:24
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/FinalProject/updateProduct.php(24): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/FinalProject/updateProduct.php on line 24
+[12-Dec-2018 20:47:18 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/FinalProject/updateProduct.php:24
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/FinalProject/updateProduct.php(24): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/FinalProject/updateProduct.php on line 24
+[12-Dec-2018 20:57:46 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/ubuntu/workspace/cst336/FinalProject/deleteProduct.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/FinalProject/deleteProduct.php(10): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/FinalProject/deleteProduct.php on line 10
+[12-Dec-2018 21:01:46 UTC] PHP Fatal error:  Cannot redeclare startConnection() (previously declared in /home/ubuntu/workspace/cst336/inc/dbConnection.php:3) in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 3
+[12-Dec-2018 21:01:46 UTC] PHP Stack trace:
+[12-Dec-2018 21:01:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/FinalProject/deleteProduct.php:0
+[12-Dec-2018 21:02:49 UTC] PHP Fatal error:  Cannot redeclare startConnection() (previously declared in /home/ubuntu/workspace/cst336/inc/dbConnection.php:3) in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 3
+[12-Dec-2018 21:02:49 UTC] PHP Stack trace:
+[12-Dec-2018 21:02:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/FinalProject/deleteProduct.php:0
+[12-Dec-2018 21:02:49 UTC] PHP   2. include() /home/ubuntu/workspace/cst336/FinalProject/deleteProduct.php:8
+[12-Dec-2018 21:03:39 UTC] PHP Fatal error:  Cannot redeclare startConnection() (previously declared in /home/ubuntu/workspace/cst336/inc/dbConnection.php:3) in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 3
+[12-Dec-2018 21:03:39 UTC] PHP Stack trace:
+[12-Dec-2018 21:03:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/FinalProject/deleteProduct.php:0

@@ -42,6 +42,17 @@ include "functions.php";
             }
             
         </style>
+        <script>
+        
+            function confirmDelete() {
+                
+                //alert();
+                //prompt();
+                return confirm("Are you sure you want to delete this product");
+                
+            }
+            
+        </script>
          
     </head>
     <body>
