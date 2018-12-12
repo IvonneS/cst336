@@ -1,8 +1,6 @@
 <?php
 include '../inc/dbConnection.php';
 $dbConn = startConnection("cosmetics");
-
-
 function displayAll(){
     global $dbConn; 
  
@@ -10,14 +8,17 @@ function displayAll(){
     $stmt = $dbConn->prepare($sql);
     $stmt->execute();
     $records = $stmt->fetchAll(PDO::FETCH_ASSOC); //we're expecting multiple records
-
     foreach ($records as $record) {
     
                     echo "Name: ". $record['product_Name'] . "<br>";
                     echo "Brand:". $record['branch'] . "<br>";
                     echo "<img src = '". $record['product_Image'] . "' width='200' height='150' alt = 'image'><br><br> ";
                     echo " Price: $" . $record['product_Price'] .   "<br>";
-                     echo  "Description: " . $record['product_Description'] . "<br>";
+                    echo  "Description: " . $record['product_Description'] . "<br>";
+                    echo "<a class='btn btn-warning' role='button' href='updateProduct.php?product_Id=".$record['product_Id']."'>Update</a>";
+                    echo "<form action='deleteProduct.php' onsubmit='return confirmDelete()'>";
+                    echo "   <input type='hidden' name='product_Id' value='".$record['product_Id']."'>";
+                    echo "   <button class='btn btn-outline-danger' type='submit'>Delete</button><br><br>";
     }
 }
 function validateSession(){
@@ -27,10 +28,8 @@ function validateSession(){
     exit;
   }
 }
-
 function displayProduct(){
      global $dbConn;
-
         if(isset($_GET['searchForm'])){
                 
                 $sql = "SELECT * FROM product WHERE 1"; 
@@ -88,7 +87,6 @@ function displayProduct(){
         }
                     
 }//function ends
-
 function update(){
     if (isset($_GET['updateProduct'])){  //user has submitted update form
     
@@ -176,7 +174,6 @@ function displayCate(){
         $record . "<br>";
     }
 }
-
 function displayEye(){
     global $dbConn;
     $sql = "SELECT * FROM `category` WHERE category_Id = 1 OR category_Id = 4 OR category_Id = 5 OR category_Id = 13";
@@ -226,7 +223,6 @@ function displayLips(){
         $record . "<br>";
     }
   }
-
 function displaySum(){
     global $dbConn;
     
@@ -234,7 +230,6 @@ function displaySum(){
     $stmt = $dbConn->prepare($sql);
     $stmt->execute();
      $records = $stmt->fetchAll(PDO::FETCH_ASSOC); //we're expecting multiple records
-
     foreach ($records as $record) {
         
         echo " $ " . $record['avg_price'] . "<br>";
@@ -248,7 +243,6 @@ function displayMax(){
     $stmt = $dbConn->prepare($sql);
     $stmt->execute();
     $records = $stmt->fetchAll(PDO::FETCH_ASSOC); //we're expecting multiple records
-
     foreach ($records as $record) {
         
         echo " $ " . $record['avg_price'] . "<br>";
@@ -262,12 +256,10 @@ function displayAvg(){
     $stmt = $dbConn->prepare($sql);
     $stmt->execute();
     $records = $stmt->fetchAll(PDO::FETCH_ASSOC); //we're expecting multiple records
-
     foreach ($records as $record) {
         
         echo " $ " . $record['avg_price'] . "<br>";
         
     }
 }
-
 ?>
