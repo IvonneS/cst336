@@ -1,27 +1,5 @@
 <!--Page to do changes in database from admin -->
 <? php
-session_start();
-include '../inc/dbConnection.php';
-$dbConn = startConnection("cosmetics");
-
-
-function displayAll(){
-    global $dbConn; 
- 
-    $sql = "SELECT * FROM product ORDER BY product_Name";
-    $stmt = $dbConn->prepare($sql);
-    $stmt->execute();
-    $records = $stmt->fetchAll(PDO::FETCH_ASSOC); //we're expecting multiple records
-
-    foreach ($records as $record) {
-    
-                    echo "Name: ". $record['product_Name'] . "<br>";
-                    echo "Brand:". $record['branch'] . "<br>";
-                    echo "<img src = '". $record['product_Image'] . "' width='200' height='150' alt = 'image'><br><br> ";
-                    echo " Price: $" . $record['product_Price'] .   "<br>";
-                     echo  "Description: " . $record['product_Description'] . "<br>";
-    }
-}
 
 ?>
 
