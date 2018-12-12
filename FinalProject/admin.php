@@ -1,24 +1,33 @@
 <!--Page to do changes in database from admin -->
 <? php
+session_start();
 include '../inc/dbConnection.php';
 $dbConn = startConnection("cosmetics");
 
-function displayAll(){
- global $dbConn;
 
+function displayAll(){
+    global $dbConn; 
+ 
     $sql = "SELECT * FROM product ORDER BY product_Name";
     $stmt = $dbConn->prepare($sql);
     $stmt->execute();
-    $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $records = $stmt->fetchAll(PDO::FETCH_ASSOC); //we're expecting multiple records
 
     foreach ($records as $record) {
-        echo "Product: " . $record["product_Name"] . "</br>";
-
+    
+                    echo "Name: ". $record['product_Name'] . "<br>";
+                    echo "Brand:". $record['branch'] . "<br>";
+                    echo "<img src = '". $record['product_Image'] . "' width='200' height='150' alt = 'image'><br><br> ";
+                    echo " Price: $" . $record['product_Price'] .   "<br>";
+                     echo  "Description: " . $record['product_Description'] . "<br>";
     }
 }
 
-
 ?>
+
+
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -36,7 +45,7 @@ function displayAll(){
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="report.html">Admin Report</a></a>
+            <a class="nav-link" href="report.php">Admin Report</a></a>
           </li>
         </ul>
       </div>
@@ -44,12 +53,7 @@ function displayAll(){
         <title> Admin Main Page </title>
        
         <style>
-            #productList{
-          text-align: left;
-          margin-right: 300px;
-	        margin-left: 300px;
-	        font-family: serif;
-          }
+           
             form {
                 display: inline-block;
             }
@@ -77,8 +81,9 @@ function displayAll(){
           </form>
 
            <br><br>
-        
-           <?= displayAll() ?>
+          
+         
+           
 
     </body>
 </html>

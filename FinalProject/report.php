@@ -4,7 +4,9 @@ Administrators can generate at least three reports, which use aggregate function
 (e.g., average price of all products in the table)	
 
 -->
-
+<?php
+include 'functions.php';
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -29,17 +31,19 @@ Administrators can generate at least three reports, which use aggregate function
         <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
         <script>
             $("document").ready(function(){
-                $("#cate").change(function() {
+                $("#button_1").click(function(e) {
+                   e.preventDefault();
+    
                     $.ajax({
             
                     type: "GET",
-                    url: "",
-                    data: { "cate":$("#cate").val() },
-                    success: function(data,status) {
-                        $("#sum").html("$");
-                        $("#avg").html("$");
-                    
-            
+                    url: "db.php",
+                    data: { "button_1":$("#button_1").val() },
+                    success: function(data) {
+                        $("#sum").html(data);
+                       
+                        
+
                 },
                 complete: function(data,status) { //optional, used for debugging purposes
                // alert(status);
@@ -72,17 +76,23 @@ Administrators can generate at least three reports, which use aggregate function
         </style>
     <body>
         <table>
+            <form>
+              <button id="button_1" value="val_1" name="but1">Get Sum</button>
+             </form>
             <tr>
-                <th>Brand </th>
-                <th>Sum  </th>
-                <th>Average </th>
+            
+           
+                <th>Sum </th>
+                <th>Average</th>
+                <th>Max Value</th>
                
                 
             </tr>
             <tr>
-                <td><form><input type="text" name="category" size="5" id="cate"></input></form></td>
+               
                 <td><label id= "sum"></label></td>
-                <td><label id= "avg"></label></td>
+                <td><label id= "avg">    <?= displayAvg() ?></label></td>
+                <td><label id= "max">    <?= displayMax() ?></label></td>
             </tr>
             
         </table>

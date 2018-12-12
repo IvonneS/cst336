@@ -2,6 +2,24 @@
 include '../inc/dbConnection.php';
 $dbConn = startConnection("cosmetics");
 
+
+function displayAll(){
+    global $dbConn; 
+ 
+    $sql = "SELECT * FROM product ORDER BY product_Name";
+    $stmt = $dbConn->prepare($sql);
+    $stmt->execute();
+    $records = $stmt->fetchAll(PDO::FETCH_ASSOC); //we're expecting multiple records
+
+    foreach ($records as $record) {
+    
+                    echo "Name: ". $record['product_Name'] . "<br>";
+                    echo "Brand:". $record['branch'] . "<br>";
+                    echo "<img src = '". $record['product_Image'] . "' width='200' height='150' alt = 'image'><br><br> ";
+                    echo " Price: $" . $record['product_Price'] .   "<br>";
+                     echo  "Description: " . $record['product_Description'] . "<br>";
+    }
+}
 function validateSession(){
     if (!isset($_SESSION[''])) {
     
@@ -208,5 +226,48 @@ function displayLips(){
         $record . "<br>";
     }
   }
+
+function displaySum(){
+    global $dbConn;
+    
+    $sql = "SELECT round(sum(product_Price)) avg_price FROM product ";
+    $stmt = $dbConn->prepare($sql);
+    $stmt->execute();
+     $records = $stmt->fetchAll(PDO::FETCH_ASSOC); //we're expecting multiple records
+
+    foreach ($records as $record) {
+        
+        echo " $ " . $record['avg_price'] . "<br>";
+        
+    }
+}
+function displayMax(){
+    global $dbConn;
+    
+    $sql = "SELECT max(product_Price) avg_price FROM product ";
+    $stmt = $dbConn->prepare($sql);
+    $stmt->execute();
+    $records = $stmt->fetchAll(PDO::FETCH_ASSOC); //we're expecting multiple records
+
+    foreach ($records as $record) {
+        
+        echo " $ " . $record['avg_price'] . "<br>";
+        
+    }
+}
+function displayAvg(){
+    global $dbConn;
+    
+      $sql = "SELECT round(avg(product_Price)) avg_price FROM product";
+    $stmt = $dbConn->prepare($sql);
+    $stmt->execute();
+    $records = $stmt->fetchAll(PDO::FETCH_ASSOC); //we're expecting multiple records
+
+    foreach ($records as $record) {
+        
+        echo " $ " . $record['avg_price'] . "<br>";
+        
+    }
+}
 
 ?>

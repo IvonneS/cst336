@@ -1,6 +1,42 @@
 <?php
-include "functions.php";
+session_start();
+include '../inc/dbConnection.php';
+$dbConn = startConnection("cosmetics");
+
+if (isset($_GET['updateProduct'])){  //user has submitted update form
+    
+    $np = array();
+    $np[":product_Name"] = $_GET['product_Name'];
+    $np[":product_Description"] = $_GET['product_Description'];
+    $np[":product_Price"] = $_GET['product_Price'];
+    $np[":category_Id"] = $_GET['category_Id'];
+    $np[":product_Image"] = $_GET['product_Image'];
+    
+    $sql = "UPDATE product 
+            SET product_Name= :product_Name,
+               product_Description = :product_Description,
+               product_Price = :product_Price,
+               category_Id = :category_Id,
+               product_Image = :product_Image
+            WHERE product_Id = " . $_GET['product_Id'];
+    
+    $stmt = $dbConn->prepare($sql);
+    $stmt->execute($np);       
+    
+}
+
+
+if (isset($_GET['productId'])) {
+
+  $productInfo = getProductInfo($_GET['product_Id']);    
+
+    
+}
+
+
 ?>
+
+
 <!DOCTYPE html>
 <html>
     <head>
