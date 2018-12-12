@@ -36,8 +36,6 @@ include "functions.php";
             }
             body{
                 text-align:center;
-                background-color: pink;
-                background-size: cover;
 
             }
             
