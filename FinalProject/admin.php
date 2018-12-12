@@ -79,7 +79,6 @@ function displayAll(){
            <br><br>
         
            <?= displayAll() ?>
-           </div>
-      
+
     </body>
 </html>
