@@ -667,3 +667,56 @@ Stack trace:
 [12-Dec-2018 21:03:39 UTC] PHP Fatal error:  Cannot redeclare startConnection() (previously declared in /home/ubuntu/workspace/cst336/inc/dbConnection.php:3) in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 3
 [12-Dec-2018 21:03:39 UTC] PHP Stack trace:
 [12-Dec-2018 21:03:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/FinalProject/deleteProduct.php:0
+[17-Dec-2018 20:18:59 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/FinalExam/index.php on line 13
+[17-Dec-2018 20:18:59 UTC] PHP Stack trace:
+[17-Dec-2018 20:18:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/FinalExam/index.php:0
+[17-Dec-2018 20:18:59 UTC] PHP   2. displayInfo() /home/ubuntu/workspace/cst336/FinalExam/index.php:60
+[17-Dec-2018 20:20:23 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/FinalExam/index.php on line 13
+[17-Dec-2018 20:20:23 UTC] PHP Stack trace:
+[17-Dec-2018 20:20:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/FinalExam/index.php:0
+[17-Dec-2018 20:20:23 UTC] PHP   2. displayInfo() /home/ubuntu/workspace/cst336/FinalExam/index.php:61
+[17-Dec-2018 20:23:21 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/FinalExam/index.php on line 13
+[17-Dec-2018 20:23:21 UTC] PHP Stack trace:
+[17-Dec-2018 20:23:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/FinalExam/index.php:0
+[17-Dec-2018 20:23:21 UTC] PHP   2. displayInfo() /home/ubuntu/workspace/cst336/FinalExam/index.php:59
+[17-Dec-2018 20:24:22 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/FinalExam/index.php on line 13
+[17-Dec-2018 20:24:22 UTC] PHP Stack trace:
+[17-Dec-2018 20:24:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/FinalExam/index.php:0
+[17-Dec-2018 20:24:22 UTC] PHP   2. displayInfo() /home/ubuntu/workspace/cst336/FinalExam/index.php:59
+[17-Dec-2018 20:26:05 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'c9.product' doesn't exist' in /home/ubuntu/workspace/cst336/FinalExam/index.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/FinalExam/index.php(15): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/FinalExam/index.php(60): displayInfo()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/FinalExam/index.php on line 15
+[17-Dec-2018 21:03:26 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'c9.stars' doesn't exist' in /home/ubuntu/workspace/cst336/FinalExam/db.php:25
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/FinalExam/db.php(25): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/FinalExam/db.php on line 25
+[17-Dec-2018 22:19:51 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: no parameters were bound' in /home/ubuntu/workspace/cst336/FinalExam/verify.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/FinalExam/verify.php(15): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/FinalExam/verify.php on line 15
+[17-Dec-2018 22:26:02 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/cst336/FinalExam/program1.php on line 192
+[17-Dec-2018 22:26:59 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/cst336/FinalExam/program1.php on line 192
+[17-Dec-2018 22:50:20 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/cst336/FinalExam/program2.php on line 4
+[17-Dec-2018 22:50:20 UTC] PHP Stack trace:
+[17-Dec-2018 22:50:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/FinalExam/program2.php:0
+[17-Dec-2018 22:51:32 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/FinalExam/program2.php on line 14
+[17-Dec-2018 22:51:32 UTC] PHP Stack trace:
+[17-Dec-2018 22:51:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/FinalExam/program2.php:0
+[17-Dec-2018 22:51:32 UTC] PHP   2. displayInfo() /home/ubuntu/workspace/cst336/FinalExam/program2.php:51
+[17-Dec-2018 23:17:13 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 2' in /home/ubuntu/workspace/cst336/FinalExam/program1.php:37
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/FinalExam/program1.php(37): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/FinalExam/program1.php(136): check()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/FinalExam/program1.php on line 37
+[17-Dec-2018 23:18:14 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 2' in /home/ubuntu/workspace/cst336/FinalExam/program1.php:35
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/FinalExam/program1.php(35): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/FinalExam/program1.php(135): check()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/FinalExam/program1.php on line 35

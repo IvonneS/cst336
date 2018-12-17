@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+    $("document").ready(function() {
+    
+        $("#hero").change(function() {
+            $.ajax({
+            
+            type: "GET",
+            url: "https://www.omdbapi.com/?s=&apikey=12215ee6",
+            dataType: "json",
+            data: { "s": $("#hero").val() },
+            success: function(data,status) {
+                alert(data[0].title)
+            },
+            complete: function(data,status) { //optional, used for debugging purposes
+            //alert(status);
+            }
+            
+            });//ajax
+        }); //
+    }); //documentReady
+    </script>
+    </head>
+<body>
+<h1>Select Superhero:</h1>
+<select id= "hero">
+  <option value="Batman">Batman</option>
+  <option value="Captin America">Captin America</option>
+  <option value="Iron Man">Iron Man</option>
+  <option value="Spider Man">Spider Man</option>
+  <option value="Superman">Superman</option>
+  <option value="Hulk">The Hulk</option>
+  <option value="Wonderwoman">Wonderwoman</option>
+  </select>
+  </br>
+  </br>
+  <input type="submit" value="Search Movies!">
+
+  </br>
+  </br>
+  <input type="submit" value="Superhero Details">
+  
+</body>
+</html>
