@@ -99,10 +99,10 @@ function display2(){
                 $("#user").change(function() {
                      $.ajax({
                                 type: "GET",
-                                url: "",
+                                url: "db.php",
                                 data: { "user":$("#user") },
                                 success: function(data, status) {
-                                  $("#time").html("do some");
+                                  $("#time").html(data);
                                 },
                                 complete: function(data, status) { //optional, used for debugging purposes
                                      //alert(status);
